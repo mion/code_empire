@@ -86,7 +86,7 @@ class CombatSimulation:
 
 
 if __name__ == '__main__':
-    simulations = 10
+    simulations = 5000
     name_a = 'orc'
     name_b = 'troll'
     matches = []
@@ -99,17 +99,22 @@ if __name__ == '__main__':
         b = Creature('troll', 1, Point(0, 0))
         cs = CombatSimulation(a, b, 50)
         result = cs.run(output)
-        matches.append({'winner': result[0], 'rounds': result[1]})
+        match = {'winner': result[0].name, 'rounds': result[1]}
+        matches.append(match)
 
     a_wins = 0
     b_wins = 0
+    a_rounds = 0
+    b_rounds = 0
     draws = 0
 
     for match in matches:
         if match['winner'] == name_a:
             a_wins += 1
+            a_rounds += match['rounds']
         elif match['winner'] == name_b:
             b_wins += 1
+            b_rounds += match['rounds']
         else:
             draws += 1
 
