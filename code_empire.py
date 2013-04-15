@@ -27,6 +27,9 @@ class Creature:
         self.position = position
         self.set_stats(level)
 
+    def __str__(self):
+        return 'c'
+
     def set_stats(self, level):
         self.life = 100
         self.attack_range = 1
@@ -85,7 +88,48 @@ class CombatSimulation:
         return (None, self.max_rounds)
 
 
+class TileMap:
+    EMPTY_TILE = ' '
+
+    def __init__(self, size):
+        self.size = size
+        self.tiles = []
+        for i in range(size*size):
+            self.tiles.append(self.EMPTY_TILE)
+
+    def get_tile_at(self, x, y):
+        return self.tiles[x + self.size*y]
+
+    def set_tile_at(self, tile, x, y):
+        self.tiles[x + self.size*y] = tile
+
+    def is_tile_empty(self, x, y):
+        return self.get_tile_at(x, y) == self.EMPTY_TILE
+
+    def __str__(self):
+        s = ''
+        header = '  '
+        for j in range(self.size):
+            header += " {} ".format(j)
+        header += "\n"
+
+        for i in range(self.size):
+            row = ''
+            for j in range(self.size):
+                row += "[{}]".format(str(self.get_tile_at(j, i)))
+
+            s += "{} {}\n".format(i, row)
+
+        return header+s
+
+
 if __name__ == '__main__':
+    tile_map = TileMap(10)
+    tile_map.set_tile_at('x', 3, 5)
+    print tile_map
+
+
+if __name__ == '__other__':
     simulations = 5000
     name_a = 'orc'
     name_b = 'troll'
