@@ -57,8 +57,8 @@ class CombatSimulation:
 
         # Run matches
         for i in range(simulations):
-            orc = Creature(name_a, 1, Point(0, 0))
-            troll = Creature(name_b, 1, Point(0, 0))
+            orc = Creature(name_a, position=Point(0, 0))
+            troll = Creature(name_b, position=Point(0, 0))
 
             cs = CombatSimulation(MAX_ROUNDS)
 
