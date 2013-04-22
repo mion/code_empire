@@ -56,6 +56,14 @@ class World:
         self.players[c.player]['creatures'].append(c)
         self.tile_map.set_tile_at(c.position.x, c.position.y, c)
 
+    def remove_creature(self, c):
+        """
+        Removes a creature from the world.
+        """
+        self.creatures.remove(c)
+        self.players[c.player]['creatures'].remove(c)
+        self.tile_map.set_tile_at(c.position.x, c.position.y, TileMap.EMPTY_TILE)
+
     def move_creature(self, c, dx, dy):
         """
         Attempts to move a creature by increasing its x and y.
@@ -114,7 +122,8 @@ class World:
         elif resp['action'] == 'attack':
             target_x, target_y = resp.get('target_x', 0), resp.get('target_y', 0)
             target_creature = self.tile_map.get_tile_at(target_x, target_y)
-            c.attack(target_creature)
+            if target_creature.__class__ == Creature:
+                c.attack(target_creature)
 
     def gather_fortress_info(self, c):
         return
@@ -124,6 +133,9 @@ class World:
 
     def update(self):
         for creature in self.creatures:
+            if not creature.alive():
+                self.remove_creature(creature)
+
             info = self.gather_creature_info(creature)
             response = creature.think(info)
             self.handle_creature_response(response, creature)
