@@ -84,6 +84,14 @@ class World:
     def standing_players(self):
         return filter(lambda player: len(self.players[player]['creatures']) > 0, self.players.keys())
 
+    def has_winner(self):
+        survivors = self.standing_players()
+        if len(survivors) <= 1:
+            return False
+        else:
+            return True
+
+
     def gather_creature_info(self, c):
         """
         Information available to that creature.
@@ -135,16 +143,13 @@ class World:
         for creature in self.creatures:
             if not creature.alive():
                 self.remove_creature(creature)
+                continue
 
             info = self.gather_creature_info(creature)
             response = creature.think(info)
             self.handle_creature_response(response, creature)
 
-        survivors = self.standing_players()
-        if len(survivors) <= 1:
-            return False
-        else:
-            return True
+        return self.has_winner()
 
 
 class TileError(Exception):

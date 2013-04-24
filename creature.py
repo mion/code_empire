@@ -80,31 +80,35 @@ class Creature:
     def think(self, info):
         memory = self.memory
 
-        if 'target' in memory:
-            for c in info['creatures']:
-                if c['id'] == memory['target']:
-                    memory['target_x'] = c['x']
-                    memory['target_y'] = c['y']
-                    break
-
-            if self.in_attack_range(Point(memory['target_x'], memory['target_y'])):
-                return {'action': 'attack', 'target_x': memory['target_x'], 'target_y': memory['target_y']}
+        if 'target_id' in memory:
+            #target = info['creatures'][]
+            creature = None
+            if creature and not creature.alive():
+                # Dead target
+                del memory['target_id']
             else:
-                dx, dy = self.position.dx_dy(Point(memory['target_x'], memory['target_y']))
-                return {'action': 'move', 'dx': dx, 'dy': dy}
-        else:
-            dx = Dice.roll(2) - 1
-            dy = Dice.roll(2) - 1
+                # Attack a target
+                for c in info['creatures']:
+                    if c['id'] == memory['target_id']:
+                        memory['target_x'] = c['x']
+                        memory['target_y'] = c['y']
+                        break
 
-            for c in info['creatures']:
-                if c['player'] != self.player:
-                    memory['target'] = c['id']
-                    memory['target_x'] = c['x']
-                    memory['target_y'] = c['y']
-                    dx, dy = self.position.dx_dy(Point(c['x'], c['y']))
+                if self.in_attack_range(Point(memory['target_x'], memory['target_y'])):
+                    return {'action': 'attack', 'target_x': memory['target_x'], 'target_y': memory['target_y']}
+                else:
+                    dx, dy = self.position.dx_dy(Point(memory['target_x'], memory['target_y']))
+                    return {'action': 'move', 'dx': dx, 'dy': dy}
+        
+        # Wander
+        dx = Dice.roll(2) - 1
+        dy = Dice.roll(2) - 1
 
-            return {'action': 'move', 'dx': dx, 'dy': dy}
+        for c in info['creatures']:
+            if c['player'] != self.player:
+                memory['target_id'] = c['id']
+                memory['target_x'] = c['x']
+                memory['target_y'] = c['y']
+                dx, dy = self.position.dx_dy(Point(c['x'], c['y']))
 
-
-
-
+        return {'action': 'move', 'dx': dx, 'dy': dy}
