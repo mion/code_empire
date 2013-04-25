@@ -1,6 +1,6 @@
-from creature import Creature
-from point import Point
-from dice import Dice
+from model.creature import Creature
+from util.point import Point
+from util.dice import Dice
 
 class CombatSimulation:
     def __init__(self, max_rounds):

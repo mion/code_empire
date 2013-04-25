@@ -1,10 +1,11 @@
-import world
+from model.world import World
+
 
 if __name__ == '__main__':
     red_team = 'mion'
     blue_team = 'rob_pike'
 
-    world = world.World(red_team, blue_team)
+    world = World(red_team, blue_team)
 
     for i in range(500):
       world.display(i+1)

@@ -1,4 +1,4 @@
-from creature import Creature
+from model.creature import Creature
 
 class Fortress(Creature):
   def __init__(self, player):

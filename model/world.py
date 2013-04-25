@@ -1,6 +1,7 @@
-from fortress import Fortress
-from creature import Creature
-from point import Point
+from model.fortress import Fortress
+from model.creature import Creature
+from util.point import Point
+
 
 class World:
     MAP_SIZE = 10
