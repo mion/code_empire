@@ -7,7 +7,7 @@ if __name__ == '__main__':
     world = world.World(red_team, blue_team)
 
     for i in range(500):
-      world.display()
+      world.display(i+1)
       
       if not world.update():
         break

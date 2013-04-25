@@ -7,7 +7,7 @@ class World:
 
     def __init__(self, red_player, blue_player):
         self.tile_map = TileMap(World.MAP_SIZE)
-        self.creatures = []
+        self.creatures = {}
         self.players = {}
 
         self.red_player = red_player
@@ -15,7 +15,7 @@ class World:
 
         for p in (red_player, blue_player):
             self.players[p] = {'fortress': Fortress(p),
-                               'creatures': [], 
+                               'creatures': {}, 
                                'gold': 0}
 
         self.tile_map.set_tile_at(World.MAP_SIZE - 1, World.MAP_SIZE - 1, self.players[red_player]['fortress'])
@@ -26,7 +26,7 @@ class World:
         self.insert_creature(Creature('Peon', blue_player, position=Point(0, 1)))
         self.insert_creature(Creature('Peon', blue_player, position=Point(1, 0)))
 
-    def display(self):
+    def display(self, num_round):
         """
         Prints the map.
         """
@@ -40,10 +40,10 @@ class World:
 
         print 'CREATURES'
         print '-'*10
-        for c in self.creatures:
-            c.display()
+        for id in self.creatures:
+            self.creatures[id].display()
 
-        print 'MAP'
+        print 'MAP - Round {}'.format(num_round)
         print '-'*10
         print self.tile_map
 
@@ -52,16 +52,16 @@ class World:
         """
         Inserts a creature into the world.
         """
-        self.creatures.append(c)
-        self.players[c.player]['creatures'].append(c)
+        self.creatures[c.id] = c
+        self.players[c.player]['creatures'][c.id] = c
         self.tile_map.set_tile_at(c.position.x, c.position.y, c)
 
     def remove_creature(self, c):
         """
         Removes a creature from the world.
         """
-        self.creatures.remove(c)
-        self.players[c.player]['creatures'].remove(c)
+        del self.creatures[c.id]
+        del self.players[c.player]['creatures'][c.id]
         self.tile_map.set_tile_at(c.position.x, c.position.y, TileMap.EMPTY_TILE)
 
     def move_creature(self, c, dx, dy):
@@ -140,16 +140,27 @@ class World:
         return
 
     def update(self):
-        for creature in self.creatures:
+        dead_creatures = []
+
+        for id in self.creatures:
+            creature = self.creatures[id]
+
             if not creature.alive():
-                self.remove_creature(creature)
+                #self.remove_creature(creature)
+                dead_creatures.append(creature)
                 continue
 
             info = self.gather_creature_info(creature)
             response = creature.think(info)
             self.handle_creature_response(response, creature)
 
+        self.clean(dead_creatures)
+
         return self.has_winner()
+
+    def clean(self, dead_creatures=None):
+        for dead in dead_creatures:
+            self.remove_creature(dead)
 
 
 class TileError(Exception):
