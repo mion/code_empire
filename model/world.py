@@ -1,5 +1,6 @@
 from model.fortress import Fortress
 from model.creature import Creature
+from model.tilemap import TileMap
 from util.point import Point
 
 
@@ -7,7 +8,7 @@ class World:
     MAP_SIZE = 10
 
     def __init__(self, red_player, blue_player):
-        self.tile_map = TileMap(World.MAP_SIZE)
+        self.tilemap = TileMap(World.MAP_SIZE)
         self.creatures = {}
         self.players = {}
 
@@ -19,11 +20,11 @@ class World:
                                'creatures': {}, 
                                'gold': 0}
 
-        self.tile_map.set_tile_at(World.MAP_SIZE - 1, World.MAP_SIZE - 1, self.players[red_player]['fortress'])
+        self.tilemap.set_tile_at(World.MAP_SIZE - 1, World.MAP_SIZE - 1, self.players[red_player]['fortress'])
         self.insert_creature(Creature('Peon', red_player, position=Point(World.MAP_SIZE - 1, World.MAP_SIZE - 2)))
         self.insert_creature(Creature('Peon', red_player, position=Point(World.MAP_SIZE - 2, World.MAP_SIZE - 1)))
 
-        self.tile_map.set_tile_at(0, 0, self.players[blue_player]['fortress'])
+        self.tilemap.set_tile_at(0, 0, self.players[blue_player]['fortress'])
         self.insert_creature(Creature('Peon', blue_player, position=Point(0, 1)))
         self.insert_creature(Creature('Peon', blue_player, position=Point(1, 0)))
 
@@ -33,7 +34,7 @@ class World:
         """
         self.creatures[c.id] = c
         self.players[c.player]['creatures'][c.id] = c
-        self.tile_map.set_tile_at(c.position.x, c.position.y, c)
+        self.tilemap.set_tile_at(c.position.x, c.position.y, c)
 
     def remove_creature(self, c):
         """
@@ -41,7 +42,7 @@ class World:
         """
         del self.creatures[c.id]
         del self.players[c.player]['creatures'][c.id]
-        self.tile_map.set_tile_at(c.position.x, c.position.y, TileMap.EMPTY_TILE)
+        self.tilemap.set_tile_at(c.position.x, c.position.y, TileMap.EMPTY_TILE)
 
     def move_creature(self, c, dx, dy):
         """
@@ -50,9 +51,9 @@ class World:
         to_x = c.position.x + dx
         to_y = c.position.y + dy
 
-        if self.tile_map.in_bounds(to_x, to_y) and self.tile_map.is_tile_empty(to_x, to_y):
-            self.tile_map.set_tile_at(c.position.x, c.position.y, TileMap.EMPTY_TILE)
-            self.tile_map.set_tile_at(to_x, to_y, c)
+        if self.tilemap.in_bounds(to_x, to_y) and self.tilemap.is_tile_empty(to_x, to_y):
+            self.tilemap.set_tile_at(c.position.x, c.position.y, TileMap.EMPTY_TILE)
+            self.tilemap.set_tile_at(to_x, to_y, c)
             c.position.x = to_x
             c.position.y = to_y
 
@@ -70,7 +71,6 @@ class World:
         else:
             return True
 
-
     def gather_creature_info(self, c):
         """
         Information available to that creature.
@@ -84,8 +84,8 @@ class World:
 
         for x in range(x0, xf + 1):
             for y in range(y0, yf + 1):
-                if self.tile_map.in_bounds(x, y) and not self.tile_map.is_tile_empty(x, y):
-                    c = self.tile_map.get_tile_at(x, y)
+                if self.tilemap.in_bounds(x, y) and not self.tilemap.is_tile_empty(x, y):
+                    c = self.tilemap.get_tile_at(x, y)
                     creature_info = {
                         'id': c.id,
                         'name': c.name,
@@ -108,7 +108,7 @@ class World:
             self.move_creature(c, dx, dy)
         elif resp['action'] == 'attack':
             target_x, target_y = resp.get('target_x', 0), resp.get('target_y', 0)
-            target_creature = self.tile_map.get_tile_at(target_x, target_y)
+            target_creature = self.tilemap.get_tile_at(target_x, target_y)
             if target_creature.__class__ == Creature:
                 c.attack(target_creature)
 
@@ -140,59 +140,3 @@ class World:
     def clean(self, dead_creatures=None):
         for dead in dead_creatures:
             self.remove_creature(dead)
-
-
-class TileError(Exception):
-    def __init__(self, value):
-        self.value = value
-
-    def __str__(self):
-        return repr(self.value)
-
-
-class TileMap:
-    EMPTY_TILE = ' '
-
-    def __init__(self, size):
-        self.size = size
-        self.tiles = []
-        for i in range(size*size):
-            self.tiles.append(self.EMPTY_TILE)
-
-    def get_tile_at(self, x, y):
-        if self.in_bounds(x, y):
-            return self.tiles[x + self.size*y]
-        else:
-            raise TileError('point ({}, {}) out of bounds'.format(x, y))
-
-    def set_tile_at(self, x, y, tile):
-        if self.in_bounds(x, y):
-            self.tiles[x + self.size*y] = tile
-        else:
-            raise TileError('point ({}, {}) out of bounds'.format(x, y))
-
-    def is_tile_empty(self, x, y):
-        if self.in_bounds(x, y):
-            return self.get_tile_at(x, y) == self.EMPTY_TILE
-        else:
-            raise TileError('point ({}, {}) out of bounds'.format(x, y))
-
-    def in_bounds(self, x, y):
-        return (0 <= x < self.size) and (0 <= y < self.size)
-
-    def __str__(self):
-        s = ''
-        header = '  '
-        for j in range(self.size):
-            header += " {} ".format(j)
-        header += "\n"
-
-        for i in range(self.size):
-            cols = []
-            for j in range(self.size):
-                cols.append("[{}]".format(str(self.get_tile_at(j, i))))
-
-            row = ''.join(cols)
-            s += "{} {}\n".format(i, row)
-
-        return header+s

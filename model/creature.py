@@ -2,6 +2,7 @@ from util.dice import Dice
 from util.point import Point
 from model.attack import AttackResult
 
+
 class Creature:
     ID_COUNTER = 0
 

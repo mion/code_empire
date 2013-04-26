@@ -1,3 +1,6 @@
+from error import InvalidPlayerError
+
+
 class Colors:
     """
     ASCII escape codes for terminal colors.
@@ -8,15 +11,16 @@ class Colors:
     YELLOW 	= '\033[93m'
     RED 	= '\033[91m'
     CYAN 	= '\033[96m'
-    ENDC 	= '\033[0m'
+    END 	= '\033[0m'
 
     def disable(self):
-        self.HEADER = ''
-        self.OKBLUE = ''
-        self.OKGREEN = ''
-        self.WARNING = ''
-        self.FAIL = ''
-        self.ENDC = ''
+        MAGENTA = ''
+        BLUE    = ''
+        GREEN   = ''
+        YELLOW  = ''
+        RED     = ''
+        CYAN    = ''
+        END    = ''
 
 class Terminal:
     def __init__(self, world):
@@ -41,4 +45,31 @@ class Terminal:
 
         print 'MAP - Round {}'.format(current_round)
         print '-'*10
-        print self.world.tile_map
+        print self.str_tilemap()
+
+    def str_tilemap(self):
+        tilemap = self.world.tilemap
+
+        s = ''
+        header = '  '
+        for j in range(tilemap.size):
+            header += " {} ".format(j)
+        header += "\n"
+
+        for i in range(tilemap.size):
+            cols = []
+            for j in range(tilemap.size):
+                cols.append("[{}]".format(str(tilemap.get_tile_at(j, i))))
+
+            row = ''.join(cols)
+            s += "{} {}\n".format(i, row)
+
+        return header+s
+
+    def color_str_creature(self, creature):
+        if creature.player == self.world.red_player:
+            return Colors.RED + str(creature) + Colors.END
+        elif creature.player == self.world.blue_player:
+            return Colors.BLUE + str(creature) + Colors.END
+        else:
+            raise InvalidPlayerError(creature.player)

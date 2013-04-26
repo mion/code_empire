@@ -5,7 +5,7 @@ from view.terminal import Terminal
 
 if __name__ == '__main__':
     red_team = 'mion'
-    blue_team = 'jarvis'
+    blue_team = 'cpu'
 
     world = World(red_team, blue_team)
     terminal = Terminal(world)
