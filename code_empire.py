@@ -1,6 +1,7 @@
 #!./venv/bin/python
 from model.world import World
 from view.terminal import Terminal
+import os
 
 
 if __name__ == '__main__':
@@ -11,6 +12,8 @@ if __name__ == '__main__':
     terminal = Terminal(world)
 
     for i in range(500):
+      os.system("clear")
+
       terminal.display(i + 1)
       
       if not world.update():
@@ -19,3 +22,4 @@ if __name__ == '__main__':
       raw_input('Press any key to continue...')
 
     print 'Game Over'
+    

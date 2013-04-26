@@ -50,8 +50,8 @@ class Creature:
     def in_attack_range(self, point):
         return self.position.distance_to(point) <= self.attack_range
 
-    def deal_damage(self, target):
-        target.life -= (self.attack_power - target.defense)
+    def damage_dealt(self, target):
+        return self.attack_power - target.defense
 
     def hit_chance(self, target):
         return self.accuracy - target.dodge
@@ -68,7 +68,7 @@ class Creature:
         successful_hit = Dice.roll() < self.hit_chance(target)
 
         if successful_hit:
-            self.deal_damage(target)
+            target.life -= self.damage_dealt(target)
 
             if target.alive():
                 return AttackResult.HIT
