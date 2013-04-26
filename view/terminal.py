@@ -1,5 +1,5 @@
 from error import InvalidPlayerError
-
+from model.creature import Creature
 
 class Colors:
     """
@@ -59,7 +59,11 @@ class Terminal:
         for i in range(tilemap.size):
             cols = []
             for j in range(tilemap.size):
-                cols.append("[{}]".format(str(tilemap.get_tile_at(j, i))))
+                tile = tilemap.get_tile_at(j, i)
+                if isinstance(tile, Creature): # TODO: hmm use duck typing instead
+                    cols.append("[{}]".format(self.color_str_creature(tilemap.get_tile_at(j, i))))
+                else:
+                    cols.append("[ ]")
 
             row = ''.join(cols)
             s += "{} {}\n".format(i, row)
