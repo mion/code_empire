@@ -27,28 +27,6 @@ class World:
         self.insert_creature(Creature('Peon', blue_player, position=Point(0, 1)))
         self.insert_creature(Creature('Peon', blue_player, position=Point(1, 0)))
 
-    def display(self, num_round):
-        """
-        Prints the map.
-        """
-        red = self.red_player
-        blue = self.blue_player
-
-        print 'FORTRESSES'
-        print '-'*10
-        self.players[red]['fortress'].display()
-        self.players[blue]['fortress'].display()
-
-        print 'CREATURES'
-        print '-'*10
-        for id in self.creatures:
-            self.creatures[id].display()
-
-        print 'MAP - Round {}'.format(num_round)
-        print '-'*10
-        print self.tile_map
-
-
     def insert_creature(self, c):
         """
         Inserts a creature into the world.

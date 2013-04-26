@@ -1,14 +1,14 @@
 class Colors:
-	"""
-	ASCII escape codes for terminal colors.
-	"""
-	MAGENTA = '\033[95m'
-	BLUE 	= '\033[94m'
+    """
+    ASCII escape codes for terminal colors.
+    """
+    MAGENTA = '\033[95m'
+    BLUE 	= '\033[94m'
     GREEN 	= '\033[92m'
     YELLOW 	= '\033[93m'
-	RED 	= '\033[91m'
-	CYAN 	= '\033[96m'
-	ENDC 	= '\033[0m'
+    RED 	= '\033[91m'
+    CYAN 	= '\033[96m'
+    ENDC 	= '\033[0m'
 
     def disable(self):
         self.HEADER = ''
@@ -19,11 +19,11 @@ class Colors:
         self.ENDC = ''
 
 class Terminal:
-	def __init__(self, world):
-		self.world = world
+    def __init__(self, world):
+        self.world = world
 
-	def display(self, current_round):
-		"""
+    def display(self, current_round):
+        """
         Prints the map on the console.
         """
         red = self.world.red_player
@@ -39,6 +39,6 @@ class Terminal:
         for id in self.world.creatures:
             self.world.creatures[id].display()
 
-        print 'MAP - Round {}'.format(num_round)
+        print 'MAP - Round {}'.format(current_round)
         print '-'*10
         print self.world.tile_map

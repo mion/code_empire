@@ -1,3 +1,4 @@
+#!./venv/bin/python
 from model.world import World
 from view.terminal import Terminal
 
