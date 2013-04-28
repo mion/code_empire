@@ -1,6 +1,7 @@
 import unittest
-from model.creature import Creature
 from util.point import Point
+from model.creature import Creature
+from model.attack import AttackResult
 
 
 class TestCreature(unittest.TestCase):
@@ -18,7 +19,18 @@ class TestCreature(unittest.TestCase):
         self.red_creatures[0].accuracy = 1.0
         self.blue_creatures[0].dodge = 0.0
 
+        attack_result = self.red_creatures[0].attack(self.blue_creatures[0])
+
+        self.assertEqual(AttackResult.HIT, attack_result)
         self.assertTrue(self.blue_creatures[0].life < self.blue_creatures[0].max_life)
+
+    def test_attack_missed(self):
+        self.red_creatures[0].accuracy = 0.0
+
+        attack_result = self.red_creatures[0].attack(self.blue_creatures[0])
+
+        self.assertEqual(AttackResult.MISS, attack_result)
+        self.assertTrue(self.blue_creatures[0].life == self.blue_creatures[0].max_life)
 
 
 if __name__ == '__main__':
