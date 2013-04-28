@@ -12,10 +12,19 @@ class Creature:
 
         self.name = name
         self.player = player
-        self.experience = 0
-        self.level = level
         self.position = position
-        self.set_stats(level)
+
+        self.level        = level
+        self.max_life     = 100*level
+        self.attack_power = 25*level
+        self.defense      = 5*level
+        
+        self.life = self.max_life
+        self.experience   = 0
+        self.view_range   = 3
+        self.attack_range = 1
+        self.accuracy     = 0.90
+        self.dodge        = 0.5
 
         self.memory = {}
 
@@ -24,15 +33,6 @@ class Creature:
 
     def display(self):
         print "* {}'s {}\n+- id: {}\n+- life: {}\n+- pos: {}\n".format(self.player, self.name, self.id, self.life, self.position)
-
-    def set_stats(self, level):
-        self.view_range = 3
-        self.life = 100
-        self.attack_range = 1
-        self.attack_power = 25
-        self.defense = 5
-        self.accuracy = 0.90
-        self.dodge = 0.5
 
     def experience_for_level(self, n):
         return 100*n
