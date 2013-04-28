@@ -1,3 +1,4 @@
+import os
 from model.creature import Creature
 from model.fortress import Fortress
 from model.world import World
@@ -15,6 +16,8 @@ class Game(object):
         for i in range(Game.MAX_ROUNDS):
             if interactive:
                 self.terminal.display(i + 1)
+
+            #info = self.world.gather_info
 
             winner = self.world.update()
 

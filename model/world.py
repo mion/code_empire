@@ -125,7 +125,6 @@ class World:
             creature = self.creatures[id]
 
             if not creature.alive():
-                #self.remove_creature(creature)
                 dead_creatures.append(creature)
                 continue
 
