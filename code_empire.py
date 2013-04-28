@@ -1,21 +1,26 @@
 #!./venv/bin/python
-from model.world import World
-from view.terminal import Terminal
-
+# from model.world import World
+# from view.terminal import Terminal
+from controller.game import Game
 
 if __name__ == '__main__':
-    red_team = 'mion'
-    blue_team = 'cpu'
+    new_game = Game('mion', 'CPU')
+    new_game.start()
+    # red_team = 'mion'
+    # blue_team = 'cpu'
 
-    world = World(red_team, blue_team)
-    terminal = Terminal(world)
+    # world = World(red_team, blue_team)
+    # terminal = Terminal(world)
 
-    for i in range(500):
-      terminal.display(i + 1)
+    # for i in range(500):
+    #   terminal.display(i + 1)
       
-      if not world.update():
-        break
+    #   winner = world.update()
+      
+    #   if winner:
+    #     print 'GAME OVER: {} won!\n'.format(winner)
+    #     break
 
-      raw_input('Press any key to continue...')
+    #   raw_input('Press any key to continue...')
 
-    print 'Game Over'
+    # print 'GAME OVER: draw.\n'

@@ -1,0 +1,1 @@
+python creature.py $1

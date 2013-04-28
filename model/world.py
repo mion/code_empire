@@ -64,12 +64,12 @@ class World:
     def standing_players(self):
         return filter(lambda player: len(self.players[player]['creatures']) > 0, self.players.keys())
 
-    def has_winner(self):
+    def winner(self):
         survivors = self.standing_players()
-        if len(survivors) <= 1:
-            return False
+        if len(survivors) == 1:
+            return survivors[0]
         else:
-            return True
+            return None
 
     def gather_creature_info(self, c):
         """
@@ -135,7 +135,7 @@ class World:
 
         self.clean(dead_creatures)
 
-        return self.has_winner()
+        return self.winner()
 
     def clean(self, dead_creatures=None):
         for dead in dead_creatures:
