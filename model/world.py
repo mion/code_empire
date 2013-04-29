@@ -65,6 +65,8 @@ class World:
         return filter(lambda player: len(self.players[player]['creatures']) > 0, self.players.keys())
 
     def winner(self):
+        # TODO: check stale winning/drawing conditions.
+        # (eg: there are no more creatures and Player 1 has not enough resources)
         survivors = self.standing_players()
         if len(survivors) == 1:
             return survivors[0]
@@ -127,10 +129,6 @@ class World:
             if not creature.alive():
                 dead_creatures.append(creature)
                 continue
-
-            info = self.gather_creature_info(creature)
-            response = creature.think(info)
-            self.handle_creature_response(response, creature)
 
         self.clean(dead_creatures)
 

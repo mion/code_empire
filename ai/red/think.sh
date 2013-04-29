@@ -1,1 +1,3 @@
-python creature.py $1
+JSON=$1
+
+python ai/red/creature.py "$JSON"

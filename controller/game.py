@@ -1,4 +1,6 @@
-import os
+import sys
+import subprocess
+import json
 from model.creature import Creature
 from model.fortress import Fortress
 from model.world import World
@@ -17,7 +19,19 @@ class Game(object):
             if interactive:
                 self.terminal.display(i + 1)
 
-            #info = self.world.gather_info
+            creatures = self.world.creatures
+
+            for id in creatures:
+                info = self.world.gather_creature_info(creatures[id])
+                info_json = json.dumps(info)
+                try:
+                    # TODO: review security issue with check_output (possibly malicious player name?)
+                    response_json = subprocess.check_output(["./ai/{}/think.sh '{}'".format(creatures[id].player, info_json)], shell=True)
+                    response = json.loads(response_json)
+                    self.world.handle_creature_response(response, creatures[id])
+                except subprocess.CalledProcessError, e:
+                    print 'An error occurred when running think.sh: ' + str(e)
+                    sys.exit(1)
 
             winner = self.world.update()
 
