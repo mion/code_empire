@@ -2,6 +2,7 @@ from model.fortress import Fortress
 from model.creature import Creature
 from model.tilemap import TileMap
 from util.point import Point
+from util.dice import Dice
 
 
 class World:
@@ -77,7 +78,7 @@ class World:
         """
         Information available to that creature.
         """
-        info = {'creatures': []}
+        info = {'creatures': {}, 'memory': c.memory}
 
         x0 = max(c.position.x - c.view_range, 0)
         xf = min(c.position.x + c.view_range, World.MAP_SIZE - 1)
@@ -87,17 +88,20 @@ class World:
         for x in range(x0, xf + 1):
             for y in range(y0, yf + 1):
                 if self.tilemap.in_bounds(x, y) and not self.tilemap.is_tile_empty(x, y):
-                    c = self.tilemap.get_tile_at(x, y)
+                    creat = self.tilemap.get_tile_at(x, y)
                     creature_info = {
-                        'id': c.id,
-                        'name': c.name,
-                        'level': c.level,
-                        'life': c.life,
-                        'player': c.player,
+                        'id': creat.id,
+                        'name': creat.name,
+                        'level': creat.level,
+                        'life': creat.life,
+                        'player': creat.player,
                         'x': x,
                         'y': y
                     }
-                    info['creatures'].append(creature_info)
+                    if creat.id != c.id:
+                        info['creatures'][creat.id] = creature_info
+                    else:
+                        info['myself'] = creature_info
 
         return info
 
@@ -105,6 +109,8 @@ class World:
         """
         Handles a creature's response to the think method.
         """
+        c.memory = resp['memory']
+
         if resp['action'] == 'move':
             dx, dy = resp.get('dx', 0), resp.get('dy', 0)
             self.move_creature(c, dx, dy)
@@ -113,6 +119,8 @@ class World:
             target_creature = self.tilemap.get_tile_at(target_x, target_y)
             if target_creature.__class__ == Creature:
                 c.attack(target_creature)
+        elif resp['action'] == 'wander':
+            self.move_creature(c, Dice.roll(2) - 1, Dice.roll(2) - 1)
 
     def gather_fortress_info(self, c):
         return

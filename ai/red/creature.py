@@ -1,12 +1,13 @@
 import sys
 import json
+from random import random
 
 def think(info):
-    response = {}
+    response = {"memory": info["memory"]}
 
     response["action"] = "move"
-    response["dx"] = 1
-    response["dy"] = 1
+    response["dx"] = int((3)*random()) - 1
+    response["dy"] = int((3)*random()) - 1
 
     return response
 
