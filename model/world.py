@@ -21,11 +21,21 @@ class World:
                                'creatures': {}, 
                                'gold': 0}
 
-        self.tilemap.set_tile_at(World.MAP_SIZE - 1, World.MAP_SIZE - 1, self.players[red_player]['fortress'])
+        #self.players[red_player] = {'fortress': Fortress(red_player, Point(World.MAP_SIZE - 1, World.MAP_SIZE - 1)), 'creatures': {}, 'gold': 0}
+        #self.insert_creature(self.players[red_player]['fortress'])
+        self.players[red_player]['fortress'].position = Point(World.MAP_SIZE - 1, World.MAP_SIZE - 1)
+        self.tilemap.set_tile_at(self.players[red_player]['fortress'].position.x, 
+                                 self.players[red_player]['fortress'].position.y, 
+                                 self.players[red_player]['fortress'])
         self.insert_creature(Creature('Peon', red_player, position=Point(World.MAP_SIZE - 1, World.MAP_SIZE - 2)))
         self.insert_creature(Creature('Peon', red_player, position=Point(World.MAP_SIZE - 2, World.MAP_SIZE - 1)))
 
-        self.tilemap.set_tile_at(0, 0, self.players[blue_player]['fortress'])
+        #self.players[blue_player] = {'fortress': Fortress(blue_player, Point(0, 0)), 'creatures': {}, 'gold': 0}
+        #self.insert_creature(self.players[blue_player]['fortress'])
+        self.players[blue_player]['fortress'].position = Point(0, 0)
+        self.tilemap.set_tile_at(self.players[blue_player]['fortress'].position.x, 
+                                 self.players[blue_player]['fortress'].position.y, 
+                                 self.players[blue_player]['fortress'])
         self.insert_creature(Creature('Peon', blue_player, position=Point(0, 1)))
         self.insert_creature(Creature('Peon', blue_player, position=Point(1, 0)))
 

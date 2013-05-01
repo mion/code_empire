@@ -35,13 +35,13 @@ class Terminal:
 
         print 'FORTRESSES'
         print '-'*10
-        self.world.players[red]['fortress'].display()
-        self.world.players[blue]['fortress'].display()
+        print self.color_str(repr(self.world.players[red]['fortress']), Colors.RED)
+        print self.color_str(repr(self.world.players[blue]['fortress']), Colors.BLUE)
 
         print 'CREATURES'
         print '-'*10
         for id in self.world.creatures:
-            self.world.creatures[id].display()
+            print self.color_str(repr(self.world.creatures[id]), self.creature_color(self.world.creatures[id]))
 
         print 'MAP - Round {}'.format(current_round)
         print '-'*10
@@ -77,3 +77,12 @@ class Terminal:
             return Colors.BLUE + str(creature) + Colors.END
         else:
             raise InvalidPlayerError(creature.player)
+
+    def creature_color(self, creature):
+        if creature.player == self.world.red_player:
+            return Colors.RED
+        else:
+            return Colors.BLUE
+
+    def color_str(self, string, color):
+        return color + string + Colors.END

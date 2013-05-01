@@ -31,8 +31,9 @@ class Creature:
     def __str__(self):
         return 'c'
 
-    def display(self):
-        print "* {}'s {}\n+- id: {}\n+- life: {}\n+- pos: {}\n".format(self.player, self.name, self.id, self.life, self.position)
+    def __repr__(self):
+        #print "* {}'s {}\n+- id: {}\n+- life: {}\n+- pos: {}\n".format(self.player, self.name, self.id, self.life, self.position)
+        return "{} {}, life: {} [ID: {}]\n".format(self.position, self.name, self.life, self.id)
 
     def experience_for_level(self, n):
         return 100*n
