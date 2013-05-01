@@ -11,5 +11,5 @@ def disable():
 def enable():
 	LOGGING = True
 
-def log(context="GLOBAL", message):
-  print "{}\t[{}] - {}".format(timestamp(), context, message)
+def log(message, context="GLOBAL"):
+  print "[{}]\t{} - {}".format(timestamp(), context, message)

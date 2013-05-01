@@ -26,9 +26,9 @@ class CreatureAI(object):
     def __init__(self, info):
         self.info = info
         self.memory = info["memory"]
-        self.target = info["creatures"].get(self.memory.get("target_id", None), None)
         self.myself = info["myself"]
         self.response = {"memory": self.memory}
+        self.target = self.get_target() #info["creatures"].get(self.memory.get("target_id", None), None)
 
     def is_target_insight(self):
         return self.target["id"] in info["creatures"]
@@ -36,6 +36,9 @@ class CreatureAI(object):
     def is_target_in_attack_range(self):
         # TODO: hardcoded attack range
         return Point(self.target["x"], self.target["y"]).distance_to(Point(self.myself["x"], self.myself["y"])) <= 1
+
+    def get_target(self):
+        return self.info["creatures"].get(self.memory.get("target_id", None), None)
 
     def lose_target(self):
         del self.memory["target_id"]
@@ -52,17 +55,45 @@ class CreatureAI(object):
         self.response["action"] = "move"
         self.response["dx"], self.response["dy"] = self.target_dx_dy()
 
+    def find_target(self):
+        for cid in self.info["creatures"]:
+            creature = self.info["creatures"][cid]
+            if creature["player"] != self.myself["player"]:
+                self.memory["target_id"] = creature["id"]
+                self.target = creature
+                return True
+
+        return False
+
+    def log(self, message):
+        with open(self.myself["player"] + '_battle.log', 'a') as f:
+            f.write('{} at ({}, {}) -> {}'.format(self.myself["name"], self.myself["x"], self.myself["y"], message))
+        self.response['log'].append(message)
+
     def think(self):
+        self.response['log'] = []
+
         if self.target:
+            self.log("I have a target.")
             if self.is_target_insight():
+                self.log("Target is insight.")
                 if self.is_target_in_attack_range():
+                    self.log("Target is close! attacking...")
                     self.attack_target()
                 else:
+                    self.log("Target is not close, following...")
                     self.follow_target()
             else:
+                self.log("Target lost.")
                 self.lose_target()    
         else:
-            self.response["action"] = "wander"
+            self.log("I don't have a target.")
+            if self.find_target():
+                self.log("Target found: {}. Following...".format(self.target))
+                self.follow_target()
+            else:
+                self.log("No target insight, wandering...")
+                self.response["action"] = "wander"
 
         return self.response
 

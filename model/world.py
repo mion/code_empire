@@ -3,6 +3,7 @@ from model.creature import Creature
 from model.tilemap import TileMap
 from util.point import Point
 from util.dice import Dice
+from util.log import log
 
 
 class World:
@@ -131,6 +132,10 @@ class World:
                 c.attack(target_creature)
         elif resp['action'] == 'wander':
             self.move_creature(c, Dice.roll(2) - 1, Dice.roll(2) - 1)
+
+        if resp.get('log', None):
+            for l in resp['log']:
+                log(l, "{}'s {} at {}".format(c.player, c.name, c.position))
 
     def gather_fortress_info(self, c):
         return

@@ -30,7 +30,7 @@ class Game(object):
                     response = json.loads(response_json)
                     self.world.handle_creature_response(response, creatures[id])
                 except subprocess.CalledProcessError, e:
-                    print 'An error occurred when running think.sh: ' + str(e)
+                    print '\nAn error occurred when running think.sh: ' + str(e)
                     sys.exit(1)
 
             winner = self.world.update()
