@@ -1547,3 +1547,1609 @@ Peon at (7, 0) -> Target: None
 Peon at (7, 0) -> Creatures: {u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 0, u'x': 9, u'id': 2}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 8, u'id': 4}}
 Peon at (7, 0) -> I don't have a target.
 Peon at (7, 0) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 0, u'x': 9, u'id': 2}. Following...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 2, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (2, 0) -> Starting round... memory: {}
+Peon at (2, 0) -> Target: None
+Peon at (2, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (2, 0) -> I don't have a target.
+Peon at (2, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 0, u'id': 4}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 2) -> Starting round... memory: {}
+Peon at (0, 2) -> Target: None
+Peon at (0, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 5}}
+Peon at (0, 2) -> I don't have a target.
+Peon at (0, 2) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 0, u'id': 4}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 2, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (2, 1) -> Starting round... memory: {}
+Peon at (2, 1) -> Target: None
+Peon at (2, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 0, u'id': 4}}
+Peon at (2, 1) -> I don't have a target.
+Peon at (2, 1) -> No target insight, wandering...
+Peon at (0, 2) -> Starting round... memory: {}
+Peon at (0, 2) -> Target: None
+Peon at (0, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 2, u'id': 5}}
+Peon at (0, 2) -> I don't have a target.
+Peon at (0, 2) -> No target insight, wandering...
+Peon at (2, 1) -> Starting round... memory: {}
+Peon at (2, 1) -> Target: None
+Peon at (2, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 1, u'id': 4}}
+Peon at (2, 1) -> I don't have a target.
+Peon at (2, 1) -> No target insight, wandering...
+Peon at (1, 1) -> Starting round... memory: {}
+Peon at (1, 1) -> Target: None
+Peon at (1, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 3, u'id': 5}}
+Peon at (1, 1) -> I don't have a target.
+Peon at (1, 1) -> No target insight, wandering...
+Peon at (3, 2) -> Starting round... memory: {}
+Peon at (3, 2) -> Target: None
+Peon at (3, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 1, u'id': 4}}
+Peon at (3, 2) -> I don't have a target.
+Peon at (3, 2) -> No target insight, wandering...
+Peon at (1, 2) -> Starting round... memory: {}
+Peon at (1, 2) -> Target: None
+Peon at (1, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 4, u'id': 5}}
+Peon at (1, 2) -> I don't have a target.
+Peon at (1, 2) -> No target insight, wandering...
+Peon at (4, 1) -> Starting round... memory: {}
+Peon at (4, 1) -> Target: None
+Peon at (4, 1) -> Creatures: {u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 2, u'id': 4}}
+Peon at (4, 1) -> I don't have a target.
+Peon at (4, 1) -> No target insight, wandering...
+Peon at (2, 2) -> Starting round... memory: {}
+Peon at (2, 2) -> Target: None
+Peon at (2, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 4, u'id': 5}}
+Peon at (2, 2) -> I don't have a target.
+Peon at (2, 2) -> No target insight, wandering...
+Peon at (4, 1) -> Starting round... memory: {}
+Peon at (4, 1) -> Target: None
+Peon at (4, 1) -> Creatures: {u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 2, u'id': 4}}
+Peon at (4, 1) -> I don't have a target.
+Peon at (4, 1) -> No target insight, wandering...
+Peon at (2, 1) -> Starting round... memory: {}
+Peon at (2, 1) -> Target: None
+Peon at (2, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 5, u'id': 5}}
+Peon at (2, 1) -> I don't have a target.
+Peon at (2, 1) -> No target insight, wandering...
+Peon at (5, 0) -> Starting round... memory: {}
+Peon at (5, 0) -> Target: None
+Peon at (5, 0) -> Creatures: {u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 3, u'id': 4}}
+Peon at (5, 0) -> I don't have a target.
+Peon at (5, 0) -> No target insight, wandering...
+Peon at (3, 1) -> Starting round... memory: {}
+Peon at (3, 1) -> Target: None
+Peon at (3, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 6, u'id': 5}}
+Peon at (3, 1) -> I don't have a target.
+Peon at (3, 1) -> No target insight, wandering...
+Peon at (6, 0) -> Starting round... memory: {}
+Peon at (6, 0) -> Target: None
+Peon at (6, 0) -> Creatures: {}
+Peon at (6, 0) -> I don't have a target.
+Peon at (6, 0) -> No target insight, wandering...
+Peon at (2, 0) -> Starting round... memory: {}
+Peon at (2, 0) -> Target: None
+Peon at (2, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}}
+Peon at (2, 0) -> I don't have a target.
+Peon at (2, 0) -> No target insight, wandering...
+Peon at (6, 0) -> Starting round... memory: {}
+Peon at (6, 0) -> Target: None
+Peon at (6, 0) -> Creatures: {}
+Peon at (6, 0) -> I don't have a target.
+Peon at (6, 0) -> No target insight, wandering...
+Peon at (1, 1) -> Starting round... memory: {}
+Peon at (1, 1) -> Target: None
+Peon at (1, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}}
+Peon at (1, 1) -> I don't have a target.
+Peon at (1, 1) -> No target insight, wandering...
+Peon at (5, 1) -> Starting round... memory: {}
+Peon at (5, 1) -> Target: None
+Peon at (5, 1) -> Creatures: {}
+Peon at (5, 1) -> I don't have a target.
+Peon at (5, 1) -> No target insight, wandering...
+Peon at (1, 1) -> Starting round... memory: {}
+Peon at (1, 1) -> Target: None
+Peon at (1, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}}
+Peon at (1, 1) -> I don't have a target.
+Peon at (1, 1) -> No target insight, wandering...
+Peon at (5, 0) -> Starting round... memory: {}
+Peon at (5, 0) -> Target: None
+Peon at (5, 0) -> Creatures: {}
+Peon at (5, 0) -> I don't have a target.
+Peon at (5, 0) -> No target insight, wandering...
+Peon at (1, 1) -> Starting round... memory: {}
+Peon at (1, 1) -> Target: None
+Peon at (1, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}}
+Peon at (1, 1) -> I don't have a target.
+Peon at (1, 1) -> No target insight, wandering...
+Peon at (6, 0) -> Starting round... memory: {}
+Peon at (6, 0) -> Target: None
+Peon at (6, 0) -> Creatures: {}
+Peon at (6, 0) -> I don't have a target.
+Peon at (6, 0) -> No target insight, wandering...
+Peon at (0, 2) -> Starting round... memory: {}
+Peon at (0, 2) -> Target: None
+Peon at (0, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}}
+Peon at (0, 2) -> I don't have a target.
+Peon at (0, 2) -> No target insight, wandering...
+Peon at (6, 0) -> Starting round... memory: {}
+Peon at (6, 0) -> Target: None
+Peon at (6, 0) -> Creatures: {}
+Peon at (6, 0) -> I don't have a target.
+Peon at (6, 0) -> No target insight, wandering...
+Peon at (1, 1) -> Starting round... memory: {}
+Peon at (1, 1) -> Target: None
+Peon at (1, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}}
+Peon at (1, 1) -> I don't have a target.
+Peon at (1, 1) -> No target insight, wandering...
+Peon at (6, 0) -> Starting round... memory: {}
+Peon at (6, 0) -> Target: None
+Peon at (6, 0) -> Creatures: {}
+Peon at (6, 0) -> I don't have a target.
+Peon at (6, 0) -> No target insight, wandering...
+Peon at (2, 0) -> Starting round... memory: {}
+Peon at (2, 0) -> Target: None
+Peon at (2, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}}
+Peon at (2, 0) -> I don't have a target.
+Peon at (2, 0) -> No target insight, wandering...
+Peon at (6, 0) -> Starting round... memory: {}
+Peon at (6, 0) -> Target: None
+Peon at (6, 0) -> Creatures: {u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 3, u'id': 4}}
+Peon at (6, 0) -> I don't have a target.
+Peon at (6, 0) -> No target insight, wandering...
+Peon at (3, 1) -> Starting round... memory: {}
+Peon at (3, 1) -> Target: None
+Peon at (3, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 6, u'id': 5}}
+Peon at (3, 1) -> I don't have a target.
+Peon at (3, 1) -> No target insight, wandering...
+Peon at (6, 1) -> Starting round... memory: {}
+Peon at (6, 1) -> Target: None
+Peon at (6, 1) -> Creatures: {u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 4, u'id': 4}}
+Peon at (6, 1) -> I don't have a target.
+Peon at (6, 1) -> No target insight, wandering...
+Peon at (4, 2) -> Starting round... memory: {}
+Peon at (4, 2) -> Target: None
+Peon at (4, 2) -> Creatures: {u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 6, u'id': 5}}
+Peon at (4, 2) -> I don't have a target.
+Peon at (4, 2) -> No target insight, wandering...
+Peon at (6, 1) -> Starting round... memory: {}
+Peon at (6, 1) -> Target: None
+Peon at (6, 1) -> Creatures: {u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 3, u'id': 4}}
+Peon at (6, 1) -> I don't have a target.
+Peon at (6, 1) -> No target insight, wandering...
+Peon at (3, 3) -> Starting round... memory: {}
+Peon at (3, 3) -> Target: None
+Peon at (3, 3) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 2}}
+Peon at (3, 3) -> I don't have a target.
+Peon at (3, 3) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 2}. Following...
+Peon at (7, 1) -> Starting round... memory: {}
+Peon at (7, 1) -> Target: None
+Peon at (7, 1) -> Creatures: {u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 4, u'id': 4}}
+Peon at (7, 1) -> I don't have a target.
+Peon at (7, 1) -> No target insight, wandering...
+Peon at (4, 4) -> Starting round... memory: {u'target_id': 2}
+Peon at (4, 4) -> Target: None
+Peon at (4, 4) -> Creatures: {u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 6, u'id': 2}}
+Peon at (4, 4) -> I don't have a target.
+Peon at (4, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 6, u'id': 2}. Following...
+Peon at (8, 1) -> Starting round... memory: {}
+Peon at (8, 1) -> Target: None
+Peon at (8, 1) -> Creatures: {}
+Peon at (8, 1) -> I don't have a target.
+Peon at (8, 1) -> No target insight, wandering...
+Peon at (5, 5) -> Starting round... memory: {u'target_id': 2}
+Peon at (5, 5) -> Target: None
+Peon at (5, 5) -> Creatures: {u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 7, u'id': 2}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 8, u'id': 5}}
+Peon at (5, 5) -> I don't have a target.
+Peon at (5, 5) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 7, u'id': 2}. Following...
+Peon at (8, 2) -> Starting round... memory: {}
+Peon at (8, 2) -> Target: None
+Peon at (8, 2) -> Creatures: {}
+Peon at (8, 2) -> I don't have a target.
+Peon at (8, 2) -> No target insight, wandering...
+Peon at (6, 6) -> Starting round... memory: {u'target_id': 2}
+Peon at (6, 6) -> Target: None
+Peon at (6, 6) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 8, u'id': 2}}
+Peon at (6, 6) -> I don't have a target.
+Peon at (6, 6) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (7, 2) -> Starting round... memory: {}
+Peon at (7, 2) -> Target: None
+Peon at (7, 2) -> Creatures: {}
+Peon at (7, 2) -> I don't have a target.
+Peon at (7, 2) -> No target insight, wandering...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': 0}
+Peon at (7, 7) -> Target: None
+Peon at (7, 7) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 8, u'id': 2}}
+Peon at (7, 7) -> I don't have a target.
+Peon at (7, 7) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (8, 2) -> Starting round... memory: {}
+Peon at (8, 2) -> Target: None
+Peon at (8, 2) -> Creatures: {}
+Peon at (8, 2) -> I don't have a target.
+Peon at (8, 2) -> No target insight, wandering...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': 0}
+Peon at (7, 7) -> Target: None
+Peon at (7, 7) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 9, u'id': 2}}
+Peon at (7, 7) -> I don't have a target.
+Peon at (7, 7) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (9, 1) -> Starting round... memory: {}
+Peon at (9, 1) -> Target: None
+Peon at (9, 1) -> Creatures: {}
+Peon at (9, 1) -> I don't have a target.
+Peon at (9, 1) -> No target insight, wandering...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 9, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (9, 1) -> Starting round... memory: {}
+Peon at (9, 1) -> Target: None
+Peon at (9, 1) -> Creatures: {}
+Peon at (9, 1) -> I don't have a target.
+Peon at (9, 1) -> No target insight, wandering...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 7, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 8, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (9, 2) -> Starting round... memory: {}
+Peon at (9, 2) -> Target: None
+Peon at (9, 2) -> Creatures: {}
+Peon at (9, 2) -> I don't have a target.
+Peon at (9, 2) -> No target insight, wandering...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 7, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (9, 2) -> Starting round... memory: {}
+Peon at (9, 2) -> Target: None
+Peon at (9, 2) -> Creatures: {}
+Peon at (9, 2) -> I don't have a target.
+Peon at (9, 2) -> No target insight, wandering...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 7, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 8, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (9, 2) -> Starting round... memory: {}
+Peon at (9, 2) -> Target: None
+Peon at (9, 2) -> Creatures: {}
+Peon at (9, 2) -> I don't have a target.
+Peon at (9, 2) -> No target insight, wandering...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 8, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (9, 2) -> Starting round... memory: {}
+Peon at (9, 2) -> Target: None
+Peon at (9, 2) -> Creatures: {}
+Peon at (9, 2) -> I don't have a target.
+Peon at (9, 2) -> No target insight, wandering...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 8, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (9, 1) -> Starting round... memory: {}
+Peon at (9, 1) -> Target: None
+Peon at (9, 1) -> Creatures: {}
+Peon at (9, 1) -> I don't have a target.
+Peon at (9, 1) -> No target insight, wandering...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 9, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (9, 1) -> Starting round... memory: {}
+Peon at (9, 1) -> Target: None
+Peon at (9, 1) -> Creatures: {}
+Peon at (9, 1) -> I don't have a target.
+Peon at (9, 1) -> No target insight, wandering...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 9, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (9, 2) -> Starting round... memory: {}
+Peon at (9, 2) -> Target: None
+Peon at (9, 2) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}}
+Peon at (9, 2) -> I don't have a target.
+Peon at (9, 2) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (8, 3) -> Starting round... memory: {u'target_id': 3}
+Peon at (8, 3) -> Target: None
+Peon at (8, 3) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': 3}}
+Peon at (8, 3) -> I don't have a target.
+Peon at (8, 3) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 7, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (7, 4) -> Starting round... memory: {u'target_id': 3}
+Peon at (7, 4) -> Target: None
+Peon at (7, 4) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 7, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': 2}}
+Peon at (7, 4) -> I don't have a target.
+Peon at (7, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 7, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 7, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (7, 4) -> Starting round... memory: {u'target_id': 3}
+Peon at (7, 4) -> Target: None
+Peon at (7, 4) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 7, u'id': 2}}
+Peon at (7, 4) -> I don't have a target.
+Peon at (7, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 7, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (7, 4) -> Starting round... memory: {u'target_id': 3}
+Peon at (7, 4) -> Target: None
+Peon at (7, 4) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 7, u'id': 2}}
+Peon at (7, 4) -> I don't have a target.
+Peon at (7, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 7, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (7, 4) -> Starting round... memory: {u'target_id': 3}
+Peon at (7, 4) -> Target: None
+Peon at (7, 4) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 7, u'id': 2}}
+Peon at (7, 4) -> I don't have a target.
+Peon at (7, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (7, 4) -> Starting round... memory: {u'target_id': 3}
+Peon at (7, 4) -> Target: None
+Peon at (7, 4) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 8, u'id': 2}}
+Peon at (7, 4) -> I don't have a target.
+Peon at (7, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (7, 4) -> Starting round... memory: {u'target_id': 3}
+Peon at (7, 4) -> Target: None
+Peon at (7, 4) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 9, u'id': 2}}
+Peon at (7, 4) -> I don't have a target.
+Peon at (7, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 9, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (7, 4) -> Starting round... memory: {u'target_id': 3}
+Peon at (7, 4) -> Target: None
+Peon at (7, 4) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 9, u'id': 2}}
+Peon at (7, 4) -> I don't have a target.
+Peon at (7, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 5, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 9, u'id': 2}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 6, u'id': 5}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (6, 5) -> Starting round... memory: {u'target_id': 3}
+Peon at (6, 5) -> Target: None
+Peon at (6, 5) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 5, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 9, u'id': 2}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 8, u'x': 8, u'id': 4}}
+Peon at (6, 5) -> I don't have a target.
+Peon at (6, 5) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 5, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 5, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': 2}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 6, u'id': 5}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (6, 5) -> Starting round... memory: {u'target_id': 3}
+Peon at (6, 5) -> Target: None
+Peon at (6, 5) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 5, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': 2}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 8, u'x': 8, u'id': 4}}
+Peon at (6, 5) -> I don't have a target.
+Peon at (6, 5) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 5, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 9, u'id': 2}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 6, u'id': 5}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (6, 5) -> Starting round... memory: {u'target_id': 3}
+Peon at (6, 5) -> Target: None
+Peon at (6, 5) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 6, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 9, u'id': 2}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 8, u'x': 8, u'id': 4}}
+Peon at (6, 5) -> I don't have a target.
+Peon at (6, 5) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 6, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 8, u'id': 2}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 6, u'id': 5}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (6, 5) -> Starting round... memory: {u'target_id': 3}
+Peon at (6, 5) -> Target: None
+Peon at (6, 5) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 5, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 8, u'id': 2}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 8, u'x': 8, u'id': 4}}
+Peon at (6, 5) -> I don't have a target.
+Peon at (6, 5) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 5, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (5, 4) -> Starting round... memory: {u'target_id': 3}
+Peon at (5, 4) -> Target: None
+Peon at (5, 4) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 4, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': 2}}
+Peon at (5, 4) -> I don't have a target.
+Peon at (5, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 4, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 7, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (5, 4) -> Starting round... memory: {u'target_id': 3}
+Peon at (5, 4) -> Target: None
+Peon at (5, 4) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 2, u'x': 3, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 7, u'id': 2}}
+Peon at (5, 4) -> I don't have a target.
+Peon at (5, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 2, u'x': 3, u'id': 3}. Following...
+Peon at (8, 8) -> Starting round... memory: {u'target_id': 0}
+Peon at (8, 8) -> Target: None
+Peon at (8, 8) -> Creatures: {u'0': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 2}}
+Peon at (8, 8) -> I don't have a target.
+Peon at (8, 8) -> Target found: {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': 0}. Following...
+Peon at (4, 3) -> Starting round... memory: {u'target_id': 3}
+Peon at (4, 3) -> Target: None
+Peon at (4, 3) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 2, u'x': 4, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': 2}}
+Peon at (4, 3) -> I don't have a target.
+Peon at (4, 3) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 2, u'x': 4, u'id': 3}. Following...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 2, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (2, 1) -> Starting round... memory: {}
+Peon at (2, 1) -> Target: None
+Peon at (2, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 0, u'id': 4}}
+Peon at (2, 1) -> I don't have a target.
+Peon at (2, 1) -> No target insight, wandering...
+Peon at (0, 2) -> Starting round... memory: {}
+Peon at (0, 2) -> Target: None
+Peon at (0, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 2, u'id': 5}}
+Peon at (0, 2) -> I don't have a target.
+Peon at (0, 2) -> No target insight, wandering...
+Peon at (2, 1) -> Starting round... memory: {}
+Peon at (2, 1) -> Target: None
+Peon at (2, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 1, u'id': 4}}
+Peon at (2, 1) -> I don't have a target.
+Peon at (2, 1) -> No target insight, wandering...
+Peon at (1, 3) -> Starting round... memory: {}
+Peon at (1, 3) -> Target: None
+Peon at (1, 3) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 2, u'id': 5}}
+Peon at (1, 3) -> I don't have a target.
+Peon at (1, 3) -> No target insight, wandering...
+Peon at (2, 2) -> Starting round... memory: {}
+Peon at (2, 2) -> Target: None
+Peon at (2, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 1, u'id': 4}}
+Peon at (2, 2) -> I don't have a target.
+Peon at (2, 2) -> No target insight, wandering...
+Peon at (1, 3) -> Starting round... memory: {}
+Peon at (1, 3) -> Target: None
+Peon at (1, 3) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 3, u'id': 5}}
+Peon at (1, 3) -> I don't have a target.
+Peon at (1, 3) -> No target insight, wandering...
+Peon at (3, 1) -> Starting round... memory: {}
+Peon at (3, 1) -> Target: None
+Peon at (3, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 0, u'id': 4}}
+Peon at (3, 1) -> I don't have a target.
+Peon at (3, 1) -> No target insight, wandering...
+Peon at (0, 2) -> Starting round... memory: {}
+Peon at (0, 2) -> Target: None
+Peon at (0, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 2, u'id': 5}}
+Peon at (0, 2) -> I don't have a target.
+Peon at (0, 2) -> No target insight, wandering...
+Peon at (2, 1) -> Starting round... memory: {}
+Peon at (2, 1) -> Target: None
+Peon at (2, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 0, u'id': 4}}
+Peon at (2, 1) -> I don't have a target.
+Peon at (2, 1) -> No target insight, wandering...
+Peon at (0, 2) -> Starting round... memory: {}
+Peon at (0, 2) -> Target: None
+Peon at (0, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 2, u'id': 5}}
+Peon at (0, 2) -> I don't have a target.
+Peon at (0, 2) -> No target insight, wandering...
+Peon at (2, 1) -> Starting round... memory: {}
+Peon at (2, 1) -> Target: None
+Peon at (2, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': 4}}
+Peon at (2, 1) -> I don't have a target.
+Peon at (2, 1) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 2, u'id': 5}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (2, 2) -> Starting round... memory: {}
+Peon at (2, 2) -> Target: None
+Peon at (2, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 1, u'id': 4}}
+Peon at (2, 2) -> I don't have a target.
+Peon at (2, 2) -> No target insight, wandering...
+Peon at (1, 1) -> Starting round... memory: {}
+Peon at (1, 1) -> Target: None
+Peon at (1, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 1, u'id': 5}}
+Peon at (1, 1) -> I don't have a target.
+Peon at (1, 1) -> No target insight, wandering...
+Peon at (1, 3) -> Starting round... memory: {}
+Peon at (1, 3) -> Target: None
+Peon at (1, 3) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 4}}
+Peon at (1, 3) -> I don't have a target.
+Peon at (1, 3) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (2, 4) -> Starting round... memory: {}
+Peon at (2, 4) -> Target: None
+Peon at (2, 4) -> Creatures: {}
+Peon at (2, 4) -> I don't have a target.
+Peon at (2, 4) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (3, 5) -> Starting round... memory: {}
+Peon at (3, 5) -> Target: None
+Peon at (3, 5) -> Creatures: {}
+Peon at (3, 5) -> I don't have a target.
+Peon at (3, 5) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (2, 4) -> Starting round... memory: {}
+Peon at (2, 4) -> Target: None
+Peon at (2, 4) -> Creatures: {}
+Peon at (2, 4) -> I don't have a target.
+Peon at (2, 4) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 2, u'id': 5}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (2, 3) -> Starting round... memory: {}
+Peon at (2, 3) -> Target: None
+Peon at (2, 3) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': 4}}
+Peon at (2, 3) -> I don't have a target.
+Peon at (2, 3) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 2, u'id': 5}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (2, 2) -> Starting round... memory: {}
+Peon at (2, 2) -> Target: None
+Peon at (2, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 2, u'id': 4}}
+Peon at (2, 2) -> I don't have a target.
+Peon at (2, 2) -> No target insight, wandering...
+Peon at (2, 0) -> Starting round... memory: {}
+Peon at (2, 0) -> Target: None
+Peon at (2, 0) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 3, u'id': 5}}
+Peon at (2, 0) -> I don't have a target.
+Peon at (2, 0) -> No target insight, wandering...
+Peon at (3, 2) -> Starting round... memory: {}
+Peon at (3, 2) -> Target: None
+Peon at (3, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 2, u'id': 4}}
+Peon at (3, 2) -> I don't have a target.
+Peon at (3, 2) -> No target insight, wandering...
+Peon at (2, 1) -> Starting round... memory: {}
+Peon at (2, 1) -> Target: None
+Peon at (2, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 3, u'id': 5}}
+Peon at (2, 1) -> I don't have a target.
+Peon at (2, 1) -> No target insight, wandering...
+Peon at (3, 2) -> Starting round... memory: {}
+Peon at (3, 2) -> Target: None
+Peon at (3, 2) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 3, u'id': 4}}
+Peon at (3, 2) -> I don't have a target.
+Peon at (3, 2) -> No target insight, wandering...
+Peon at (3, 1) -> Starting round... memory: {}
+Peon at (3, 1) -> Target: None
+Peon at (3, 1) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 2, u'id': 5}}
+Peon at (3, 1) -> I don't have a target.
+Peon at (3, 1) -> No target insight, wandering...
+Peon at (2, 3) -> Starting round... memory: {}
+Peon at (2, 3) -> Target: None
+Peon at (2, 3) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 4, u'id': 4}}
+Peon at (2, 3) -> I don't have a target.
+Peon at (2, 3) -> No target insight, wandering...
+Peon at (4, 2) -> Starting round... memory: {}
+Peon at (4, 2) -> Target: None
+Peon at (4, 2) -> Creatures: {u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 2, u'id': 5}}
+Peon at (4, 2) -> I don't have a target.
+Peon at (4, 2) -> No target insight, wandering...
+Peon at (2, 3) -> Starting round... memory: {}
+Peon at (2, 3) -> Target: None
+Peon at (2, 3) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 4, u'id': 4}}
+Peon at (2, 3) -> I don't have a target.
+Peon at (2, 3) -> No target insight, wandering...
+Peon at (4, 3) -> Starting round... memory: {}
+Peon at (4, 3) -> Target: None
+Peon at (4, 3) -> Creatures: {u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 3, u'id': 5}}
+Peon at (4, 3) -> I don't have a target.
+Peon at (4, 3) -> No target insight, wandering...
+Peon at (3, 3) -> Starting round... memory: {}
+Peon at (3, 3) -> Target: None
+Peon at (3, 3) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 4, u'id': 4}}
+Peon at (3, 3) -> I don't have a target.
+Peon at (3, 3) -> No target insight, wandering...
+Peon at (4, 4) -> Starting round... memory: {}
+Peon at (4, 4) -> Target: None
+Peon at (4, 4) -> Creatures: {u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 2, u'id': 5}}
+Peon at (4, 4) -> I don't have a target.
+Peon at (4, 4) -> No target insight, wandering...
+Peon at (2, 4) -> Starting round... memory: {}
+Peon at (2, 4) -> Target: None
+Peon at (2, 4) -> Creatures: {u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 4, u'id': 4}}
+Peon at (2, 4) -> I don't have a target.
+Peon at (2, 4) -> No target insight, wandering...
+Peon at (4, 4) -> Starting round... memory: {}
+Peon at (4, 4) -> Target: None
+Peon at (4, 4) -> Creatures: {u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 2, u'id': 5}}
+Peon at (4, 4) -> I don't have a target.
+Peon at (4, 4) -> No target insight, wandering...
+Peon at (2, 4) -> Starting round... memory: {}
+Peon at (2, 4) -> Target: None
+Peon at (2, 4) -> Creatures: {u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 3, u'id': 4}}
+Peon at (2, 4) -> I don't have a target.
+Peon at (2, 4) -> No target insight, wandering...
+Peon at (3, 5) -> Starting round... memory: {}
+Peon at (3, 5) -> Target: None
+Peon at (3, 5) -> Creatures: {u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 3, u'id': 5}}
+Peon at (3, 5) -> I don't have a target.
+Peon at (3, 5) -> No target insight, wandering...
+Peon at (3, 3) -> Starting round... memory: {}
+Peon at (3, 3) -> Target: None
+Peon at (3, 3) -> Creatures: {u'1': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': 1}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 6, u'x': 3, u'id': 4}}
+Peon at (3, 3) -> I don't have a target.
+Peon at (3, 3) -> No target insight, wandering...
+Peon at (3, 6) -> Starting round... memory: {}
+Peon at (3, 6) -> Target: None
+Peon at (3, 6) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 4, u'id': 3}}
+Peon at (3, 6) -> I don't have a target.
+Peon at (3, 6) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 4, u'id': 3}. Following...
+Peon at (4, 2) -> Starting round... memory: {}
+Peon at (4, 2) -> Target: None
+Peon at (4, 2) -> Creatures: {}
+Peon at (4, 2) -> I don't have a target.
+Peon at (4, 2) -> No target insight, wandering...
+Peon at (4, 7) -> Starting round... memory: {u'target_id': 3}
+Peon at (4, 7) -> Target: None
+Peon at (4, 7) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 4, u'id': 3}}
+Peon at (4, 7) -> I don't have a target.
+Peon at (4, 7) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 4, u'id': 3}. Following...
+Peon at (4, 2) -> Starting round... memory: {}
+Peon at (4, 2) -> Target: None
+Peon at (4, 2) -> Creatures: {}
+Peon at (4, 2) -> I don't have a target.
+Peon at (4, 2) -> No target insight, wandering...
+Peon at (4, 7) -> Starting round... memory: {u'target_id': 3}
+Peon at (4, 7) -> Target: None
+Peon at (4, 7) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 5, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 7, u'id': 2}}
+Peon at (4, 7) -> I don't have a target.
+Peon at (4, 7) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 5, u'id': 3}. Following...
+Peon at (4, 1) -> Starting round... memory: {}
+Peon at (4, 1) -> Target: None
+Peon at (4, 1) -> Creatures: {}
+Peon at (4, 1) -> I don't have a target.
+Peon at (4, 1) -> No target insight, wandering...
+Peon at (4, 7) -> Starting round... memory: {u'target_id': 3}
+Peon at (4, 7) -> Target: None
+Peon at (4, 7) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 5, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 7, u'id': 2}}
+Peon at (4, 7) -> I don't have a target.
+Peon at (4, 7) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 5, u'id': 3}. Following...
+Peon at (5, 2) -> Starting round... memory: {}
+Peon at (5, 2) -> Target: None
+Peon at (5, 2) -> Creatures: {}
+Peon at (5, 2) -> I don't have a target.
+Peon at (5, 2) -> No target insight, wandering...
+Peon at (4, 7) -> Starting round... memory: {u'target_id': 3}
+Peon at (4, 7) -> Target: None
+Peon at (4, 7) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 4, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 7, u'id': 2}}
+Peon at (4, 7) -> I don't have a target.
+Peon at (4, 7) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 4, u'id': 3}. Following...
+Peon at (5, 1) -> Starting round... memory: {}
+Peon at (5, 1) -> Target: None
+Peon at (5, 1) -> Creatures: {}
+Peon at (5, 1) -> I don't have a target.
+Peon at (5, 1) -> No target insight, wandering...
+Peon at (4, 7) -> Starting round... memory: {u'target_id': 3}
+Peon at (4, 7) -> Target: None
+Peon at (4, 7) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}}
+Peon at (4, 7) -> I don't have a target.
+Peon at (4, 7) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}. Following...
+Peon at (4, 2) -> Starting round... memory: {}
+Peon at (4, 2) -> Target: None
+Peon at (4, 2) -> Creatures: {}
+Peon at (4, 2) -> I don't have a target.
+Peon at (4, 2) -> No target insight, wandering...
+Peon at (4, 7) -> Starting round... memory: {u'target_id': 3}
+Peon at (4, 7) -> Target: None
+Peon at (4, 7) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}}
+Peon at (4, 7) -> I don't have a target.
+Peon at (4, 7) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}. Following...
+Peon at (4, 2) -> Starting round... memory: {}
+Peon at (4, 2) -> Target: None
+Peon at (4, 2) -> Creatures: {}
+Peon at (4, 2) -> I don't have a target.
+Peon at (4, 2) -> No target insight, wandering...
+Peon at (4, 7) -> Starting round... memory: {u'target_id': 3}
+Peon at (4, 7) -> Target: None
+Peon at (4, 7) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}}
+Peon at (4, 7) -> I don't have a target.
+Peon at (4, 7) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}. Following...
+Peon at (4, 3) -> Starting round... memory: {}
+Peon at (4, 3) -> Target: None
+Peon at (4, 3) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}}
+Peon at (4, 3) -> I don't have a target.
+Peon at (4, 3) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}. Following...
+Peon at (4, 7) -> Starting round... memory: {u'target_id': 3}
+Peon at (4, 7) -> Target: None
+Peon at (4, 7) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 5, u'id': 5}}
+Peon at (4, 7) -> I don't have a target.
+Peon at (4, 7) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}. Following...
+Peon at (5, 4) -> Starting round... memory: {u'target_id': 3}
+Peon at (5, 4) -> Target: None
+Peon at (5, 4) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 4, u'id': 4}}
+Peon at (5, 4) -> I don't have a target.
+Peon at (5, 4) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': 3}. Following...
+Peon at (4, 7) -> Starting round... memory: {u'target_id': 3}
+Peon at (4, 7) -> Target: None
+Peon at (4, 7) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 4, u'id': 3}, u'5': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 5, u'id': 5}}
+Peon at (4, 7) -> I don't have a target.
+Peon at (4, 7) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 4, u'id': 3}. Following...
+Peon at (5, 5) -> Starting round... memory: {u'target_id': 3}
+Peon at (5, 5) -> Target: None
+Peon at (5, 5) -> Creatures: {u'3': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 4, u'id': 3}, u'2': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': 2}, u'4': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 6, u'x': 4, u'id': 4}}
+Peon at (5, 5) -> I don't have a target.
+Peon at (5, 5) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 4, u'id': 3}. Following...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 2, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (2, 1) -> Starting round... memory: {}
+Peon at (2, 1) -> Target: None
+Peon at (2, 1) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 0, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (2, 1) -> I don't have a target.
+Peon at (2, 1) -> No target insight, wandering...
+Peon at (0, 2) -> Starting round... memory: {}
+Peon at (0, 2) -> Target: None
+Peon at (0, 2) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 2) -> I don't have a target.
+Peon at (0, 2) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 0, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 2) -> Starting round... memory: {}
+Peon at (0, 2) -> Target: None
+Peon at (0, 2) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 2) -> I don't have a target.
+Peon at (0, 2) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 0, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 0, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 0, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 1, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (1, 3) -> Starting round... memory: {}
+Peon at (1, 3) -> Target: None
+Peon at (1, 3) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 3) -> I don't have a target.
+Peon at (1, 3) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 0, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 1, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (1, 2) -> Starting round... memory: {}
+Peon at (1, 2) -> Target: None
+Peon at (1, 2) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 2) -> I don't have a target.
+Peon at (1, 2) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 2, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (2, 2) -> Starting round... memory: {}
+Peon at (2, 2) -> Target: None
+Peon at (2, 2) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 1, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (2, 2) -> I don't have a target.
+Peon at (2, 2) -> No target insight, wandering...
+Peon at (1, 0) -> Starting round... memory: {}
+Peon at (1, 0) -> Target: None
+Peon at (1, 0) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 3, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 0) -> I don't have a target.
+Peon at (1, 0) -> No target insight, wandering...
+Peon at (3, 3) -> Starting round... memory: {}
+Peon at (3, 3) -> Target: None
+Peon at (3, 3) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (3, 3) -> I don't have a target.
+Peon at (3, 3) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 3, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (3, 3) -> Starting round... memory: {}
+Peon at (3, 3) -> Target: None
+Peon at (3, 3) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 1, u'x': 0, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (3, 3) -> I don't have a target.
+Peon at (3, 3) -> No target insight, wandering...
+Peon at (0, 1) -> Starting round... memory: {}
+Peon at (0, 1) -> Target: None
+Peon at (0, 1) -> Creatures: {u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 1) -> I don't have a target.
+Peon at (0, 1) -> No target insight, wandering...
+Peon at (4, 3) -> Starting round... memory: {}
+Peon at (4, 3) -> Target: None
+Peon at (4, 3) -> Creatures: {}
+Peon at (4, 3) -> I don't have a target.
+Peon at (4, 3) -> No target insight, wandering...
+Peon at (0, 2) -> Starting round... memory: {}
+Peon at (0, 2) -> Target: None
+Peon at (0, 2) -> Creatures: {u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 2) -> I don't have a target.
+Peon at (0, 2) -> No target insight, wandering...
+Peon at (5, 4) -> Starting round... memory: {}
+Peon at (5, 4) -> Target: None
+Peon at (5, 4) -> Creatures: {}
+Peon at (5, 4) -> I don't have a target.
+Peon at (5, 4) -> No target insight, wandering...
+Peon at (0, 2) -> Starting round... memory: {}
+Peon at (0, 2) -> Target: None
+Peon at (0, 2) -> Creatures: {u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 2) -> I don't have a target.
+Peon at (0, 2) -> No target insight, wandering...
+Peon at (4, 3) -> Starting round... memory: {}
+Peon at (4, 3) -> Target: None
+Peon at (4, 3) -> Creatures: {}
+Peon at (4, 3) -> I don't have a target.
+Peon at (4, 3) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 3, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (3, 2) -> Starting round... memory: {}
+Peon at (3, 2) -> Target: None
+Peon at (3, 2) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 0, u'id': u'235'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (3, 2) -> I don't have a target.
+Peon at (3, 2) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (4, 1) -> Starting round... memory: {}
+Peon at (4, 1) -> Target: None
+Peon at (4, 1) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 3, u'x': 1, u'id': u'235'}}
+Peon at (4, 1) -> I don't have a target.
+Peon at (4, 1) -> No target insight, wandering...
+Peon at (1, 3) -> Starting round... memory: {}
+Peon at (1, 3) -> Target: None
+Peon at (1, 3) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 4, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 3) -> I don't have a target.
+Peon at (1, 3) -> No target insight, wandering...
+Peon at (4, 0) -> Starting round... memory: {}
+Peon at (4, 0) -> Target: None
+Peon at (4, 0) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 2, u'x': 1, u'id': u'235'}}
+Peon at (4, 0) -> I don't have a target.
+Peon at (4, 0) -> No target insight, wandering...
+Peon at (1, 2) -> Starting round... memory: {}
+Peon at (1, 2) -> Target: None
+Peon at (1, 2) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 0, u'x': 4, u'id': u'158'}, u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (1, 2) -> I don't have a target.
+Peon at (1, 2) -> No target insight, wandering...
+Peon at (4, 0) -> Starting round... memory: {}
+Peon at (4, 0) -> Target: None
+Peon at (4, 0) -> Creatures: {}
+Peon at (4, 0) -> I don't have a target.
+Peon at (4, 0) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (5, 1) -> Starting round... memory: {}
+Peon at (5, 1) -> Target: None
+Peon at (5, 1) -> Creatures: {}
+Peon at (5, 1) -> I don't have a target.
+Peon at (5, 1) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (5, 2) -> Starting round... memory: {}
+Peon at (5, 2) -> Target: None
+Peon at (5, 2) -> Creatures: {}
+Peon at (5, 2) -> I don't have a target.
+Peon at (5, 2) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (4, 1) -> Starting round... memory: {}
+Peon at (4, 1) -> Target: None
+Peon at (4, 1) -> Creatures: {}
+Peon at (4, 1) -> I don't have a target.
+Peon at (4, 1) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (5, 0) -> Starting round... memory: {}
+Peon at (5, 0) -> Target: None
+Peon at (5, 0) -> Creatures: {}
+Peon at (5, 0) -> I don't have a target.
+Peon at (5, 0) -> No target insight, wandering...
+Peon at (0, 3) -> Starting round... memory: {}
+Peon at (0, 3) -> Target: None
+Peon at (0, 3) -> Creatures: {u'64': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'blue', u'y': 0, u'x': 0, u'id': u'64'}}
+Peon at (0, 3) -> I don't have a target.
+Peon at (0, 3) -> No target insight, wandering...
+Peon at (5, 1) -> Starting round... memory: {}
+Peon at (5, 1) -> Target: None
+Peon at (5, 1) -> Creatures: {}
+Peon at (5, 1) -> I don't have a target.
+Peon at (5, 1) -> No target insight, wandering...
+Peon at (1, 4) -> Starting round... memory: {}
+Peon at (1, 4) -> Target: None
+Peon at (1, 4) -> Creatures: {}
+Peon at (1, 4) -> I don't have a target.
+Peon at (1, 4) -> No target insight, wandering...
+Peon at (5, 0) -> Starting round... memory: {}
+Peon at (5, 0) -> Target: None
+Peon at (5, 0) -> Creatures: {}
+Peon at (5, 0) -> I don't have a target.
+Peon at (5, 0) -> No target insight, wandering...
+Peon at (0, 5) -> Starting round... memory: {}
+Peon at (0, 5) -> Target: None
+Peon at (0, 5) -> Creatures: {}
+Peon at (0, 5) -> I don't have a target.
+Peon at (0, 5) -> No target insight, wandering...
+Peon at (6, 1) -> Starting round... memory: {}
+Peon at (6, 1) -> Target: None
+Peon at (6, 1) -> Creatures: {}
+Peon at (6, 1) -> I don't have a target.
+Peon at (6, 1) -> No target insight, wandering...
+Peon at (0, 5) -> Starting round... memory: {}
+Peon at (0, 5) -> Target: None
+Peon at (0, 5) -> Creatures: {}
+Peon at (0, 5) -> I don't have a target.
+Peon at (0, 5) -> No target insight, wandering...
+Peon at (6, 0) -> Starting round... memory: {}
+Peon at (6, 0) -> Target: None
+Peon at (6, 0) -> Creatures: {}
+Peon at (6, 0) -> I don't have a target.
+Peon at (6, 0) -> No target insight, wandering...
+Peon at (0, 6) -> Starting round... memory: {}
+Peon at (0, 6) -> Target: None
+Peon at (0, 6) -> Creatures: {}
+Peon at (0, 6) -> I don't have a target.
+Peon at (0, 6) -> No target insight, wandering...
+Peon at (6, 0) -> Starting round... memory: {}
+Peon at (6, 0) -> Target: None
+Peon at (6, 0) -> Creatures: {}
+Peon at (6, 0) -> I don't have a target.
+Peon at (6, 0) -> No target insight, wandering...
+Peon at (0, 6) -> Starting round... memory: {}
+Peon at (0, 6) -> Target: None
+Peon at (0, 6) -> Creatures: {}
+Peon at (0, 6) -> I don't have a target.
+Peon at (0, 6) -> No target insight, wandering...
+Peon at (6, 0) -> Starting round... memory: {}
+Peon at (6, 0) -> Target: None
+Peon at (6, 0) -> Creatures: {}
+Peon at (6, 0) -> I don't have a target.
+Peon at (6, 0) -> No target insight, wandering...
+Peon at (0, 6) -> Starting round... memory: {}
+Peon at (0, 6) -> Target: None
+Peon at (0, 6) -> Creatures: {}
+Peon at (0, 6) -> I don't have a target.
+Peon at (0, 6) -> No target insight, wandering...
+Peon at (7, 1) -> Starting round... memory: {}
+Peon at (7, 1) -> Target: None
+Peon at (7, 1) -> Creatures: {u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 7, u'id': u'106'}}
+Peon at (7, 1) -> I don't have a target.
+Peon at (7, 1) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 7, u'id': u'106'}. Following...
+Peon at (0, 5) -> Starting round... memory: {}
+Peon at (0, 5) -> Target: None
+Peon at (0, 5) -> Creatures: {}
+Peon at (0, 5) -> I don't have a target.
+Peon at (0, 5) -> No target insight, wandering...
+Peon at (7, 2) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (7, 2) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 6, u'id': u'106'}
+Peon at (7, 2) -> Creatures: {u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 6, u'id': u'106'}}
+Peon at (7, 2) -> I have a target.
+Peon at (7, 2) -> Target is insight.
+Peon at (7, 2) -> Target is not close, following...
+Peon at (0, 4) -> Starting round... memory: {}
+Peon at (0, 4) -> Target: None
+Peon at (0, 4) -> Creatures: {}
+Peon at (0, 4) -> I don't have a target.
+Peon at (0, 4) -> No target insight, wandering...
+Peon at (6, 3) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (6, 3) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 7, u'id': u'106'}
+Peon at (6, 3) -> Creatures: {u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 7, u'id': u'106'}}
+Peon at (6, 3) -> I have a target.
+Peon at (6, 3) -> Target is insight.
+Peon at (6, 3) -> Target is not close, following...
+Peon at (0, 4) -> Starting round... memory: {}
+Peon at (0, 4) -> Target: None
+Peon at (0, 4) -> Creatures: {}
+Peon at (0, 4) -> I don't have a target.
+Peon at (0, 4) -> No target insight, wandering...
+Peon at (7, 4) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (7, 4) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 8, u'id': u'106'}
+Peon at (7, 4) -> Creatures: {u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 8, u'id': u'106'}}
+Peon at (7, 4) -> I have a target.
+Peon at (7, 4) -> Target is insight.
+Peon at (7, 4) -> Target is not close, following...
+Peon at (1, 5) -> Starting round... memory: {}
+Peon at (1, 5) -> Target: None
+Peon at (1, 5) -> Creatures: {}
+Peon at (1, 5) -> I don't have a target.
+Peon at (1, 5) -> No target insight, wandering...
+Peon at (7, 4) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (7, 4) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': u'106'}
+Peon at (7, 4) -> Creatures: {u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': u'106'}}
+Peon at (7, 4) -> I have a target.
+Peon at (7, 4) -> Target is insight.
+Peon at (7, 4) -> Target is not close, following...
+Peon at (1, 5) -> Starting round... memory: {}
+Peon at (1, 5) -> Target: None
+Peon at (1, 5) -> Creatures: {}
+Peon at (1, 5) -> I don't have a target.
+Peon at (1, 5) -> No target insight, wandering...
+Peon at (8, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (8, 5) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': u'106'}
+Peon at (8, 5) -> Creatures: {u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 6, u'id': u'143'}}
+Peon at (8, 5) -> I have a target.
+Peon at (8, 5) -> Target is insight.
+Peon at (8, 5) -> Target is not close, following...
+Peon at (2, 5) -> Starting round... memory: {}
+Peon at (2, 5) -> Target: None
+Peon at (2, 5) -> Creatures: {}
+Peon at (2, 5) -> I don't have a target.
+Peon at (2, 5) -> No target insight, wandering...
+Peon at (8, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (8, 5) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': u'106'}
+Peon at (8, 5) -> Creatures: {u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 7, u'id': u'143'}}
+Peon at (8, 5) -> I have a target.
+Peon at (8, 5) -> Target is insight.
+Peon at (8, 5) -> Target is not close, following...
+Peon at (3, 6) -> Starting round... memory: {}
+Peon at (3, 6) -> Target: None
+Peon at (3, 6) -> Creatures: {}
+Peon at (3, 6) -> I don't have a target.
+Peon at (3, 6) -> No target insight, wandering...
+Peon at (8, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (8, 5) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': u'106'}
+Peon at (8, 5) -> Creatures: {u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (8, 5) -> I have a target.
+Peon at (8, 5) -> Target is insight.
+Peon at (8, 5) -> Target is not close, following...
+Peon at (4, 5) -> Starting round... memory: {}
+Peon at (4, 5) -> Target: None
+Peon at (4, 5) -> Creatures: {u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 7, u'id': u'143'}}
+Peon at (4, 5) -> I don't have a target.
+Peon at (4, 5) -> Target found: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 7, u'id': u'143'}. Following...
+Peon at (8, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (8, 5) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': u'106'}
+Peon at (8, 5) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 6, u'x': 5, u'id': u'235'}, u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 9, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 7, u'id': u'143'}}
+Peon at (8, 5) -> I have a target.
+Peon at (8, 5) -> Target is insight.
+Peon at (8, 5) -> Target is not close, following...
+Peon at (5, 6) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (5, 6) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}
+Peon at (5, 6) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 8, u'id': u'158'}, u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (5, 6) -> I have a target.
+Peon at (5, 6) -> Target is insight.
+Peon at (5, 6) -> Target is not close, following...
+Peon at (8, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (8, 5) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}
+Peon at (8, 5) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 6, u'id': u'235'}, u'106': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (8, 5) -> I have a target.
+Peon at (8, 5) -> Target is insight.
+Peon at (8, 5) -> Target is close! attacking...
+Peon at (6, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (6, 7) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}
+Peon at (6, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 8, u'id': u'158'}, u'106': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (6, 7) -> I have a target.
+Peon at (6, 7) -> Target is insight.
+Peon at (6, 7) -> Target is not close, following...
+Peon at (8, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (8, 5) -> Target: {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}
+Peon at (8, 5) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (8, 5) -> I have a target.
+Peon at (8, 5) -> Target is insight.
+Peon at (8, 5) -> Target is close! attacking...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 8, u'id': u'158'}, u'106': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is close! attacking...
+Peon at (8, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (8, 5) -> Target: {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}
+Peon at (8, 5) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (8, 5) -> I have a target.
+Peon at (8, 5) -> Target is insight.
+Peon at (8, 5) -> Target is close! attacking...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 8, u'id': u'158'}, u'106': {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}, u'143': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is close! attacking...
+Peon at (8, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (8, 5) -> Target: {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}
+Peon at (8, 5) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'106'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (8, 5) -> I have a target.
+Peon at (8, 5) -> Target is insight.
+Peon at (8, 5) -> Target is close! attacking...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 8, u'id': u'158'}, u'106': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 7, u'id': u'106'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is close! attacking...
+Peon at (8, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (8, 5) -> Target: {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 7, u'id': u'106'}
+Peon at (8, 5) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 7, u'id': u'106'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (8, 5) -> I have a target.
+Peon at (8, 5) -> Target is insight.
+Peon at (8, 5) -> Target is not close, following...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 8, u'id': u'158'}, u'106': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': u'106'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is not close, following...
+Peon at (8, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (8, 5) -> Target: {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': u'106'}
+Peon at (8, 5) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 6, u'id': u'106'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 8, u'id': u'143'}}
+Peon at (8, 5) -> I have a target.
+Peon at (8, 5) -> Target is insight.
+Peon at (8, 5) -> Target is not close, following...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 7, u'id': u'158'}, u'106': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 5, u'id': u'106'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is close! attacking...
+Peon at (7, 5) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (7, 5) -> Target: {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 5, u'id': u'106'}
+Peon at (7, 5) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 5, u'id': u'106'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (7, 5) -> I have a target.
+Peon at (7, 5) -> Target is insight.
+Peon at (7, 5) -> Target is not close, following...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 7, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 6, u'id': u'158'}, u'106': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 5, u'id': u'106'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 7, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is close! attacking...
+Peon at (6, 4) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (6, 4) -> Target: {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 5, u'id': u'106'}
+Peon at (6, 4) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 5, u'id': u'106'}}
+Peon at (6, 4) -> I have a target.
+Peon at (6, 4) -> Target is insight.
+Peon at (6, 4) -> Target is close! attacking...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 8, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 6, u'id': u'158'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 8, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is not close, following...
+Peon at (6, 4) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (6, 4) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 6, u'id': u'106'}
+Peon at (6, 4) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 6, u'id': u'106'}}
+Peon at (6, 4) -> I have a target.
+Peon at (6, 4) -> Target is insight.
+Peon at (6, 4) -> Target is close! attacking...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 8, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 6, u'id': u'158'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 8, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is not close, following...
+Peon at (6, 4) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (6, 4) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 5, u'id': u'106'}
+Peon at (6, 4) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 5, u'id': u'106'}}
+Peon at (6, 4) -> I have a target.
+Peon at (6, 4) -> Target is insight.
+Peon at (6, 4) -> Target is not close, following...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 8, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 6, u'id': u'158'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 8, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is not close, following...
+Peon at (6, 4) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (6, 4) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 5, u'id': u'106'}
+Peon at (6, 4) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 3, u'x': 5, u'id': u'106'}}
+Peon at (6, 4) -> I have a target.
+Peon at (6, 4) -> Target is insight.
+Peon at (6, 4) -> Target is not close, following...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'158': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 4, u'x': 6, u'id': u'158'}, u'143': {u'life': 80, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is close! attacking...
+Peon at (6, 4) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (6, 4) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 2, u'x': 6, u'id': u'106'}
+Peon at (6, 4) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 7, u'x': 7, u'id': u'235'}, u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 2, u'x': 6, u'id': u'106'}, u'143': {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 8, u'id': u'143'}}
+Peon at (6, 4) -> I have a target.
+Peon at (6, 4) -> Target is insight.
+Peon at (6, 4) -> Target is not close, following...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 8, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 8, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is not close, following...
+Peon at (6, 3) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (6, 3) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 1, u'x': 6, u'id': u'106'}
+Peon at (6, 3) -> Creatures: {u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 1, u'x': 6, u'id': u'106'}}
+Peon at (6, 3) -> I have a target.
+Peon at (6, 3) -> Target is insight.
+Peon at (6, 3) -> Target is not close, following...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 7, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 7, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is not close, following...
+Peon at (6, 2) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (6, 2) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 1, u'x': 5, u'id': u'106'}
+Peon at (6, 2) -> Creatures: {u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 1, u'x': 5, u'id': u'106'}}
+Peon at (6, 2) -> I have a target.
+Peon at (6, 2) -> Target is insight.
+Peon at (6, 2) -> Target is not close, following...
+Peon at (7, 8) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 8) -> Target: {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 7, u'id': u'143'}
+Peon at (7, 8) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 9, u'x': 7, u'id': u'143'}}
+Peon at (7, 8) -> I have a target.
+Peon at (7, 8) -> Target is insight.
+Peon at (7, 8) -> Target is close! attacking...
+Peon at (6, 2) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (6, 2) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 0, u'x': 4, u'id': u'106'}
+Peon at (6, 2) -> Creatures: {u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 0, u'x': 4, u'id': u'106'}}
+Peon at (6, 2) -> I have a target.
+Peon at (6, 2) -> Target is insight.
+Peon at (6, 2) -> Target is not close, following...
+Peon at (7, 8) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 8) -> Target: {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 6, u'id': u'143'}
+Peon at (7, 8) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 8, u'x': 6, u'id': u'143'}}
+Peon at (7, 8) -> I have a target.
+Peon at (7, 8) -> Target is insight.
+Peon at (7, 8) -> Target is close! attacking...
+Peon at (5, 1) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (5, 1) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 1, u'x': 4, u'id': u'106'}
+Peon at (5, 1) -> Creatures: {u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 1, u'x': 4, u'id': u'106'}}
+Peon at (5, 1) -> I have a target.
+Peon at (5, 1) -> Target is insight.
+Peon at (5, 1) -> Target is close! attacking...
+Peon at (7, 8) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 8) -> Target: {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 7, u'id': u'143'}
+Peon at (7, 8) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 60, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 7, u'id': u'143'}}
+Peon at (7, 8) -> I have a target.
+Peon at (7, 8) -> Target is insight.
+Peon at (7, 8) -> Target is close! attacking...
+Peon at (5, 1) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (5, 1) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 1, u'x': 4, u'id': u'106'}
+Peon at (5, 1) -> Creatures: {u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 1, u'x': 4, u'id': u'106'}}
+Peon at (5, 1) -> I have a target.
+Peon at (5, 1) -> Target is insight.
+Peon at (5, 1) -> Target is close! attacking...
+Peon at (7, 8) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 8) -> Target: {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 7, u'id': u'143'}
+Peon at (7, 8) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 7, u'id': u'143'}}
+Peon at (7, 8) -> I have a target.
+Peon at (7, 8) -> Target is insight.
+Peon at (7, 8) -> Target is not close, following...
+Peon at (5, 1) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (5, 1) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 0, u'x': 5, u'id': u'106'}
+Peon at (5, 1) -> Creatures: {u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 0, u'x': 5, u'id': u'106'}}
+Peon at (5, 1) -> I have a target.
+Peon at (5, 1) -> Target is insight.
+Peon at (5, 1) -> Target is close! attacking...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is not close, following...
+Peon at (5, 1) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (5, 1) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 0, u'x': 5, u'id': u'106'}
+Peon at (5, 1) -> Creatures: {u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 0, u'x': 5, u'id': u'106'}}
+Peon at (5, 1) -> I have a target.
+Peon at (5, 1) -> Target is insight.
+Peon at (5, 1) -> Target is close! attacking...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 6, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 6, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is close! attacking...
+Peon at (5, 1) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (5, 1) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 0, u'x': 5, u'id': u'106'}
+Peon at (5, 1) -> Creatures: {u'106': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 0, u'x': 5, u'id': u'106'}}
+Peon at (5, 1) -> I have a target.
+Peon at (5, 1) -> Target is insight.
+Peon at (5, 1) -> Target is close! attacking...
+Peon at (7, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (7, 7) -> Target: {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 5, u'id': u'143'}
+Peon at (7, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 7, u'x': 5, u'id': u'143'}}
+Peon at (7, 7) -> I have a target.
+Peon at (7, 7) -> Target is insight.
+Peon at (7, 7) -> Target is not close, following...
+Peon at (5, 1) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (5, 1) -> Target: None
+Peon at (5, 1) -> Creatures: {}
+Peon at (5, 1) -> I don't have a target.
+Peon at (5, 1) -> No target insight, wandering...
+Peon at (6, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (6, 7) -> Target: {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': u'143'}
+Peon at (6, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 40, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 6, u'id': u'143'}}
+Peon at (6, 7) -> I have a target.
+Peon at (6, 7) -> Target is insight.
+Peon at (6, 7) -> Target is close! attacking...
+Peon at (5, 2) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (5, 2) -> Target: None
+Peon at (5, 2) -> Creatures: {}
+Peon at (5, 2) -> I don't have a target.
+Peon at (5, 2) -> No target insight, wandering...
+Peon at (6, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (6, 7) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': u'143'}
+Peon at (6, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 6, u'x': 5, u'id': u'143'}}
+Peon at (6, 7) -> I have a target.
+Peon at (6, 7) -> Target is insight.
+Peon at (6, 7) -> Target is not close, following...
+Peon at (5, 1) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (5, 1) -> Target: None
+Peon at (5, 1) -> Creatures: {}
+Peon at (5, 1) -> I don't have a target.
+Peon at (5, 1) -> No target insight, wandering...
+Peon at (6, 7) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (6, 7) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 5, u'id': u'143'}
+Peon at (6, 7) -> Creatures: {u'33': {u'life': 1000, u'name': u'Fortress', u'level': 10, u'player': u'red', u'y': 9, u'x': 9, u'id': u'33'}, u'143': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 5, u'x': 5, u'id': u'143'}}
+Peon at (6, 7) -> I have a target.
+Peon at (6, 7) -> Target is insight.
+Peon at (6, 7) -> Target is not close, following...
+Peon at (5, 1) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (5, 1) -> Target: None
+Peon at (5, 1) -> Creatures: {}
+Peon at (5, 1) -> I don't have a target.
+Peon at (5, 1) -> No target insight, wandering...
+Peon at (5, 6) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (5, 6) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 4, u'id': u'143'}
+Peon at (5, 6) -> Creatures: {u'143': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 4, u'id': u'143'}}
+Peon at (5, 6) -> I have a target.
+Peon at (5, 6) -> Target is insight.
+Peon at (5, 6) -> Target is not close, following...
+Peon at (4, 2) -> Starting round... memory: {u'target_id': u'106'}
+Peon at (4, 2) -> Target: None
+Peon at (4, 2) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 4, u'id': u'235'}, u'143': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 4, u'id': u'143'}}
+Peon at (4, 2) -> I don't have a target.
+Peon at (4, 2) -> Target found: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 4, u'id': u'143'}. Following...
+Peon at (4, 5) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (4, 5) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 4, u'id': u'143'}
+Peon at (4, 5) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 0, u'player': u'blue', u'y': 3, u'x': 4, u'id': u'158'}, u'143': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 4, u'id': u'143'}}
+Peon at (4, 5) -> I have a target.
+Peon at (4, 5) -> Target is insight.
+Peon at (4, 5) -> Target is close! attacking...
+Peon at (4, 3) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (4, 3) -> Target: {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 4, u'id': u'143'}
+Peon at (4, 3) -> Creatures: {u'235': {u'life': 100, u'name': u'Peon', u'level': 1, u'player': u'blue', u'y': 5, u'x': 4, u'id': u'235'}, u'143': {u'life': 20, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 4, u'id': u'143'}}
+Peon at (4, 3) -> I have a target.
+Peon at (4, 3) -> Target is insight.
+Peon at (4, 3) -> Target is close! attacking...
+Peon at (4, 5) -> Starting round... memory: {u'target_id': u'143'}
+Peon at (4, 5) -> Target: {u'life': 0, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 5, u'id': u'143'}
+Peon at (4, 5) -> Creatures: {u'158': {u'life': 100, u'name': u'Peon', u'level': 0, u'player': u'blue', u'y': 3, u'x': 4, u'id': u'158'}, u'143': {u'life': 0, u'name': u'Peon', u'level': 1, u'player': u'red', u'y': 4, u'x': 5, u'id': u'143'}}
+Peon at (4, 5) -> I have a target.
+Peon at (4, 5) -> Target is insight.
+Peon at (4, 5) -> Target is not close, following...

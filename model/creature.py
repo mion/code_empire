@@ -1,14 +1,15 @@
-from util.dice import Dice
+#from util.dice import Dice
+import random
 from util.point import Point
 from model.attack import AttackResult
 
 
 class Creature:
-    ID_COUNTER = 0 # Add random initial ID to avoid cheating (finding the other player's creatures).
+    ID_COUNTER = random.randrange(0, 101) # Add random initial ID to avoid cheating (finding the other player's creatures).
 
     def __init__(self, name, player=None, level=1, position=None):
-        self.id = Creature.ID_COUNTER
-        Creature.ID_COUNTER += 1
+        self.id = str(Creature.ID_COUNTER)
+        Creature.ID_COUNTER += random.randrange(1, 101)
 
         self.name = name
         self.player = player
@@ -66,7 +67,7 @@ class Creature:
         if not self.in_attack_range(target.position):
             return AttackResult.NOT_IN_RANGE
 
-        successful_hit = Dice.roll() < self.hit_chance(target)
+        successful_hit = random.random() < self.hit_chance(target)
 
         if successful_hit:
             self.deal_damage(target)
@@ -103,8 +104,8 @@ class Creature:
                     return {'action': 'move', 'dx': dx, 'dy': dy}
         
         # Wander
-        dx = Dice.roll(2) - 1
-        dy = Dice.roll(2) - 1
+        dx = random.randrange(-1, 2)
+        dy = random.randrange(-1, 2)
 
         for c in info['creatures']:
             if c['player'] != self.player:

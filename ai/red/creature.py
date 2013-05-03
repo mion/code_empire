@@ -12,10 +12,13 @@ def think(info):
     return response
 
 if __name__ == '__main__':
-    info_json = sys.argv[1]
-    info = json.loads(info_json)
+    with open(sys.argv[1], 'r') as f:
+        info = json.load(f)
 
     response = think(info)
-    print json.dumps(response)
+
+    with open(sys.argv[2], 'w') as f:
+        json.dump(response, f)
 
     sys.exit(0)
+    
