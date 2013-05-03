@@ -4,7 +4,7 @@ from model.attack import AttackResult
 
 
 class Creature:
-    ID_COUNTER = 0
+    ID_COUNTER = 0 # Add random initial ID to avoid cheating (finding the other player's creatures).
 
     def __init__(self, name, player=None, level=1, position=None):
         self.id = Creature.ID_COUNTER

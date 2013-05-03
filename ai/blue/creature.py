@@ -27,8 +27,11 @@ class CreatureAI(object):
         self.info = info
         self.memory = info["memory"]
         self.myself = info["myself"]
-        self.response = {"memory": self.memory}
+        self.response = {"memory": self.memory, 'log': []}
         self.target = self.get_target() #info["creatures"].get(self.memory.get("target_id", None), None)
+        self.log("Starting round... memory: {}".format(self.memory))
+        self.log("Target: {}".format(self.get_target()))
+        self.log("Creatures: {}".format(self.info["creatures"]))
 
     def is_target_insight(self):
         return self.target["id"] in info["creatures"]
@@ -67,12 +70,10 @@ class CreatureAI(object):
 
     def log(self, message):
         with open(self.myself["player"] + '_battle.log', 'a') as f:
-            f.write('{} at ({}, {}) -> {}'.format(self.myself["name"], self.myself["x"], self.myself["y"], message))
+            f.write('{} at ({}, {}) -> {}\n'.format(self.myself["name"], self.myself["x"], self.myself["y"], message))
         self.response['log'].append(message)
 
     def think(self):
-        self.response['log'] = []
-
         if self.target:
             self.log("I have a target.")
             if self.is_target_insight():
@@ -85,7 +86,7 @@ class CreatureAI(object):
                     self.follow_target()
             else:
                 self.log("Target lost.")
-                self.lose_target()    
+                self.lose_target()
         else:
             self.log("I don't have a target.")
             if self.find_target():
