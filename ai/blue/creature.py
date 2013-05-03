@@ -33,8 +33,13 @@ class CreatureAI(object):
         self.log("Target: {}".format(self.get_target()))
         self.log("Creatures: {}".format(self.info["creatures"]))
 
+    def log(self, message):
+        with open(self.myself["player"] + '_battle.log', 'a') as f:
+            f.write('{} at ({}, {}) -> {}\n'.format(self.myself["name"], self.myself["x"], self.myself["y"], message))
+        self.response['log'].append(message)
+
     def is_target_insight(self):
-        return self.target["id"] in info["creatures"]
+        return self.memory["target_id"] in info["creatures"]
 
     def is_target_in_attack_range(self):
         # TODO: hardcoded attack range
@@ -42,6 +47,9 @@ class CreatureAI(object):
 
     def get_target(self):
         return self.info["creatures"].get(self.memory.get("target_id", None), None)
+
+    def has_target(self):
+        return self.memory.get("target_id", False)
 
     def lose_target(self):
         del self.memory["target_id"]
@@ -68,13 +76,16 @@ class CreatureAI(object):
 
         return False
 
-    def log(self, message):
-        with open(self.myself["player"] + '_battle.log', 'a') as f:
-            f.write('{} at ({}, {}) -> {}\n'.format(self.myself["name"], self.myself["x"], self.myself["y"], message))
-        self.response['log'].append(message)
+    def seek_and_destroy(self):
+        if self.find_target():
+            self.log("New target found: {}. Following...".format(self.target))
+            self.follow_target()
+        else:
+            self.log("No enemies around, wandering...")
+            self.response["action"] = "wander"
 
     def think(self):
-        if self.target:
+        if self.has_target():
             self.log("I have a target.")
             if self.is_target_insight():
                 self.log("Target is insight.")
@@ -85,16 +96,12 @@ class CreatureAI(object):
                     self.log("Target is not close, following...")
                     self.follow_target()
             else:
-                self.log("Target lost.")
+                self.log("Target is no longer insight.")
                 self.lose_target()
+                self.seek_and_destroy()
         else:
             self.log("I don't have a target.")
-            if self.find_target():
-                self.log("Target found: {}. Following...".format(self.target))
-                self.follow_target()
-            else:
-                self.log("No target insight, wandering...")
-                self.response["action"] = "wander"
+            self.seek_and_destroy()
 
         return self.response
 

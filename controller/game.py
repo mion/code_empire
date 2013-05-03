@@ -56,9 +56,6 @@ class Game(object):
         """
         Start and play a whole match.
         """
-        # Clear the temp directory (used for message passing)
-        self.clear_temp_dir()
-
         if interactive:
                 self.terminal.display(0)
 
@@ -75,6 +72,9 @@ class Game(object):
                 response = self.exchange_message(player, info)
                 # World handles the player's AI commands
                 self.world.handle_creature_response(response, creatures[id])
+
+                # Clear the temp directory (used for message passing)
+                self.clear_temp_dir()
                 
             if interactive:
                 self.terminal.display(i + 1)
@@ -82,12 +82,9 @@ class Game(object):
             winner = self.world.update()
 
             if winner:
-                if interactive:
-                    print 'GAME OVER: {} won!\n'.format(winner)
-                break
+                return winner
 
             if interactive:
                 raw_input('Press any key to continue...')
 
-        if interactive:
-            print 'GAME OVER: draw.\n'
+        return None
