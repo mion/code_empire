@@ -28,7 +28,7 @@ class CreatureAI(object):
         self.memory = info["memory"]
         self.myself = info["myself"]
         self.response = {"memory": self.memory, 'log': []}
-        self.target = self.get_target() #info["creatures"].get(self.memory.get("target_id", None), None)
+        self.target = self.get_target()
         self.log("Starting round... memory: {}".format(self.memory))
         self.log("Target: {}".format(self.get_target()))
         self.log("Creatures: {}".format(self.info["creatures"]))
