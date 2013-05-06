@@ -39,3 +39,6 @@ venv/*
 
 # Temporary files
 temp/*
+
+# Log files
+*.log
