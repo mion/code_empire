@@ -1,10 +1,12 @@
-#from util.dice import Dice
 import random
 from util.point import Point
-from model.attack import AttackResult
 
 
-class Creature:
+class Creature(object):
+    """
+    docstring for Creature
+    """
+
     ID_COUNTER = random.randrange(0, 101) # Add random initial ID to avoid cheating (finding the other player's creatures).
 
     def __init__(self, name, player=None, level=1, position=None):
@@ -26,6 +28,9 @@ class Creature:
         self.attack_range = 1
         self.accuracy     = 0.90
         self.dodge        = 0.5
+
+        self.gold_carried = 0
+        self.max_gold_carried = 100
 
         self.memory = {}
 
@@ -80,38 +85,34 @@ class Creature:
         else:
             return AttackResult.MISS
 
-    def think(self, info):
-        memory = self.memory
+    def is_full(self):
+        return self.gold_carried < self.max_gold_carried
 
-        if 'target_id' in memory:
-            #target = info['creatures'][]
-            creature = None
-            if creature and not creature.alive():
-                # Dead target
-                del memory['target_id']
+    def space_left(self):
+        return self.max_gold_carried - self.gold_carried
+
+    def gather(self, resource):
+        if not resource.depleted():
+            if self.is_full():
+                return GatherResult.FULL
             else:
-                # Attack a target
-                for c in info['creatures']:
-                    if c['id'] == memory['target_id']:
-                        memory['target_x'] = c['x']
-                        memory['target_y'] = c['y']
-                        break
+                self.gold_carried += resource.gather()
+                return GatherResult.SUCCESS
+        else:
+            return GatherResult.DEPLETED
 
-                if self.in_attack_range(Point(memory['target_x'], memory['target_y'])):
-                    return {'action': 'attack', 'target_x': memory['target_x'], 'target_y': memory['target_y']}
-                else:
-                    dx, dy = self.position.dx_dy(Point(memory['target_x'], memory['target_y']))
-                    return {'action': 'move', 'dx': dx, 'dy': dy}
-        
-        # Wander
-        dx = random.randrange(-1, 2)
-        dy = random.randrange(-1, 2)
 
-        for c in info['creatures']:
-            if c['player'] != self.player:
-                memory['target_id'] = c['id']
-                memory['target_x'] = c['x']
-                memory['target_y'] = c['y']
-                dx, dy = self.position.dx_dy(Point(c['x'], c['y']))
+class GatherResult(object):
+    """Possible outcomes returned by a Creature's gather method."""
+    SUCCESS         = 1 # Successfully gathered some resource.
+    DEPLETED        = 2 # There's no more resource left.
+    FULL            = 3 # Can't hold any more gold.
 
-        return {'action': 'move', 'dx': dx, 'dy': dy}
+
+class AttackResult(object):
+    """Possible outcomes returned by a Creature's attack method."""
+    HIT             = 1 # Succesfully dealt damage to target.
+    MISS            = 2 # Failed to hit target.
+    KILLED          = 3 # Hit and also killed the target.
+    NOT_IN_RANGE    = 4 # Target is too far.
+    DEAD            = 5 # Target is already dead.
