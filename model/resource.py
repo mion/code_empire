@@ -3,15 +3,16 @@ class Resource(object):
     Creatures get gold from Resources deposits that are scattered across the map.
     """
 
-    def __init__(self, name, gold_amount, gold_flux):
+    def __init__(self, name, gold_amount, gold_flux, position=None):
         """
         :param: name The resource's name (eg: Tree, Gold Mine, etc)
         :param: gold_amount The amount of gold stored in this resource.
         :param: gold_flux The amount of gold that can be retrieved per turn by any creature.
         """
-        self.name = name
+        self.name        = name
         self.gold_amount = gold_amount
-        self.gold_flux = gold_flux
+        self.gold_flux   = gold_flux
+        self.position    = position
 
     def depleted(self):
         return self.gold_amount <= 0
