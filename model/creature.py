@@ -86,7 +86,7 @@ class Creature(object):
             return AttackResult.MISS
 
     def is_full(self):
-        return self.gold_carried < self.max_gold_carried
+        return self.gold_carried >= self.max_gold_carried
 
     def space_left(self):
         return self.max_gold_carried - self.gold_carried
@@ -96,23 +96,28 @@ class Creature(object):
             if self.is_full():
                 return GatherResult.FULL
             else:
-                self.gold_carried += resource.gather()
-                return GatherResult.SUCCESS
+                if self.space_left() > resource.gold_flux:
+                    self.gold_carried += resource.gather()
+                    return GatherResult.SUCCESS
+                else:
+                    self.gold_carried += resource.gather(self.space_left)
+                    return GatherResult.CAPPED
         else:
             return GatherResult.DEPLETED
 
 
 class GatherResult(object):
     """Possible outcomes returned by a Creature's gather method."""
-    SUCCESS         = 1 # Successfully gathered some resource.
-    DEPLETED        = 2 # There's no more resource left.
-    FULL            = 3 # Can't hold any more gold.
+    SUCCESS         = 'Success' # Successfully gathered resource, STILL has space left.
+    CAPPED          = 'Capped' # Succesfully gathered resource, NO more space (ie, is now full).
+    DEPLETED        = 'Depleted' # There's no more resource left.
+    FULL            = 'Full' # Can't hold any more gold.
 
 
 class AttackResult(object):
     """Possible outcomes returned by a Creature's attack method."""
-    HIT             = 1 # Succesfully dealt damage to target.
-    MISS            = 2 # Failed to hit target.
-    KILLED          = 3 # Hit and also killed the target.
-    NOT_IN_RANGE    = 4 # Target is too far.
-    DEAD            = 5 # Target is already dead.
+    HIT             = 'Hit' # Succesfully dealt damage to target.
+    MISS            = 'Miss' # Failed to hit target.
+    KILLED          = 'Killed' # Hit and also killed the target.
+    NOT_IN_RANGE    = 'NotInRange' # Target is too far.
+    DEAD            = 'Dead' # Target is already dead.

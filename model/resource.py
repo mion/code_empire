@@ -16,11 +16,17 @@ class Resource(object):
     def depleted(self):
         return self.gold_amount <= 0
 
-    def gather(self):
+    def gather(self, gold_flux_cap=None):
         if self.depleted():
             return 0
-        elif self.gold_amount - self.gold_flux > 0:
-            self.gold_amount -= self.gold_flux
+
+        if gold_flux_cap:
+            gold_extracted = min(gold_flux_cap, self.gold_flux)
+        else:
+            gold_extracted = self.gold_flux
+        
+        if self.gold_amount - gold_extracted > 0:
+            self.gold_amount -= gold_extracted
             return self.gold_flux
         else:
             remaining_gold = self.gold_amount
