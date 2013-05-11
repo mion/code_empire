@@ -14,6 +14,7 @@ class World:
         self.tilemap = TileMap(World.MAP_SIZE)
         self.creatures = {}
         self.players = {}
+        self.resources = {}
 
         self.red_player = red_player
         self.blue_player = blue_player
@@ -40,9 +41,19 @@ class World:
         self.insert_creature(Creature('Peon', blue_player, position=Point(0, 1)))
         self.insert_creature(Creature('Peon', blue_player, position=Point(1, 0)))
 
-    def generate_map(self):
+    def generate_map(self, 
+                     init_creatures=2, 
+                     init_gold=100, 
+                     init_resources=5):
         """
         Randomically place fortresses, starting creatures and resources.
+
+        Keyword arguments:
+        init_creatures  -- The number of starting creatures for each player.
+        init_gold       -- The amount of starting gold for each player.
+        init_resources  -- The number of starting resources scattered around
+                           the map. This does NOT include the two large resources
+                           that are created near each player's fortress.
         """
         return
 
@@ -84,6 +95,9 @@ class World:
             return True
         else:
             return False
+
+    def get_entity_at(self, x, y):
+        return self.tilemap.get_tile_at(x, y)
 
     def standing_players(self):
         return filter(lambda player: len(self.players[player]['creatures']) > 0, self.players.keys())

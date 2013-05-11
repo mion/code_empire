@@ -1,4 +1,5 @@
 import unittest
+
 from util.point import Point
 from model.resource import Resource
 from model.creature import Creature
