@@ -14,7 +14,7 @@ TASK LIST
 ## Normal
 [ ] Create unit tests for game controller.
 [ ] Create unit tests for world.
-[ ] Refactor: world.py - change method prototypes to use Point instead of x and y.
+[ ] Refactor: world.py, tilemap.py - change method prototypes to use Point instead of x and y.
 ## Low
 [ ] Refactor: world.py - create a method for each action and handle the message in a creature controller class.
 [ ] Refactor: world.py - create a class that handles winning, losing and drawing criteria.

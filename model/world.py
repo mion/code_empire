@@ -1,3 +1,4 @@
+import random
 from model.fortress import Fortress
 from model.creature import Creature
 from model.resource import Resource
@@ -8,7 +9,7 @@ from util.log import log
 
 
 class World:
-    MAP_SIZE = 10
+    MAP_SIZE = 9 # Always an odd number!
 
     def __init__(self, red_player, blue_player):
         self.tilemap = TileMap(World.MAP_SIZE)
@@ -24,26 +25,19 @@ class World:
                                'creatures': {}, 
                                'gold': 0}
 
-        self.players[red_player]['fortress'].position = Point(World.MAP_SIZE - 1, World.MAP_SIZE - 1)
+        self.players[red_player]['fortress'].position = Point(World.MAP_SIZE - 1)
         self.insert_fortress(self.players[red_player]['fortress'])
-        # self.tilemap.set_tile_at(self.players[red_player]['fortress'].position.x, 
-        #                          self.players[red_player]['fortress'].position.y, 
-        #                          self.players[red_player]['fortress'])
         self.insert_creature(Creature('Peon', red_player, position=Point(World.MAP_SIZE - 1, World.MAP_SIZE - 2)))
         self.insert_creature(Creature('Peon', red_player, position=Point(World.MAP_SIZE - 2, World.MAP_SIZE - 1)))
 
-        self.players[blue_player]['fortress'].position = Point(0, 0)
+        self.players[blue_player]['fortress'].position = Point(0)
         self.insert_fortress(self.players[blue_player]['fortress'])
-        # self.tilemap.set_tile_at(self.players[blue_player]['fortress'].position.x, 
-        #                          self.players[blue_player]['fortress'].position.y, 
-        #                          self.players[blue_player]['fortress'])
-
         self.insert_creature(Creature('Peon', blue_player, position=Point(0, 1)))
         self.insert_creature(Creature('Peon', blue_player, position=Point(1, 0)))
 
-    def generate_map(self, 
-                     init_creatures=2, 
-                     init_gold=100, 
+    def generate_map(self,
+                     init_creatures=2,
+                     init_gold=100,
                      init_resources=5):
         """
         Randomically place fortresses, starting creatures and resources.
@@ -55,33 +49,35 @@ class World:
                            the map. This does NOT include the two large resources
                            that are created near each player's fortress.
         """
+        # Generate unique random points
+        starting_resources_positions = Point.generate(random.random,
+                                                      lower=Point(0),
+                                                      upper=Point(World.MAP_SIZE),
+                                                      count=init_resources)
+
         return
 
     def insert_fortress(self, fortress):
-        """
-        Insert a fortress into the world.
-        """
         self.tilemap.set_tile_at(fortress.position.x, fortress.position.y, fortress)
 
     def insert_creature(self, c):
-        """
-        Insert a creature into the world.
-        """
         self.creatures[c.id] = c
         self.players[c.player]['creatures'][c.id] = c
         self.tilemap.set_tile_at(c.position.x, c.position.y, c)
 
+    def insert_resource(self, r):
+        self.resources[r.id] = r
+        self.tilemap.set_tile_at(r.position.x, r.position.y, r)
+
     def remove_creature(self, c):
-        """
-        Remove a creature from the world.
-        """
         del self.creatures[c.id]
         del self.players[c.player]['creatures'][c.id]
         self.tilemap.set_tile_at(c.position.x, c.position.y, TileMap.EMPTY_TILE)
 
     def move_creature(self, c, dx, dy):
         """
-        Attempt to move a creature by increasing its x and y.
+        Attempt to move a creature by a incrementing its x and y.
+        Returns True if successful, False otherwise.
         """
         to_x = c.position.x + dx
         to_y = c.position.y + dy
