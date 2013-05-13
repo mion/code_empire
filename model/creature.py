@@ -106,7 +106,7 @@ class Creature(object):
 
 
 class GatherResult(object):
-    """Possible outcomes returned by a Creature's gather method."""
+    """Possible return values for the 'gather' method."""
     SUCCESS         = 'Success' # Successfully gathered resource, STILL has space left.
     CAPPED          = 'Capped' # Succesfully gathered resource, NO more space (ie, is now full).
     DEPLETED        = 'Depleted' # There's no more resource left.
@@ -114,9 +114,10 @@ class GatherResult(object):
 
 
 class AttackResult(object):
-    """Possible outcomes returned by a Creature's attack method."""
+    """Possible return values for the 'attack' method."""
     HIT             = 'Hit' # Succesfully dealt damage to target.
     MISS            = 'Miss' # Failed to hit target.
     KILLED          = 'Killed' # Hit and also killed the target.
     NOT_IN_RANGE    = 'NotInRange' # Target is too far.
     DEAD            = 'Dead' # Target is already dead.
+    

@@ -193,3 +193,4 @@ class World:
     def clean(self, dead_creatures=None):
         for dead in dead_creatures:
             self.remove_creature(dead)
+            

@@ -7,10 +7,16 @@ from model.creature import AttackResult
 from model.creature import GatherResult
 
 
+def suite():
+    combat_tests = unittest.TestLoader().loadTestsFromTestCase(CombatTestCase)
+    resource_tests = unittest.TestLoader().loadTestsFromTestCase(ResourceTestCase)
+    return unittest.TestSuit([combat_tests, resource_tests])
+
+
 class CombatTestCase(unittest.TestCase):
     def setUp(self):
-        self.attacker = Creature(name="attacker", player="player_1", level=1, position=Point(0, 0));
-        self.defender = Creature(name="defender", player="player_2", level=1, position=Point(1, 0));
+        self.attacker = Creature(name="attacker", player="player_1", level=1, position=Point(0, 0))
+        self.defender = Creature(name="defender", player="player_2", level=1, position=Point(1, 0))
 
     def test_attack_hit(self):
         self.attacker.accuracy = 1.0
