@@ -138,38 +138,6 @@ class World:
 
         return info
 
-    def handle_creature_response(self, resp, c):
-        """
-        Handle a creature's response to the think method.
-        """
-        c.memory = resp['memory']
-
-        # TODO: check for errors (e.g.: 'target' is there but no 'target_x', target class, etc)
-        # TODO: optional 'target_id' or 'target_x' and 'target_y'
-
-        if resp['action'] == 'move':
-            dx, dy = resp.get('dx', 0), resp.get('dy', 0)
-            self.move_creature(c, dx, dy)
-
-        elif resp['action'] == 'attack':
-            target_x, target_y = resp.get('target_x', 0), resp.get('target_y', 0)
-            target_creature = self.tilemap.get_tile_at(target_x, target_y)
-            if target_creature.__class__ == Creature:
-                c.attack(target_creature)
-
-        elif resp['action'] == 'gather':
-            resource_x, resource_y = resp.get('resource_x', 0), resp.get('resource_y', 0)
-            target_resource = self.tilemap.get_tile_at(resource_x, resource_y)
-            if target_resource.__class__ == Resource:
-                c.gather(target_resource)
-
-        elif resp['action'] == 'wander':
-            self.move_creature(c, Dice.roll(2) - 1, Dice.roll(2) - 1)
-
-        if resp.get('log', None):
-            for l in resp['log']:
-                log(l, "{}'s {} at {}".format(c.player, c.name, c.position))
-
     def gather_fortress_info(self, c):
         return
 
@@ -193,4 +161,62 @@ class World:
     def clean(self, dead_creatures=None):
         for dead in dead_creatures:
             self.remove_creature(dead)
-            
+
+    def handle_creature_response(self, resp, c):
+        """
+        Handle a creature's response to the think method.
+        """
+        c.memory = resp['memory']
+
+        # All possible actions a creature may perform.
+        # TODO: Implement this!
+        # TODO: Set this table as a Class constant, as this is probably slow.
+        action = {
+            'move':     handle_move,
+            'attack':   handle_attack,
+            'gather':   handle_gather,
+            'wander':   handle_wander
+        }.get(resp['action'], None)
+
+        if action:
+            action(resp, c)
+        else:
+            # TODO: Create an UnknownActionError class and throw it here!
+            #       Possibly make it inherit from some FatalErrorClass that ends the game.
+            #       (Well, maybe not in this case)
+            return
+
+
+        # TODO: Check for errors (e.g.: 'target' is there but no 'target_x', target class, etc)
+        # TODO: Add optional choice of 'target_id' over 'target_x' and 'target_y'
+
+        if resp['action'] == 'move':
+            dx, dy = resp.get('dx', 0), resp.get('dy', 0)
+            self.move_creature(c, dx, dy)
+        elif resp['action'] == 'attack':
+            target_x, target_y = resp.get('target_x', 0), resp.get('target_y', 0)
+            target_creature = self.tilemap.get_tile_at(target_x, target_y)
+            if target_creature.__class__ == Creature:
+                c.attack(target_creature)
+        elif resp['action'] == 'gather':
+            resource_x, resource_y = resp.get('resource_x', 0), resp.get('resource_y', 0)
+            target_resource = self.tilemap.get_tile_at(resource_x, resource_y)
+            if target_resource.__class__ == Resource:
+                c.gather(target_resource)
+        elif resp['action'] == 'wander':
+            self.move_creature(c, Dice.roll(2) - 1, Dice.roll(2) - 1)
+        if resp.get('log', None):
+            for l in resp['log']:
+                log(l, "{}'s {} at {}".format(c.player, c.name, c.position))
+
+        def handle_move(self, creature, resp):
+            return
+
+        def handle_attack(self, creature, resp):
+            return
+
+        def handle_gather(self, creature, resp):
+            return
+
+        def handle_wander(self, creature, resp):
+            return
