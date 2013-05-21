@@ -10,7 +10,7 @@ from model.creature import GatherResult
 def suite():
     combat_tests = unittest.TestLoader().loadTestsFromTestCase(CombatTestCase)
     resource_tests = unittest.TestLoader().loadTestsFromTestCase(ResourceTestCase)
-    return unittest.TestSuit([combat_tests, resource_tests])
+    return unittest.TestSuite([combat_tests, resource_tests])
 
 
 class CombatTestCase(unittest.TestCase):

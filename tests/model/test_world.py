@@ -42,6 +42,7 @@ class WorldTestCase(unittest.TestCase):
         self.assertEqual(Point(0, 0), c.position)
         self.assertEqual(c, self.world.get_entity_at(0, 0))
 
+    @unittest.skip("[world.py] Not ready yet.")
     def test_generate_map(self):
         self.assertTrue(False)
 

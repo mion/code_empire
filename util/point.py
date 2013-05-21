@@ -1,7 +1,7 @@
 class Point(object):
   def __init__(self, x, y=None):
     self.x = x
-    if y:
+    if y != None:
       self.y = y
     else:
       self.y = x
