@@ -220,3 +220,13 @@ class World:
 
         def handle_wander(self, creature, resp):
             return
+
+class Error(Exception):
+    """Base class for errors in this module."""
+    pass
+
+class UnknownActionError(Error):
+    """Raised when no method handles the action from the creature's message."""
+    def __init__(self, action, msg):
+        self.action = action
+        self.msg = msg
