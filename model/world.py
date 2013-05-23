@@ -10,6 +10,7 @@ from util.log import log
 
 class World:
     MAP_SIZE = 9 # Always an odd number!
+    STARTING_AREA_SIZE = 3
 
     def __init__(self, red_player, blue_player):
         self.tilemap = TileMap(World.MAP_SIZE)
@@ -25,15 +26,24 @@ class World:
                                'creatures': {}, 
                                'gold': 0}
 
-        self.players[red_player]['fortress'].position = Point(World.MAP_SIZE - 1)
+        # Generate starting creatures and resources
+        red_lower = Point(World.MAP_SIZE - World.STARTING_AREA_SIZE)
+        red_upper = Point(World.MAP_SIZE)
+        red_starting_points = Point.generate(random, red_lower, red_upper, 4)
+        self.players[red_player]['fortress'].position = red_starting_points[0]
         self.insert_fortress(self.players[red_player]['fortress'])
-        self.insert_creature(Creature('Peon', red_player, position=Point(World.MAP_SIZE - 1, World.MAP_SIZE - 2)))
-        self.insert_creature(Creature('Peon', red_player, position=Point(World.MAP_SIZE - 2, World.MAP_SIZE - 1)))
+        self.insert_creature(Creature('Peon', red_player, position=red_starting_points[1]))
+        self.insert_creature(Creature('Peon', red_player, position=red_starting_points[2]))
+        self.insert_resource(Resource('Gold Mine', 500, 10, position=red_starting_points[3]))
 
-        self.players[blue_player]['fortress'].position = Point(0)
+        blue_lower = Point(0)
+        blue_upper = Point(World.STARTING_AREA_SIZE)
+        blue_starting_points = Point.generate(random, blue_lower, blue_upper, 4)
+        self.players[blue_player]['fortress'].position = blue_starting_points[0]
         self.insert_fortress(self.players[blue_player]['fortress'])
-        self.insert_creature(Creature('Peon', blue_player, position=Point(0, 1)))
-        self.insert_creature(Creature('Peon', blue_player, position=Point(1, 0)))
+        self.insert_creature(Creature('Peon', blue_player, position=blue_starting_points[1]))
+        self.insert_creature(Creature('Peon', blue_player, position=blue_starting_points[2]))
+        self.insert_resource(Resource('Gold Mine', 500, 10, position=blue_starting_points[3]))
 
     def generate_map(self,
                      init_creatures=2,
@@ -111,7 +121,7 @@ class World:
         """
         Information available to that creature.
         """
-        info = {'creatures': {}, 'memory': c.memory}
+        info = {'creatures': {}, 'fortresses': {}, 'resources': {}, 'memory': c.memory}
 
         x0 = max(c.position.x - c.view_range, 0)
         xf = min(c.position.x + c.view_range, World.MAP_SIZE - 1)
@@ -121,20 +131,12 @@ class World:
         for x in range(x0, xf + 1):
             for y in range(y0, yf + 1):
                 if self.tilemap.in_bounds(x, y) and not self.tilemap.is_tile_empty(x, y):
-                    creat = self.tilemap.get_tile_at(x, y)
-                    creature_info = {
-                        'id': creat.id,
-                        'name': creat.name,
-                        'level': creat.level,
-                        'life': creat.life,
-                        'player': creat.player,
-                        'x': x,
-                        'y': y
-                    }
-                    if creat.id != c.id:
-                        info['creatures'][creat.id] = creature_info
+                    entity = self.tilemap.get_tile_at(x, y)
+                    if entity.id != c.id:
+                        entity_info = entity.to_info()
+                        info[entity_info['type']][entity.id] = entity_info # REFACTOR: confusing?
                     else:
-                        info['myself'] = creature_info
+                        info['myself'] = entity.to_info()
 
         return info
 

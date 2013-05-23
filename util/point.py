@@ -35,19 +35,16 @@ class Point(object):
     min, max -- Points denoting the lower (min) and upper (max) bounds for x and y.
                 NOTE: lower.x <= x < upper.x (same for y)
     count -- The number of points to generate. If count is 1, returns a single point.
+             Note that count is actually capped by the amount of all possible points
+             in the region defined by lower/upper.
     """
     if count > 1:
       points = []
 
-      x_ary = [i for i in range(lower.x, upper.x)]
-      y_ary = [i for i in range(lower.y, upper.y)]
+      for x in range(lower.x, upper.x):
+        for y in range(lower.y, upper.y):
+          points.append(Point(x, y)) # REFACTOR: Not very efficient
 
-      random.shuffle(x_ary)
-      random.shuffle(y_ary)
-
-      for x, y in zip(x_ary, y_ary):
-        points.append(Point(x, y))
-
-      return points
+      return random.sample(points, count)
     else:
       return Point(random.randrange(lower.x, upper.x), random.randrange(lower.y, upper.y))

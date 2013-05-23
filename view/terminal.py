@@ -43,6 +43,11 @@ class Terminal:
         for id in self.world.creatures:
             print self.color_str(repr(self.world.creatures[id]), self.creature_color(self.world.creatures[id]))
 
+        print 'RESOURCES'
+        print '-'*10
+        for id in self.world.resources:
+            print repr(self.world.resources[id])
+
         print 'MAP - Round {}'.format(current_round)
         print '-'*10
         print self.str_tilemap()
@@ -60,8 +65,8 @@ class Terminal:
             cols = []
             for j in range(tilemap.size):
                 tile = tilemap.get_tile_at(j, i)
-                if isinstance(tile, Creature): # TODO: hmm use duck typing instead
-                    cols.append("[{}]".format(self.color_str_creature(tilemap.get_tile_at(j, i))))
+                if not tilemap.is_tile_empty(j, i):
+                    cols.append("[{}]".format(self.str_color(tilemap.get_tile_at(j, i))))
                 else:
                     cols.append("[ ]")
 
@@ -70,13 +75,16 @@ class Terminal:
 
         return header+s
 
-    def color_str_creature(self, creature):
-        if creature.player == self.world.red_player:
-            return Colors.RED + str(creature) + Colors.END
-        elif creature.player == self.world.blue_player:
-            return Colors.BLUE + str(creature) + Colors.END
+    def str_color(self, entity):
+        if getattr(entity, 'player', None):
+            if entity.player == self.world.red_player:
+                return Colors.RED + str(entity) + Colors.END
+            elif entity.player == self.world.blue_player:
+                return Colors.BLUE + str(entity) + Colors.END
+            else:
+                raise InvalidPlayerError(entity.player)
         else:
-            raise InvalidPlayerError(creature.player)
+            return str(entity)
 
     def creature_color(self, creature):
         if creature.player == self.world.red_player:

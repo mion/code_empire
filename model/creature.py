@@ -1,21 +1,18 @@
 import random
+from model.entity import Entity
 from util.point import Point
 
 
-class Creature(object):
+class Creature(Entity):
     """
     docstring for Creature
     """
 
-    ID_COUNTER = random.randrange(0, 101) # Add random initial ID to avoid cheating (finding the other player's creatures).
-
     def __init__(self, name, player=None, level=1, position=None):
-        self.id = str(Creature.ID_COUNTER)
-        Creature.ID_COUNTER += random.randrange(1, 101)
+        super(Creature, self).__init__(position=position)
 
         self.name = name
         self.player = player
-        self.position = position
 
         self.level        = level
         self.max_life     = 100*level
@@ -39,6 +36,18 @@ class Creature(object):
 
     def __repr__(self):
         return "{} {}, life: {} [ID: {}]\n".format(self.position, self.name, self.life, self.id)
+
+    def to_info(self):
+        return {
+                'id': self.id,
+                'name': self.name,
+                'type': 'creatures',
+                'level': self.level,
+                'life': self.life,
+                'player': self.player,
+                'x': self.position.x,
+                'y': self.position.y
+               }
 
     def experience_for_level(self, n):
         return 100*n
