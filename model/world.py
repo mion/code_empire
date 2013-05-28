@@ -27,45 +27,61 @@ class World:
                                'gold': 0}
 
         # Generate starting creatures and resources
-        red_lower = Point(World.MAP_SIZE - World.STARTING_AREA_SIZE)
-        red_upper = Point(World.MAP_SIZE)
-        red_starting_points = Point.generate(random, red_lower, red_upper, 4)
-        self.players[red_player]['fortress'].position = red_starting_points[0]
-        self.insert_fortress(self.players[red_player]['fortress'])
-        self.insert_creature(Creature('Peon', red_player, position=red_starting_points[1]))
-        self.insert_creature(Creature('Peon', red_player, position=red_starting_points[2]))
-        self.insert_resource(Resource('Gold Mine', 500, 10, position=red_starting_points[3]))
+        
+        # red_lower = Point(World.MAP_SIZE - World.STARTING_AREA_SIZE)
+        # red_upper = Point(World.MAP_SIZE)
+        # red_starting_points = Point.generate(random, red_lower, red_upper, 4)
+        # self.players[red_player]['fortress'].position = red_starting_points[0]
+        # self.insert_fortress(self.players[red_player]['fortress'])
+        # self.insert_creature(Creature('Peon', red_player, position=red_starting_points[1]))
+        # self.insert_creature(Creature('Peon', red_player, position=red_starting_points[2]))
+        # self.insert_resource(Resource('Gold Mine', 500, 10, position=red_starting_points[3]))
 
-        blue_lower = Point(0)
-        blue_upper = Point(World.STARTING_AREA_SIZE)
-        blue_starting_points = Point.generate(random, blue_lower, blue_upper, 4)
-        self.players[blue_player]['fortress'].position = blue_starting_points[0]
-        self.insert_fortress(self.players[blue_player]['fortress'])
-        self.insert_creature(Creature('Peon', blue_player, position=blue_starting_points[1]))
-        self.insert_creature(Creature('Peon', blue_player, position=blue_starting_points[2]))
-        self.insert_resource(Resource('Gold Mine', 500, 10, position=blue_starting_points[3]))
+        # blue_lower = Point(0)
+        # blue_upper = Point(World.STARTING_AREA_SIZE)
+        # blue_starting_points = Point.generate(random, blue_lower, blue_upper, 4)
+        # self.players[blue_player]['fortress'].position = blue_starting_points[0]
+        # self.insert_fortress(self.players[blue_player]['fortress'])
+        # self.insert_creature(Creature('Peon', blue_player, position=blue_starting_points[1]))
+        # self.insert_creature(Creature('Peon', blue_player, position=blue_starting_points[2]))
+        # self.insert_resource(Resource('Gold Mine', 500, 10, position=blue_starting_points[3]))
 
-    def generate_map(self,
-                     init_creatures=2,
-                     init_gold=100,
-                     init_resources=5):
+    def generate_starting_area(self,
+                               random,
+                               player,
+                               lower,
+                               upper,
+                               num_creatures=2,
+                               start_gold=100,
+                               num_resources=1,
+                               gold_amount_func=lambda i: 100 / (i + 1),
+                               gold_flux_func=lambda i: 10 * (i + 1)):
         """
         Randomically place fortresses, starting creatures and resources.
 
         Keyword arguments:
-        init_creatures  -- The number of starting creatures for each player.
-        init_gold       -- The amount of starting gold for each player.
-        init_resources  -- The number of starting resources scattered around
-                           the map. This does NOT include the two large resources
-                           that are created near each player's fortress.
+        random         -- Python's random module.
+        player         -- The player's name.
+        lower          -- 
+        upper          -- 
+        num_creatures  -- The number of starting creatures for each player.
+        start_gold     -- The amount of starting gold for each player.
+        num_resources  -- The number of starting resources scattered around
+                           the map, one of which is a large resource
+                           that is created near each player's fortress.
         """
-        # Generate unique random points
-        starting_resources_positions = Point.generate(random.random,
-                                                      lower=Point(0),
-                                                      upper=Point(World.MAP_SIZE),
-                                                      count=init_resources)
+        random_points = Point.generate(random.random,
+                                       lower=lower,
+                                       upper=upper,
+                                       count=(1 + num_creatures + num_resources))
 
-        return
+        self.insert_fortress(Fortress(player, start_gold, position=random_points.pop()))
+
+        for i in range(num_creatures):
+            self.insert_creature(Creature('Peon', player, position=random_points.pop()))
+
+        for i in range(num_resources):
+            self.insert_resource(Resource('Gold Mine', gold_amount_func(i), gold_flux_func(i), position=random_points.pop()))
 
     def insert_fortress(self, fortress):
         self.tilemap.set_tile_at(fortress.position.x, fortress.position.y, fortress)

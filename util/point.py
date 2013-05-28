@@ -32,7 +32,7 @@ class Point(object):
 
     Keyword arguments:
     random -- An instance of Python's random object.
-    min, max -- Points denoting the lower (min) and upper (max) bounds for x and y.
+    lower, upper -- Points denoting the lower (min) and upper (max) bounds for x and y.
                 NOTE: lower.x <= x < upper.x (same for y)
     count -- The number of points to generate. If count is 1, returns a single point.
              Note that count is actually capped by the amount of all possible points

@@ -1,8 +1,9 @@
 from model.creature import Creature
 
 class Fortress(Creature):
-    def __init__(self, player, position=None):
+    def __init__(self, player, gold_carried=100, position=None):
         super(Fortress, self).__init__('Fortress', player, 10, position)
+        self.gold_carried = gold_carried
 
     def __str__(self):
         return 'F'

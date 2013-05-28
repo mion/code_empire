@@ -1,6 +1,7 @@
 from error import InvalidPlayerError
 from model.creature import Creature
 
+
 class Colors:
     """
     ASCII escape codes for terminal colors.
@@ -21,6 +22,7 @@ class Colors:
         RED     = ''
         CYAN    = ''
         END    = ''
+
 
 class Terminal:
     def __init__(self, world):
