@@ -1,4 +1,4 @@
-class Point(object):
+class Point(object): # REFACTOR: http://docs.python.org/2/library/collections.html#collections.namedtuple
   def __init__(self, x, y=None):
     self.x = x
     if y != None:

@@ -14,19 +14,28 @@ class World:
 
     def __init__(self, red_player, blue_player):
         self.tilemap = TileMap(World.MAP_SIZE)
-        self.creatures = {}
         self.players = {}
+        self.creatures = {}
         self.resources = {}
+        self.fortresses = {}
 
         self.red_player = red_player
         self.blue_player = blue_player
 
         for p in (red_player, blue_player):
-            self.players[p] = {'fortress': Fortress(p),
-                               'creatures': {}, 
-                               'gold': 0}
+            self.players[p] = {}
 
-        # Generate starting creatures and resources
+        self.generate_starting_area(
+            random, 
+            red_player, 
+            Point(World.MAP_SIZE - World.STARTING_AREA_SIZE), 
+            Point(World.MAP_SIZE))
+
+        self.generate_starting_area(
+            random, 
+            blue_player, 
+            Point(0), 
+            Point(World.STARTING_AREA_SIZE))
         
         # red_lower = Point(World.MAP_SIZE - World.STARTING_AREA_SIZE)
         # red_upper = Point(World.MAP_SIZE)
@@ -70,7 +79,7 @@ class World:
                            the map, one of which is a large resource
                            that is created near each player's fortress.
         """
-        random_points = Point.generate(random.random,
+        random_points = Point.generate(random,
                                        lower=lower,
                                        upper=upper,
                                        count=(1 + num_creatures + num_resources))
@@ -83,8 +92,10 @@ class World:
         for i in range(num_resources):
             self.insert_resource(Resource('Gold Mine', gold_amount_func(i), gold_flux_func(i), position=random_points.pop()))
 
-    def insert_fortress(self, fortress):
-        self.tilemap.set_tile_at(fortress.position.x, fortress.position.y, fortress)
+    def insert_fortress(self, f):
+        self.fortresses[f.id] = f
+        self.players[f.player]['fortress'] = f
+        self.tilemap.set_tile_at(f.position.x, f.position.y, f)
 
     def insert_creature(self, c):
         self.creatures[c.id] = c
