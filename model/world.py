@@ -8,6 +8,17 @@ from util.dice import Dice
 from util.log import log
 
 
+class Error(Exception):
+    """Base class for errors in this module."""
+    pass
+
+
+class UnknownActionError(Error):
+    """Raised when no method handles the action from the creature's message."""
+    def __init__(self, action):
+        self.action = action
+
+
 class World:
     MAP_SIZE = 9 # Always an odd number!
     STARTING_AREA_SIZE = 3
@@ -23,7 +34,7 @@ class World:
         self.blue_player = blue_player
 
         for p in (red_player, blue_player):
-            self.players[p] = {}
+            self.players[p] = dict(creatures={}, fortress={})
 
         self.generate_starting_area(
             random, 
@@ -236,12 +247,3 @@ class World:
         if resp.get('log', None):
             for l in resp['log']:
                 log(l, "{}'s {} at {}".format(c.player, c.name, c.position))
-
-class Error(Exception):
-    """Base class for errors in this module."""
-    pass
-
-class UnknownActionError(Error):
-    """Raised when no method handles the action from the creature's message."""
-    def __init__(self, action):
-        self.action = action
