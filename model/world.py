@@ -1,4 +1,5 @@
 import random
+
 from model.fortress import Fortress
 from model.creature import Creature
 from model.resource import Resource
@@ -36,35 +37,18 @@ class World:
         for p in (red_player, blue_player):
             self.players[p] = dict(creatures={}, fortress={})
 
+    def generate(self, random):
         self.generate_starting_area(
             random, 
-            red_player, 
+            self.red_player, 
             Point(World.MAP_SIZE - World.STARTING_AREA_SIZE), 
             Point(World.MAP_SIZE))
 
         self.generate_starting_area(
             random, 
-            blue_player, 
+            self.blue_player, 
             Point(0), 
             Point(World.STARTING_AREA_SIZE))
-        
-        # red_lower = Point(World.MAP_SIZE - World.STARTING_AREA_SIZE)
-        # red_upper = Point(World.MAP_SIZE)
-        # red_starting_points = Point.generate(random, red_lower, red_upper, 4)
-        # self.players[red_player]['fortress'].position = red_starting_points[0]
-        # self.insert_fortress(self.players[red_player]['fortress'])
-        # self.insert_creature(Creature('Peon', red_player, position=red_starting_points[1]))
-        # self.insert_creature(Creature('Peon', red_player, position=red_starting_points[2]))
-        # self.insert_resource(Resource('Gold Mine', 500, 10, position=red_starting_points[3]))
-
-        # blue_lower = Point(0)
-        # blue_upper = Point(World.STARTING_AREA_SIZE)
-        # blue_starting_points = Point.generate(random, blue_lower, blue_upper, 4)
-        # self.players[blue_player]['fortress'].position = blue_starting_points[0]
-        # self.insert_fortress(self.players[blue_player]['fortress'])
-        # self.insert_creature(Creature('Peon', blue_player, position=blue_starting_points[1]))
-        # self.insert_creature(Creature('Peon', blue_player, position=blue_starting_points[2]))
-        # self.insert_resource(Resource('Gold Mine', 500, 10, position=blue_starting_points[3]))
 
     def generate_starting_area(self,
                                random,
@@ -228,7 +212,6 @@ class World:
         c.memory = resp['memory']
 
         # All possible actions a creature may perform.
-        # TODO: Implement this!
         # TODO: Set this table as a Class constant, as this is probably slow.
         handle = {
             'move':     self.handle_move,

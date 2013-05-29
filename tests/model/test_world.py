@@ -10,7 +10,10 @@ class WorldTestCase(unittest.TestCase):
     def setUp(self):
         self.world = World('red', 'blue')
 
-    def test_init(self):
+    def test_generate(self):
+        import random
+        
+        self.world.generate(random)
         self.assertGreater(len(self.world.creatures), 0)
         self.assertGreater(len(self.world.players) , 0)
 

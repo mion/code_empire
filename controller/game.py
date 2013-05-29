@@ -2,7 +2,8 @@ import sys
 import subprocess
 import json
 import md5
-from random import random
+import random
+
 from model.creature import Creature
 from model.fortress import Fortress
 from model.world import World
@@ -15,10 +16,11 @@ class Game(object):
 
     def __init__(self, red_player, blue_player):
         self.world = World(red_player, blue_player)
+        self.world.generate(random)
         self.terminal = Terminal(self.world)
 
     def random_hash(self):
-        return md5.new(str(random())).hexdigest()
+        return md5.new(str(random.random())).hexdigest()
 
     def call_think(self, player, info_filename, response_filename):
         """
