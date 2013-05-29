@@ -12,10 +12,9 @@ class WorldTestCase(unittest.TestCase):
 
     def test_generate(self):
         import random
-        
+
         self.world.generate(random)
         self.assertGreater(len(self.world.creatures), 0)
-        self.assertGreater(len(self.world.players) , 0)
 
     def test_insert_creature(self):
         c = Creature(name='creature', player='red', position=Point(0, 0))
@@ -27,7 +26,6 @@ class WorldTestCase(unittest.TestCase):
         self.assertEqual(c, self.world.get_entity_at(c.position.x, 
                                                      c.position.y))
         self.assertEqual(c, self.world.creatures[c.id])
-        self.assertEqual(c, self.world.players['red']['creatures'][c.id])
 
     def test_move_creature(self):
         c = Creature(name='creature', player='red', position=Point(0, 0))

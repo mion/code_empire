@@ -26,16 +26,11 @@ class World:
 
     def __init__(self, red_player, blue_player):
         self.tilemap = TileMap(World.MAP_SIZE)
-        self.players = {}
         self.creatures = {}
         self.resources = {}
         self.fortresses = {}
-
         self.red_player = red_player
         self.blue_player = blue_player
-
-        for p in (red_player, blue_player):
-            self.players[p] = dict(creatures={}, fortress={})
 
     def generate(self, random):
         self.generate_starting_area(
@@ -89,12 +84,10 @@ class World:
 
     def insert_fortress(self, f):
         self.fortresses[f.id] = f
-        self.players[f.player]['fortress'] = f
         self.tilemap.set_tile_at(f.position.x, f.position.y, f)
 
     def insert_creature(self, c):
         self.creatures[c.id] = c
-        self.players[c.player]['creatures'][c.id] = c
         self.tilemap.set_tile_at(c.position.x, c.position.y, c)
 
     def insert_resource(self, r):
@@ -103,7 +96,6 @@ class World:
 
     def remove_creature(self, c):
         del self.creatures[c.id]
-        del self.players[c.player]['creatures'][c.id]
         self.tilemap.set_tile_at(c.position.x, c.position.y, TileMap.EMPTY_TILE)
 
     def move_creature(self, c, dx, dy):
@@ -128,7 +120,7 @@ class World:
         return self.tilemap.get_tile_at(x, y)
 
     def standing_players(self):
-        return filter(lambda player: len(self.players[player]['creatures']) > 0, self.players.keys())
+        return 
 
     def winner(self):
         # TODO: check win/draw special cases.

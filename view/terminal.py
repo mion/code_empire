@@ -42,13 +42,13 @@ class Terminal:
 
         print 'CREATURES'
         print '-'*10
-        for id in self.world.creatures:
-            print self.color_str(repr(self.world.creatures[id]), self.creature_color(self.world.creatures[id]))
+        for creature in self.world.creatures.iteritems():
+            print self.color_str(repr(creature), self.creature_color(creature))
 
         print 'RESOURCES'
         print '-'*10
-        for id in self.world.resources:
-            print repr(self.world.resources[id])
+        for resource in self.world.resources.iteritems():
+            print repr(resource)
 
         print 'MAP - Round {}'.format(current_round)
         print '-'*10
@@ -58,10 +58,7 @@ class Terminal:
         tilemap = self.world.tilemap
 
         s = ''
-        header = '  '
-        for j in range(tilemap.size):
-            header += " {} ".format(j)
-        header += "\n"
+        header = ' '.join([j for j in range(tilemap.size)])
 
         for i in range(tilemap.size):
             cols = []
