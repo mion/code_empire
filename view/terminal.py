@@ -28,17 +28,18 @@ class Terminal:
     def __init__(self, world):
         self.world = world
         self.colors = dict(
-            magenta='\033[95m',
+            red='\033[91m',
             blue='\033[94m',
             green='\033[92m',
             yellow='\033[93m',
-            red='\033[91m',
+            magenta='\033[95m',
             cyan='\033[96m',
             end='\033[0m') # ASCII escape codes for terminal colors.
 
         self.player_colors = {}
+        available_colors = ['magenta', 'cyan', 'green', 'yellow', 'blue', 'red']
         for i, player in enumerate(world.players.iterkeys()):
-            self.player_colors[player] = self.colors.values()[i]
+            self.player_colors[player] = self.colors[available_colors.pop()]
 
     def display(self, current_round):
         """
@@ -46,8 +47,8 @@ class Terminal:
         """
         print 'FORTRESSES'
         print '-'*10
-        for name, player in self.world.players.iteritems():
-            print self.player_colors[name] + repr(player['fortress']) + self.colors['end']
+        for fortress in self.world.fortresses.itervalues():
+            print self.player_colors[fortress.player] + repr(fortress) + self.colors['end']
 
         print 'CREATURES'
         print '-'*10
@@ -67,32 +68,21 @@ class Terminal:
         tilemap = self.world.tilemap
 
         s = ''
-        header = ' '.join([j for j in range(tilemap.size)])
+        header = '  '.join([str(j) for j in range(tilemap.size)])
 
         for i in range(tilemap.size):
-            cols = []
-            for j in range(tilemap.size):
-                tile = tilemap.get_tile_at(j, i)
-                if not tilemap.is_tile_empty(j, i):
-                    cols.append("[{}]".format(self.str_color(tilemap.get_tile_at(j, i))))
-                else:
-                    cols.append("[ ]")
-
-            row = ''.join(cols)
+            row = ''.join([self.str_tile(tilemap.get_tile_at(j, i)) for j in range(tilemap.size)])
             s += "{} {}\n".format(i, row)
 
-        return header+s
+        return "   {}\n{}".format(header, s)
 
-    def str_color(self, entity):
-        if getattr(entity, 'player', None):
-            if entity.player == self.world.red_player:
-                return Colors.RED + str(entity) + Colors.END
-            elif entity.player == self.world.blue_player:
-                return Colors.BLUE + str(entity) + Colors.END
-            else:
-                raise InvalidPlayerError(entity.player)
-        else:
-            return str(entity)
+    def str_tile(self, tile):
+        s = str(tile) if tile else ' '
 
-    def color_str(self, string, color):
-        return color + string + Colors.END
+        if getattr(tile, 'player', None):
+            s = self.coloured(s, self.player_colors[tile.player])
+        
+        return "[{}]".format(s)
+
+    def coloured(self, s, color):
+        return color + s + self.colors['end']

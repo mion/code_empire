@@ -36,7 +36,7 @@ class World:
             self.players[player_name] = dict(fortress=None, creatures=Set([]))
 
     def generate(self, random):
-        # For now, let's hard code 2 players only
+        # For now, hard code 2 players
         self.generate_starting_area(
             random, 
             self.players.keys()[0], 
