@@ -7,7 +7,7 @@ class Creature(Entity):
     """
     docstring for Creature
     """
-
+    # TODO: player should be renamed to player_name
     def __init__(self, name, player=None, level=1, position=None):
         super(Creature, self).__init__(position=position)
 

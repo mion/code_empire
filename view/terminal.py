@@ -4,7 +4,7 @@ from model.creature import Creature
 
 class Colors:
     """
-    ASCII escape codes for terminal colors.
+    
     """
     MAGENTA = '\033[95m'
     BLUE 	= '\033[94m'
@@ -27,27 +27,36 @@ class Colors:
 class Terminal:
     def __init__(self, world):
         self.world = world
+        self.colors = dict(
+            magenta='\033[95m',
+            blue='\033[94m',
+            green='\033[92m',
+            yellow='\033[93m',
+            red='\033[91m',
+            cyan='\033[96m',
+            end='\033[0m') # ASCII escape codes for terminal colors.
+
+        self.player_colors = {}
+        for i, player in enumerate(world.players.iterkeys()):
+            self.player_colors[player] = self.colors.values()[i]
 
     def display(self, current_round):
         """
         Prints the map on the console.
         """
-        red = self.world.red_player
-        blue = self.world.blue_player
-
         print 'FORTRESSES'
         print '-'*10
-        print self.color_str(repr(self.world.players[red]['fortress']), Colors.RED)
-        print self.color_str(repr(self.world.players[blue]['fortress']), Colors.BLUE)
+        for name, player in self.world.players.iteritems():
+            print self.player_colors[name] + repr(player['fortress']) + self.colors['end']
 
         print 'CREATURES'
         print '-'*10
-        for creature in self.world.creatures.iteritems():
-            print self.color_str(repr(creature), self.creature_color(creature))
+        for creature in self.world.creatures.itervalues():
+            print self.player_colors[creature.player] + repr(creature) + self.colors['end']
 
         print 'RESOURCES'
         print '-'*10
-        for resource in self.world.resources.iteritems():
+        for resource in self.world.resources.itervalues():
             print repr(resource)
 
         print 'MAP - Round {}'.format(current_round)
@@ -84,12 +93,6 @@ class Terminal:
                 raise InvalidPlayerError(entity.player)
         else:
             return str(entity)
-
-    def creature_color(self, creature):
-        if creature.player == self.world.red_player:
-            return Colors.RED
-        else:
-            return Colors.BLUE
 
     def color_str(self, string, color):
         return color + string + Colors.END

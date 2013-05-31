@@ -1,5 +1,7 @@
 import random
 
+from sets import Set
+
 from model.fortress import Fortress
 from model.creature import Creature
 from model.resource import Resource
@@ -15,7 +17,7 @@ class Error(Exception):
 
 
 class UnknownActionError(Error):
-    """Raised when no method handles the action from the creature's message."""
+    """Raised when no method handles the action from the AI message."""
     def __init__(self, action):
         self.action = action
 
@@ -24,24 +26,26 @@ class World:
     MAP_SIZE = 9 # Always an odd number!
     STARTING_AREA_SIZE = 3
 
-    def __init__(self, red_player, blue_player):
+    def __init__(self, *player_names):
         self.tilemap = TileMap(World.MAP_SIZE)
-        self.creatures = {}
-        self.resources = {}
-        self.fortresses = {}
-        self.red_player = red_player
-        self.blue_player = blue_player
+        self.creatures = {} # maps creature.id to creature
+        self.resources = {} # maps resource.id to resource
+        self.fortresses = {} # maps fortress.id to fortress
+        self.players = {} # maps player_name (string) to a dict
+        for player_name in player_names:
+            self.players[player_name] = dict(fortress=None, creatures=Set([]))
 
     def generate(self, random):
+        # For now, let's hard code 2 players only
         self.generate_starting_area(
             random, 
-            self.red_player, 
+            self.players.keys()[0], 
             Point(World.MAP_SIZE - World.STARTING_AREA_SIZE), 
             Point(World.MAP_SIZE))
 
         self.generate_starting_area(
             random, 
-            self.blue_player, 
+            self.players.keys()[1], 
             Point(0), 
             Point(World.STARTING_AREA_SIZE))
 
@@ -84,10 +88,12 @@ class World:
 
     def insert_fortress(self, f):
         self.fortresses[f.id] = f
+        self.players[f.player]['fortress'] = f
         self.tilemap.set_tile_at(f.position.x, f.position.y, f)
 
     def insert_creature(self, c):
         self.creatures[c.id] = c
+        self.players[c.player]['creatures'].add(c)
         self.tilemap.set_tile_at(c.position.x, c.position.y, c)
 
     def insert_resource(self, r):
@@ -96,6 +102,7 @@ class World:
 
     def remove_creature(self, c):
         del self.creatures[c.id]
+        self.players[c.player]['creatures'].remove(c)
         self.tilemap.set_tile_at(c.position.x, c.position.y, TileMap.EMPTY_TILE)
 
     def move_creature(self, c, dx, dy):
@@ -120,7 +127,7 @@ class World:
         return self.tilemap.get_tile_at(x, y)
 
     def standing_players(self):
-        return 
+        return filter(lambda player: len(player['creatures']) > 0, self.players.values())
 
     def winner(self):
         # TODO: check win/draw special cases.
