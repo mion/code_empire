@@ -16,28 +16,30 @@ The objective is to **destroy the other player's fortress**.
 
 ## How to play?
 1. Fork this repo
-2. Create a directory with **your Github username** inside ```ai```` (you can find a few example AIs in there).
-3. Write your AI, commit and push your changes.
+2. Create a directory with **your Github username** inside ```ai```.
+3. Write your AI, commit and push your changes. A few example AIs are provided for you.
 4. That's it! You're now playing Code Empire.
 
-We'll look for the latest commit on your master branch and automatically update it on the game server.<br>
+A cronjob looks for the latest commit on your master branch and automatically update it on the game server.<br>
 All other branches are ignored.
 
 ## Gameplay
 <insert detailed instructions here>
 
-
 TODOs
 -----
-## High
+
+##### High
 - Refactor: creature.py, fortress.py, resource.py - create an Entity class from which they inherit ID, position, etc.
 - Performance refactor: game.py - use just use one file for communication (instead of opening and closing), Unix-style!
-## Normal
+
+#####Normal
 - Create unit/func tests for game controller.
 - Create unit tests for world.
 - Refactor: world.py, tilemap.py - change method prototypes to use Point instead of x and y.
 - Refactor: world.py - create a method for each action and handle the message in a creature controller class. Put them in a Controller!
-## Low
+
+##### Low
 - Refactor: world.py - create a class that handles winning, losing and drawing criteria.
 - Refactor: creature.py - rename 'position' to 'pos'.
 - Creature a class Direction < Point, with x and y in range [1, -1] and constants NORTH, SOUTH, etc.
