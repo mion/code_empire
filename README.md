@@ -2,6 +2,8 @@ Code Empire
 -----------
 **Work In Progress**: v1.0 will be posted on HN as soon as it's playable.<br>
 
+![Battle of the Languages](http://emkun.deviantart.com/art/Battle-228756398 "Who will win?")
+
 ## What is it?
 A programming game in the likes of "Age of Empires" to test your skills.<br>
 In *Code Empire*, you are to implement the AI code that controls a small army seeking to destroy the enemy forces.<br>
@@ -20,14 +22,15 @@ The objective is to **destroy the other player's fortress**.
 3. Write your AI, commit and push your changes. A few example AIs are provided for you.
 4. That's it! You're now playing Code Empire.
 
-A cronjob looks for the latest commit on your master branch and automatically update it on the game server.<br>
+A cronjob looks for the latest commit on your master branch and automatically updates it on the game server.<br>
 All other branches are ignored.
 
 ## Gameplay
-<insert detailed instructions here>
+...insert detailed instructions here...
 
-TODOs
------
+---
+
+### TODOs
 
 ##### High
 - Refactor: creature.py, fortress.py, resource.py - create an Entity class from which they inherit ID, position, etc.
