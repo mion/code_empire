@@ -54,9 +54,9 @@ class Game(object):
         import os
         os.system('rm ' + Game.TEMP_DIR + '*')
 
-    def start(self, interactive=True):
+    def play(self, interactive=True):
         """
-        Start and play a whole match.
+        Play a whole match.
         """
         if interactive:
                 self.terminal.display(0)
