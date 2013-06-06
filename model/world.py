@@ -30,24 +30,12 @@ class World:
 
     def __init__(self, *player_names):
         self.tilemap = TileMap(World.MAP_SIZE)
-        self.creatures = CreatureADT()
-        self.resources = ResourceADT()
-        self.fortresses = FortressADT()
+        self.creatures = {} #CreatureADT()
+        self.resources = {} #ResourceADT()
+        self.fortresses = {} #FortressADT()
         self.players = {} # maps player_name (string) to a dict
         for player_name in player_names:
             self.players[player_name] = dict(fortress=None, creatures=Set([]))
-
-    def get_player_by_name(self, name):
-        return self.players[name]
-
-    def get_creature_by_id(self, id):
-        return self.creatures[id]
-
-    def get_resource_by_id(self, id):
-        return self.resources[id]
-
-    def get_fortress_by_id(self, id):
-        return self.fortresses[id]
 
     def get_entity_at(self, x, y):
         return self.tilemap.get_tile_at(x, y)
