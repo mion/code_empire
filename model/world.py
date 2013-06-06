@@ -129,7 +129,7 @@ class World:
             return False
 
     def standing_players(self):
-        return filter(lambda player: len(player['creatures']) > 0, self.players.values())
+        return [p for p in self.players.values() if len(p['creatures']) > 0]
 
     def winner(self):
         # TODO: check win/draw special cases.

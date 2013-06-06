@@ -2,6 +2,7 @@ import random
 from model.entity import Entity
 from model.entity import EntityADT
 
+
 class Resource(Entity):
     """
     Creatures get gold from Resources deposits that are scattered across the map.
@@ -60,4 +61,3 @@ class ResourceADT(EntityADT):
     """Resource Abstract Data Type"""
     def __init__(self):
         super(ResourceADT, self).__init__()
-        
