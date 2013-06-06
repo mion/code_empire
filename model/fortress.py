@@ -1,4 +1,5 @@
 from model.creature import Creature
+from model.creature import CreatureADT
 
 class Fortress(Creature):
     def __init__(self, player, gold_carried=100, position=None):
@@ -22,3 +23,9 @@ class Fortress(Creature):
 
     def think(self, info):
         return
+
+
+class FortressADT(CreatureADT):
+    """Fortress Abstract Data Type"""
+    def __init__(self):
+        super(FortressADT, self).__init__()

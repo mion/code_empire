@@ -1,5 +1,6 @@
 import random
 from model.entity import Entity
+from model.entity import EntityADT
 from util.point import Point
 
 
@@ -129,4 +130,9 @@ class AttackResult(object):
     KILLED          = 'Killed' # Hit and also killed the target.
     NOT_IN_RANGE    = 'NotInRange' # Target is too far.
     DEAD            = 'Dead' # Target is already dead.
-    
+
+
+class CreatureADT(EntityADT):
+    """Creature Abstract Data Type"""
+    def __init__(self):
+        super(CreatureADT, self).__init__()

@@ -1,10 +1,12 @@
 import random
-
 from sets import Set
 
 from model.fortress import Fortress
+from model.fortress import FortressADT
 from model.creature import Creature
+from model.creature import CreatureADT
 from model.resource import Resource
+from model.resource import ResourceADT
 from model.tilemap import TileMap
 from util.point import Point
 from util.dice import Dice
@@ -28,12 +30,27 @@ class World:
 
     def __init__(self, *player_names):
         self.tilemap = TileMap(World.MAP_SIZE)
-        self.creatures = {} # maps creature.id to creature
-        self.resources = {} # maps resource.id to resource
-        self.fortresses = {} # maps fortress.id to fortress
+        self.creatures = CreatureADT()
+        self.resources = ResourceADT()
+        self.fortresses = FortressADT()
         self.players = {} # maps player_name (string) to a dict
         for player_name in player_names:
             self.players[player_name] = dict(fortress=None, creatures=Set([]))
+
+    def get_player_by_name(self, name):
+        return self.players[name]
+
+    def get_creature_by_id(self, id):
+        return self.creatures[id]
+
+    def get_resource_by_id(self, id):
+        return self.resources[id]
+
+    def get_fortress_by_id(self, id):
+        return self.fortresses[id]
+
+    def get_entity_at(self, x, y):
+        return self.tilemap.get_tile_at(x, y)
 
     def generate(self, random):
         # For now, hard code 2 players
@@ -122,9 +139,6 @@ class World:
             return True
         else:
             return False
-
-    def get_entity_at(self, x, y):
-        return self.tilemap.get_tile_at(x, y)
 
     def standing_players(self):
         return filter(lambda player: len(player['creatures']) > 0, self.players.values())

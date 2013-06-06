@@ -1,6 +1,6 @@
 import random
 from model.entity import Entity
-
+from model.entity import EntityADT
 
 class Resource(Entity):
     """
@@ -54,3 +54,10 @@ class Resource(Entity):
             remaining_gold = self.gold_amount
             self.gold_amount = 0
             return remaining_gold
+
+
+class ResourceADT(EntityADT):
+    """Resource Abstract Data Type"""
+    def __init__(self):
+        super(ResourceADT, self).__init__()
+        
