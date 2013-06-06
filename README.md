@@ -1,32 +1,27 @@
 Code Empire - Episode 1.0: Attack of the Languages
 -----------
 *Code Empire* is a game where programmers clash by writing AI code in their favorite language, seeking fame, fortune and a chance to honour their respective communities.<br>
-May the best hacker win!
-
-**Work In Progress**: v1.0 will be posted on HN as soon as it's playable.<br>
 
 ![Art by emkun.devianart.com](http://fc07.deviantart.net/fs70/f/2011/196/0/b/battle_by_emkun-d3s71ke.png "Art by emkun.devianart.com")
 
 ## What is it?
-A programming game in the likes of "Age of Empires", except you don't move the pieces with your mouse; rather, you write code to do it for you.<br>
+A strategy game in the likes of Warcraft/Age of Empires, except you don't move the pieces with your mouse: you write code to do it for you.<br>
 In *Code Empire*, you are to implement the AI that controls a small army seeking to destroy the enemy forces.<br>
-The game is **language agnostic**, meaning you're free to write the AI code in any language you want.
+The game is **language agnostic**, meaning you're free to write the AI code in any language you want.<br>
 
 ## Rules
 Each player has a **fortress** and several *creatures*.<br>
-* Creatures can act both as peons, gathering gold from **resources** that are scattered around the map, as well as military units, attacking enemy creatures and fortresses.<br>
-* Fortresses can create other creatures (at the cost of **gold**) and also attack nearby enemy units. They're much stronger than normal creatures.
-* You're also granted an additional amount of gold each round, based on how fast your code runs.
+* After each round, you're granted an additional amount of gold based on _how fast your code runs_.
+* Fortresses can create creatures (at the cost of **gold**) and also attack nearby enemy units. 
+* Creatures can be customized in order to create classes of units with different responsabilities. Two common classes are peons, units that gather gold from **resources** that are scattered around the map, and military units that attack enemy creatures and fortresses.<br>
 
 The main objective is to **destroy the other player's fortress**.
 
 ## How to play?
-1. Fork this repo
-2. Create a directory with **your Github username** inside ```ai```.
-3. Write your AI, commit and push your changes. A few example AIs are provided for you.
-4. That's it! You're now playing Code Empire.
-
-A cronjob looks for the latest commit on your *master* branch and automatically updates it on the game server (all other branches are ignored).
+Currently, the game is only halfway finished and not ready to be played.<br>
+It shouldn't take me too long to get a version 1.0 out and running on a server, but if you like the idea and want to speed up things, consider giving this repo *a star*.<br>
+Thanks :) That should boost my morale a bit. Now if you feel like to, read on to understand the game rules.<br>
+Any ideas are welcome at this point, so feel free to open an issue or something!
 
 ## Gameplay
 Each round, the ```creature.sh``` script in your directory is called for every one of your creatures.<br>
