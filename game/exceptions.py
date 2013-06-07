@@ -1,3 +1,13 @@
+# -*- coding: utf-8 -*-
+
+"""
+game.exceptions
+~~~~~~~~~~~~~~~~~~~
+
+This module contains the set of CodeEmpire's exceptions.
+
+"""
+
 class OutOfBoundsError(Exception):
     def __init__(self, x, y):
         self.value = 'point ({}, {}) is out of bounds'.format(x, y)

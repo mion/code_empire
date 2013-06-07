@@ -1,16 +1,12 @@
-from random import randrange
-from util.point import Point
+# -*- coding: utf-8 -*-
 
+"""
+game.structures
+~~~~~~~~~~~~~~~~~~~
 
-class Entity(object):
-    """Entity"""
-    ID_COUNTER = randrange(0, 101) # Add random initial ID to avoid cheating (finding the other player's creatures).
+Data structures that power CodeEmpire.
 
-    def __init__(self, position):
-        self.id = str(Entity.ID_COUNTER)
-        Entity.ID_COUNTER += randrange(1, 101)
-        self.position = position
-
+"""
 
 class EntityADT(object):
     """Entity Abstract Data Type"""

@@ -4,13 +4,13 @@ import json
 import md5
 import random
 
-from model.creature import Creature
-from model.fortress import Fortress
-from model.world import World
-from view.terminal import Terminal
+from game.model.creature import Creature
+from game.model.fortress import Fortress
+from game.model.world import World
+from game.view.terminal import Terminal
 
 
-class Game(object):
+class World(object):
     MAX_ROUNDS = 500
     TEMP_DIR = 'temp/'
 
