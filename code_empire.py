@@ -1,8 +1,8 @@
 #!./venv/bin/python
-from controller.game import Game
+from game.controllers.world import World
 
 if __name__ == '__main__':
-    new_game = Game('red', 'blue')
+    new_game = World('red', 'blue')
     winner = new_game.play()
     
     if winner:

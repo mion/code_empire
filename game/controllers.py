@@ -1,13 +1,23 @@
+# -*- coding: utf-8 -*-
+
+"""
+game.controllers
+~~~~~~~~~~~~~~~~~~~
+
+Controllers handle the exchange of message (input/output) that go "in and out"
+of models. Note that although input usually comes from the view (terminal), 
+it can also come from somewhere else (the player's AI).
+
+"""
+
 import sys
 import subprocess
 import json
 import md5
 import random
 
-from game.models.creature import Creature
-from game.models.fortress import Fortress
-from game.models.world import World
-from game.views.terminal import Terminal
+from models import World, Fortress, Creature
+from views import Terminal
 
 
 class World(object):

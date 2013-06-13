@@ -1,16 +1,232 @@
-import random
-from sets import Set
+# -*- coding: utf-8 -*-
 
-from model.fortress import Fortress
-from model.fortress import FortressADT
-from model.creature import Creature
-from model.creature import CreatureADT
-from model.resource import Resource
-from model.resource import ResourceADT
-from model.tilemap import TileMap
-from util.point import Point
-from util.dice import Dice
-from util.log import log
+"""
+game.models
+~~~~~~~~~~~~~~~~~~~
+
+...
+
+"""
+
+import random
+
+from utils import Point
+
+
+class Entity(object):
+    """Entity"""
+    ID_COUNTER = randrange(0, 101) # Add random initial ID to avoid cheating (finding the other player's creatures).
+
+    def __init__(self, position):
+        self.id = str(Entity.ID_COUNTER)
+        Entity.ID_COUNTER += randrange(1, 101)
+        self.position = position
+
+
+class Creature(Entity):
+    """
+    docstring for Creature
+    """
+    # TODO: player should be renamed to player_name
+    def __init__(self, name, player=None, level=1, position=None):
+        super(Creature, self).__init__(position=position)
+
+        self.name = name
+        self.player = player
+
+        self.level        = level
+        self.max_life     = 100*level
+        self.attack_power = 25*level
+        self.defense      = 5*level
+        
+        self.life = self.max_life
+        self.experience   = 0
+        self.view_range   = 3
+        self.attack_range = 1
+        self.accuracy     = 0.90
+        self.dodge        = 0.5
+
+        self.gold_carried = 0
+        self.max_gold_carried = 100
+
+        self.memory = {}
+
+    def __str__(self):
+        return 'c'
+
+    def __repr__(self):
+        return "{} {}, life: {} [ID: {}]\n".format(self.position, self.name, self.life, self.id)
+
+    def to_info(self):
+        return {
+                'id': self.id,
+                'name': self.name,
+                'type': 'creatures',
+                'level': self.level,
+                'life': self.life,
+                'player': self.player,
+                'x': self.position.x,
+                'y': self.position.y
+               }
+
+    def experience_for_level(self, n):
+        return 100*n
+
+    def level_for_experience(self, experience):
+        return self.experience/100
+
+    def experience_worth(self):
+        return self.level*10
+
+    def gain_kill_experience(self, target):
+        self.experience += target.experience_worth()
+        self.level = self.level_for_experience(self.experience)
+
+    def in_attack_range(self, point):
+        return self.position.distance_to(point) <= self.attack_range
+
+    def deal_damage(self, target):
+        target.life -= (self.attack_power - target.defense)
+
+    def hit_chance(self, target):
+        return self.accuracy - target.dodge
+
+    def alive(self):
+        return self.life > 0
+
+    def attack(self, target):
+        if not target.alive():
+            return AttackResult.DEAD
+        if not self.in_attack_range(target.position):
+            return AttackResult.NOT_IN_RANGE
+
+        successful_hit = random.random() < self.hit_chance(target)
+
+        if successful_hit:
+            self.deal_damage(target)
+
+            if target.alive():
+                return AttackResult.HIT
+            else:
+                self.gain_kill_experience(target)
+                return AttackResult.KILLED
+        else:
+            return AttackResult.MISS
+
+    def is_full(self):
+        return self.gold_carried >= self.max_gold_carried
+
+    def space_left(self):
+        return self.max_gold_carried - self.gold_carried
+
+    def gather(self, resource):
+        if not resource.depleted():
+            if self.is_full():
+                return GatherResult.FULL
+            else:
+                if self.space_left() > resource.gold_flux:
+                    self.gold_carried += resource.gather()
+                    return GatherResult.SUCCESS
+                else:
+                    self.gold_carried += resource.gather(self.space_left)
+                    return GatherResult.CAPPED
+        else:
+            return GatherResult.DEPLETED
+
+
+class GatherResult(object):
+    """Possible return values for the 'gather' method."""
+    SUCCESS         = 'Success' # Successfully gathered resource, STILL has space left.
+    CAPPED          = 'Capped' # Succesfully gathered resource, NO more space (ie, is now full).
+    DEPLETED        = 'Depleted' # There's no more resource left.
+    FULL            = 'Full' # Can't hold any more gold.
+
+
+class AttackResult(object):
+    """Possible return values for the 'attack' method."""
+    HIT             = 'Hit' # Succesfully dealt damage to target.
+    MISS            = 'Miss' # Failed to hit target.
+    KILLED          = 'Killed' # Hit and also killed the target.
+    NOT_IN_RANGE    = 'NotInRange' # Target is too far.
+    DEAD            = 'Dead' # Target is already dead.
+
+
+class Fortress(Creature):
+    def __init__(self, player, gold_carried=100, position=None):
+        super(Fortress, self).__init__('Fortress', player, 10, position)
+        self.gold_carried = gold_carried
+
+    def __str__(self):
+        return 'F'
+
+    def to_info(self):
+        return {
+                'id': self.id,
+                'name': self.name,
+                'type': 'fortresses',
+                'level': self.level,
+                'life': self.life,
+                'player': self.player,
+                'x': self.position.x,
+                'y': self.position.y
+               }
+
+    def think(self, info):
+        return
+
+
+class Resource(Entity):
+    """
+    Creatures get gold from Resources deposits that are scattered across the map.
+    """
+    def __init__(self, name, gold_amount, gold_flux, position=None):
+        """
+        :param: name The resource's name (eg: Tree, Gold Mine, etc)
+        :param: gold_amount The amount of gold stored in this resource.
+        :param: gold_flux The amount of gold that can be retrieved per turn by any creature.
+        """
+        super(Resource, self).__init__(position=position)
+
+        self.name        = name
+        self.gold_amount = gold_amount
+        self.gold_flux   = gold_flux
+
+    def __str__(self):
+        return '$'
+
+    def __repr__(self):
+        return '{} {}, gold: {} [+{}]\n'.format(self.position, self.name, self.gold_amount, self.gold_flux)
+
+    def to_info(self):
+        return {
+                'id': self.id,
+                'name': self.name,
+                'type': 'resources',
+                'gold_amount': self.gold_amount,
+                'gold_flux': self.gold_flux,
+                'x': self.position.x,
+                'y': self.position.y
+               }
+
+    def depleted(self):
+        return self.gold_amount <= 0
+
+    def gather(self, gold_flux_cap=None):
+        if self.depleted():
+            return 0
+
+        if gold_flux_cap:
+            gold_extracted = min(gold_flux_cap, self.gold_flux)
+        else:
+            gold_extracted = self.gold_flux
+        
+        if self.gold_amount - gold_extracted > 0:
+            self.gold_amount -= gold_extracted
+            return self.gold_flux
+        else:
+            remaining_gold = self.gold_amount
+            self.gold_amount = 0
+            return remaining_gold
 
 
 class World:

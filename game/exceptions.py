@@ -15,9 +15,17 @@ class OutOfBoundsError(Exception):
     def __str__(self):
         return repr(self.value)
 
+
 class InvalidPlayerError(Exception):
     def __init__(self, player):
         self.value = 'invalid player "{}"'.format(player)
 
     def __str__(self):
         return repr(self.value)
+
+
+class UnknownActionError(Error):
+    """Raised when no method handles the action from the AI message."""
+    def __init__(self, action):
+        self.action = action
+

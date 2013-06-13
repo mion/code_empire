@@ -56,8 +56,3 @@ class Resource(Entity):
             self.gold_amount = 0
             return remaining_gold
 
-
-class ResourceADT(EntityADT):
-    """Resource Abstract Data Type"""
-    def __init__(self):
-        super(ResourceADT, self).__init__()
