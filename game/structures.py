@@ -11,8 +11,8 @@ Data structures that power CodeEmpire.
 from exceptions import OutOfBoundsError
 
 
-class EntityADT(object):
-    """Entity Abstract Data Type"""
+class EntityCollection(object):
+    """Entity collection."""
     def __init__(self):
         self.entities = {}
 
@@ -33,7 +33,7 @@ class EntityADT(object):
         return None
 
 
-class TileMap:
+class TileMap(object):
     EMPTY_TILE = ' '
 
     def __init__(self, size):

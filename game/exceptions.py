@@ -24,7 +24,7 @@ class InvalidPlayerError(Exception):
         return repr(self.value)
 
 
-class UnknownActionError(Error):
+class UnknownActionError(Exception):
     """Raised when no method handles the action from the AI message."""
     def __init__(self, action):
         self.action = action

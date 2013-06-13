@@ -1,5 +1,5 @@
 #!./venv/bin/python
-from game.controllers.world import World
+from game.controllers import World
 
 if __name__ == '__main__':
     new_game = World('red', 'blue')

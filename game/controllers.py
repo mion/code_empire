@@ -16,18 +16,17 @@ import json
 import md5
 import random
 
-from models import World, Fortress, Creature
-from views import Terminal
-
+import models
+import views
 
 class World(object):
     MAX_ROUNDS = 500
     TEMP_DIR = 'temp/'
 
     def __init__(self, red_player, blue_player):
-        self.world = World(red_player, blue_player)
+        self.world = models.World(red_player, blue_player)
         self.world.generate(random)
-        self.terminal = Terminal(self.world)
+        self.terminal = views.Terminal(self.world)
 
     def random_hash(self):
         return md5.new(str(random.random())).hexdigest()
@@ -47,8 +46,9 @@ class World(object):
         """
         Exchange a message using randomically named JSON files.
         """
-        info_filename = Game.TEMP_DIR + self.random_hash()
-        response_filename = Game.TEMP_DIR + self.random_hash()
+        # TODO: use Unix temp files (Python's tempfile module)
+        info_filename = World.TEMP_DIR + self.random_hash()
+        response_filename = World.TEMP_DIR + self.random_hash()
 
         with open(info_filename, 'w') as f:
             json.dump(info, f)
@@ -62,7 +62,7 @@ class World(object):
 
     def clear_temp_dir(self):
         import os
-        os.system('rm ' + Game.TEMP_DIR + '*')
+        os.system('rm ' + World.TEMP_DIR + '*')
 
     def play(self, interactive=True):
         """
@@ -71,7 +71,7 @@ class World(object):
         if interactive:
                 self.terminal.display(0)
 
-        for i in range(Game.MAX_ROUNDS):
+        for i in range(World.MAX_ROUNDS):
             creatures = self.world.creatures
 
             for id in creatures:

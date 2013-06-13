@@ -9,17 +9,20 @@ game.models
 """
 
 import random
+import logging
+from sets import Set
 
+from exceptions import OutOfBoundsError
 from utils import Point
-
+from structures import TileMap
 
 class Entity(object):
     """Entity"""
-    ID_COUNTER = randrange(0, 101) # Add random initial ID to avoid cheating (finding the other player's creatures).
+    ID_COUNTER = random.randrange(0, 101) # Add random initial ID to avoid cheating (finding the other player's creatures).
 
     def __init__(self, position):
         self.id = str(Entity.ID_COUNTER)
-        Entity.ID_COUNTER += randrange(1, 101)
+        Entity.ID_COUNTER += random.randrange(1, 101)
         self.position = position
 
 
@@ -229,11 +232,13 @@ class Resource(Entity):
             return remaining_gold
 
 
-class World:
+class World(object):
     MAP_SIZE = 9 # Always an odd number!
     STARTING_AREA_SIZE = 3
 
     def __init__(self, *player_names):
+        self.battle_logger = logging.getLogger('battle') 
+
         self.tilemap = TileMap(World.MAP_SIZE)
         self.creatures = {} #CreatureADT()
         self.resources = {} #ResourceADT()
@@ -409,7 +414,7 @@ class World:
             c.gather(target_resource)
 
     def handle_wander(self, c, resp):
-        self.move_creature(c, Dice.roll(2) - 1, Dice.roll(2) - 1)
+        self.move_creature(c, random.randrange(3) - 1, random.randrange(3) - 1)
 
     def handle_creature_response(self, resp, c):
         """
@@ -435,4 +440,4 @@ class World:
         # TODO: Add optional choice of 'target_id' over 'target_x' and 'target_y'
         if resp.get('log', None):
             for l in resp['log']:
-                log(l, "{}'s {} at {}".format(c.player, c.name, c.position))
+                self.battle_logger.info("%s's %s at %s: '%s'", c.player, c.name, c.position, l)

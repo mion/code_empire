@@ -8,6 +8,9 @@ Utility classes and functions.
 
 """
 
+import logging
+
+
 class Point(object): # REFACTOR: http://docs.python.org/2/library/collections.html#collections.namedtuple
   def __init__(self, x, y=None):
     self.x = x
@@ -58,3 +61,12 @@ class Point(object): # REFACTOR: http://docs.python.org/2/library/collections.ht
       return random.sample(points, count)
     else:
       return Point(random.randrange(lower.x, upper.x), random.randrange(lower.y, upper.y))
+
+
+class BattleReport(object):
+  def __init__(self):
+    self.report = []
+
+  def movement(self, creature, orig, dest):
+    self.report.append({"action": "movement", "creature": creature, "orig": orig, "dest": dest})
+
