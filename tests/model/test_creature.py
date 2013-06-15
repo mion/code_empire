@@ -1,10 +1,7 @@
 import unittest
 
-from util.point import Point
-from model.resource import Resource
-from model.creature import Creature
-from model.creature import AttackResult
-from model.creature import GatherResult
+from game.utils import Point
+from game.models import Creature, Resource, AttackResult, GatherResult
 
 
 def suite():

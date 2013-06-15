@@ -1,9 +1,7 @@
 import unittest
 
-from model.world import World
-from util.point import Point
-from model.creature import Creature
-from model.resource import Resource
+from game.utils import Point
+from game.models import World, Creature, Resource
 
 
 class WorldTestCase(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from util.point import Point
+from game.utils import Point
 
 class PointTestCase(unittest.TestCase):
     def test_init(self):
