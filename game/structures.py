@@ -11,7 +11,7 @@ Data structures that power CodeEmpire.
 from exceptions import OutOfBoundsError
 
 
-class EntityCollection(object):
+class EntityDict(object):
     """Entity collection."""
     def __init__(self):
         self.entities = {}

@@ -36,7 +36,7 @@ class World(object):
         Calls the 'think.sh' script for a given player.
         """
         try:
-            # TODO: security issue with check_output (possibly malicious player name?)
+            # TODO: security issue with check_output - possibly malicious player name?
             subprocess.check_output(["./ai/{}/think.sh '{}' '{}'".format(player, info_filename, response_filename)], shell=True)
         except subprocess.CalledProcessError, e:
             print '\nAn error occurred when running think.sh: ' + str(e)
