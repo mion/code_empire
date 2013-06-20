@@ -34,8 +34,8 @@ class CreatureAI(object):
         self.log("Creatures: {}".format(self.info["creatures"]))
 
     def log(self, message):
-        with open(self.myself["player"] + '_battle.log', 'a') as f:
-            f.write('{} at ({}, {}) -> {}\n'.format(self.myself["name"], self.myself["x"], self.myself["y"], message))
+        # with open(self.myself["player"] + '_battle.log', 'a') as f:
+        #     f.write('{} at ({}, {}) -> {}\n'.format(self.myself["name"], self.myself["x"], self.myself["y"], message))
         self.response['log'].append(message)
 
     def is_target_insight(self):

@@ -237,7 +237,7 @@ class World(object):
     STARTING_AREA_SIZE = 3
 
     def __init__(self, *player_names):
-        self.battle_logger = logging.getLogger('battle') 
+        self.logger = logging.getLogger('code_empire.models.World') 
 
         self.tilemap = TileMap(World.MAP_SIZE)
         self.creatures = {} #CreatureADT()
@@ -439,5 +439,5 @@ class World(object):
         # TODO: Check for errors (e.g.: 'target' is there but no 'target_x', target class, etc)
         # TODO: Add optional choice of 'target_id' over 'target_x' and 'target_y'
         if resp.get('log', None):
-            for l in resp['log']:
-                self.battle_logger.info("%s's %s at %s: '%s'", c.player, c.name, c.position, l)
+            for creature_log in resp['log']:
+                self.logger.info("%s's %s (id=%s) : %s", c.player, c.name, c.id, creature_log)
