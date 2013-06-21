@@ -102,7 +102,6 @@ class World(object):
         return MatchResult(None)
 
 
-
 class MatchResult(object):
     """The end result for a match."""
     def __init__(self, winner):
@@ -113,3 +112,21 @@ class MatchResult(object):
             return "GAME OVER - Winner: {}".format(self.winner)
         else:
             return "GAME OVER - Draw"
+
+
+# TODO: puts these in a "messages" module.
+class Message(object):
+    """Message exchanged between the player's AI and the world."""
+    def __init__(self, body):
+        self.body = body
+        
+    def to_json(self, filename):
+        with open(filename, 'w') as f:
+            json.dump(self.body, f)
+
+    @classmethod
+    def from_json(self, filename):
+        with open(filename, 'r') as f: #FIXME: check if file is there
+            body = json.load(f)
+
+        return Message(body=body)

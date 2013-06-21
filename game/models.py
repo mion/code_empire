@@ -30,8 +30,8 @@ class Creature(Entity):
     """
     docstring for Creature
     """
-    # TODO: player should be renamed to player_name
-    def __init__(self, name, player=None, level=1, position=None):
+    # TODO: player should probably be renamed to player_name
+    def __init__(self, name, player=None, level=1, position=None, max_gold_carried=100):
         super(Creature, self).__init__(position=position)
 
         self.name = name
@@ -50,7 +50,7 @@ class Creature(Entity):
         self.dodge        = 0.5
 
         self.gold_carried = 0
-        self.max_gold_carried = 100
+        self.max_gold_carried = max_gold_carried
 
         self.memory = {}
 
@@ -158,6 +158,7 @@ class Fortress(Creature):
     def __init__(self, player, gold_carried=100, position=None):
         super(Fortress, self).__init__('Fortress', player, 10, position)
         self.gold_carried = gold_carried
+        self.max_gold_carried = 10000
 
     def __str__(self):
         return 'F'
@@ -173,9 +174,6 @@ class Fortress(Creature):
                 'x': self.position.x,
                 'y': self.position.y
                }
-
-    def think(self, info):
-        return
 
 
 class Resource(Entity):

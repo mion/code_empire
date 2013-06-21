@@ -44,6 +44,15 @@ The creature [...]
 
 ---
 
-### Cool (and laborious) ideas
+## Cool (and laborious) ideas for the future
+
+### General
 - Write a HTML5 parser for battle logs, so that battles can be reviewed with animations, sound, etc.
 - Write small client libraries for popular languages that parse the JSON into classes, handle creature memory, etc.
+
+### Game design ideas
+- More game elements to increase strategic complexity:
+    - World: water, terrain (affects movement speed), etc. 
+    - Entities: ships ("water" creature), catapults ("mechanical" creature), etc. 
+    - Nature: wind, rain, etc.
+- **Realtime** gameplay: make a hybrid version of the game where control is shared by the AI and the player (e.g.: through an action command REPL). Hmmm this sounds really cool indeed.
