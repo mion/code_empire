@@ -64,7 +64,7 @@ class World(object):
         import os
         os.system('rm ' + World.TEMP_DIR + '*')
 
-    def play(self, interactive=True):
+    def play(self, interactive=False):
         """
         Play a whole match.
         """
@@ -94,9 +94,22 @@ class World(object):
             winner = self.world.update()
 
             if winner:
-                return winner
+                return MatchResult(winner)
 
             if interactive:
                 raw_input('Press any key to continue...')
 
-        return None
+        return MatchResult(None)
+
+
+
+class MatchResult(object):
+    """The end result for a match."""
+    def __init__(self, winner):
+        self.winner = winner
+        
+    def __str__(self):
+        if self.winner:
+            return "GAME OVER - Winner: {}".format(self.winner)
+        else:
+            return "GAME OVER - Draw"

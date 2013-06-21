@@ -18,11 +18,11 @@ from structures import TileMap
 
 class Entity(object):
     """Entity"""
-    ID_COUNTER = random.randrange(0, 101) # Add random initial ID to avoid cheating (finding the other player's creatures).
+    ID_COUNTER = random.randrange(0, 1000) # Add random initial ID to avoid cheating (finding the other player's creatures).
 
     def __init__(self, position):
         self.id = str(Entity.ID_COUNTER)
-        Entity.ID_COUNTER += random.randrange(1, 101)
+        Entity.ID_COUNTER += random.randrange(5, 500)
         self.position = position
 
 
@@ -339,7 +339,7 @@ class World(object):
             return False
 
     def standing_players(self):
-        return [p for p in self.players.values() if len(p['creatures']) > 0]
+        return [pname for pname, pdict in self.players.items() if len(pdict['creatures']) > 0]
 
     def winner(self):
         # TODO: check win/draw special cases.
