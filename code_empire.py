@@ -15,7 +15,7 @@ def _setup_logging():
     log_fn = 'game_{}.log'.format(_timestamp())
     logging.basicConfig(filename=log_fn, format='[%(levelname)s] %(name)s\n\t\t-- %(message)s\n', level=logging.DEBUG)
     logger.setLevel(logging.DEBUG)
-
+    
 def new_game_interactive(players):
     logger.info('starting new game (interactive mode), players: {}'.format(players))
     new_game = controllers.World(players[0], players[1])
