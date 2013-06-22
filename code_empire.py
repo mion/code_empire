@@ -6,33 +6,32 @@ import time
 import game.controllers as controllers
 
 
-logger = logging.getLogger('code_empire')
+lg = logging.getLogger('code_empire')
 
-def _timestamp():
+def timestamp():
     return time.strftime("%d-%m-%Y-%H%M%S", time.gmtime())
 
-def _setup_logging():
-    log_fn = 'game_{}.log'.format(_timestamp())
+def setup_logging():
+    log_fn = 'game_{}.log'.format(timestamp())
     logging.basicConfig(filename=log_fn, format='[%(levelname)s] %(name)s\n\t\t-- %(message)s\n', level=logging.DEBUG)
-    logger.setLevel(logging.DEBUG)
-    
+    lg.setLevel(logging.DEBUG)
+ 
+def new_game(players, inter):
+    lg.info('starting new game (interactive: {}), players: {}'.format(inter, players))
+    game = controllers.Game(players[0], players[1])
+    result = game.play(interactive=inter)
+    lg.info('game over, winner: {}'.format(result.winner))   
+    print result
+
 def new_game_interactive(players):
-    logger.info('starting new game (interactive mode), players: {}'.format(players))
-    new_game = controllers.World(players[0], players[1])
-    result = new_game.play(interactive=True)   
-    logger.info('game over, winner: {}'.format(result.winner))   
-    print result 
+    new_game(players, True)
 
 def new_game_result_only(players):
-    logger.info('starting new game, players: {}'.format(players))
-    new_game = controllers.World(players[0], players[1])
-    result = new_game.play()
-    logger.info('game over, winner: {}'.format(result.winner))   
-    print result 
+    new_game(players, False)
 
 
 if __name__ == '__main__':
-    _setup_logging()
+    setup_logging()
 
     parser = argparse.ArgumentParser(description='The epic programming game -- this program plays an entire CodeEmpire match between two players.')
     parser.add_argument('players', metavar='P', 

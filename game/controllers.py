@@ -19,7 +19,7 @@ import random
 import models
 import views
 
-class World(object):
+class Game(object):
     MAX_ROUNDS = 500
     TEMP_DIR = 'temp/'
 
@@ -47,8 +47,8 @@ class World(object):
         Exchange a message using randomically named JSON files.
         """
         # TODO: use Unix temp files (Python's tempfile module)
-        info_filename = World.TEMP_DIR + self.random_hash()
-        response_filename = World.TEMP_DIR + self.random_hash()
+        info_filename = Game.TEMP_DIR + self.random_hash()
+        response_filename = Game.TEMP_DIR + self.random_hash()
 
         with open(info_filename, 'w') as f:
             json.dump(info, f)
@@ -62,7 +62,7 @@ class World(object):
 
     def clear_temp_dir(self):
         import os
-        os.system('rm ' + World.TEMP_DIR + '*')
+        os.system('rm ' + Game.TEMP_DIR + '*')
 
     def play(self, interactive=False):
         """
@@ -71,7 +71,7 @@ class World(object):
         if interactive:
                 self.terminal.display(0)
 
-        for i in range(World.MAX_ROUNDS):
+        for i in range(Game.MAX_ROUNDS):
             creatures = self.world.creatures
 
             for id in creatures:
