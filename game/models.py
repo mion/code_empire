@@ -4,7 +4,7 @@
 game.models
 ~~~~~~~~~~~~~~~~~~~
 
-...
+This module implements the game's core logic.
 
 """
 

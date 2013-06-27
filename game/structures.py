@@ -4,7 +4,7 @@
 game.structures
 ~~~~~~~~~~~~~~~~~~~
 
-Data structures that power CodeEmpire.
+Data structures that power Code Empire.
 
 """
 

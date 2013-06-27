@@ -4,7 +4,7 @@
 game.exceptions
 ~~~~~~~~~~~~~~~~~~~
 
-This module contains the set of CodeEmpire's exceptions.
+This module contains the set of Code Empire's exceptions.
 
 """
 

@@ -4,7 +4,8 @@
 game.views
 ~~~~~~~~~~~~~~~~~~~
 
-...
+This module contains graphic logic.
+At the moment this means drawing stuff to the terminal.
 
 """
 
