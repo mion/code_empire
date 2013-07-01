@@ -29,8 +29,29 @@ If you'd like to boost my morale a bit, you could also *star the repo*! Thanks :
 ## Gameplay
 
 Each round, the ```creature.sh``` script in your directory is called for every one of your creatures.<br>
-The script receives a JSON (serialized string) with information available to that particular creature. Your code will then return another JSON with the action that should be taken by the creature.<br>
+The script receives a JSON with information available to that particular creature. Your code will then return another JSON with the action that should be taken by the creature.<br>
 The same goes for your ```fortress.sh``` script.<br>
+Eg.: A level 3 creature called "Orc" standing at (3, 5) would receive this:
+
+    {
+        'myself': {
+            'name': 'Orc',
+            'life': 350,
+            'level': 3,
+            'x': 3,
+            'y': 5,
+            'group': 'default'
+        },
+        'nearby_enemies': {
+            'Troll': {
+                'life': 100,
+                'level': 1,
+                'x': 5,
+                'y': 7
+            }
+        },
+        'nearby_allies': {}
+    }
 
 ##### Fortress
 
