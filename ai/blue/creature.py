@@ -22,6 +22,7 @@ class Point(object):
       dy /= abs(dy)
     return (dx, dy)
 
+
 class CreatureAI(object):
     def __init__(self, info):
         self.info = info

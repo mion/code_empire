@@ -5,8 +5,7 @@ game.controllers
 ~~~~~~~~~~~~~~~~~~~
 
 Controllers handle the exchange of message (input/output) that go "in and out"
-of models. Note that although input usually comes from the view (terminal), 
-it can also come from somewhere else (the player's AI).
+of models.
 
 """
 
