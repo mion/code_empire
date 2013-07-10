@@ -46,6 +46,7 @@ class TileMap(object):
             for x in range(p.start[0], p.stop[0]): # Improve? O(n^2)
                 for y in range(p.start[1], p.stop[1]):
                     region.append(self.tiles[x + self.size*y])
+            return region
         else:
             return self.get_tile_at(p[0], p[1])
 
