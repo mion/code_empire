@@ -112,7 +112,7 @@ class World(object):
         """
         c -- creature
         """
-        info = dict(creatures={}, fortresses={}, resources={}, memory={})
+        info = dict(creatures={}, fortresses={}, resources={}, memory=c.memory)
 
         x0 = max(c.position.x - c.view_range, 0)
         xf = min(c.position.x + c.view_range, models.World.MAP_SIZE - 1)

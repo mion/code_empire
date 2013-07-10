@@ -41,6 +41,11 @@ class TileMap(object):
         self.tiles = [empty for i in range(size*size)]
 
     def __getitem__(self, p):
+        """
+        If p is a slice, return a square region delimited by the points (tuples) 
+        lower_left and upper_right; otherwise, unpack p as a tuple (x, y) and 
+        return that point.
+        """
         if isinstance(p, slice):
             region = []
             for x in range(p.start[0], p.stop[0]): # Improve? O(n^2)
@@ -75,10 +80,3 @@ class TileMap(object):
     @check_bounds
     def is_tile_empty(self, x, y):
         return self.get_tile_at(x, y) == self.EMPTY_TILE
-
-    def get_region(self, lower, upper):
-        """
-        Returns a square region delimited by the points (tuples) lower_left and
-        upper_right.
-        """
-        return self.tiles[lower:upper]
