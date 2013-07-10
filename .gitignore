@@ -39,6 +39,7 @@ venv/*
 
 # Temporary files
 temp/*
+temp.py
 
 # Log files
 *.log

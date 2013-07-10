@@ -24,8 +24,10 @@ class Game(object):
 
     def __init__(self, red_player, blue_player):
         self.world = models.World(red_player, blue_player)
-        self.world.generate(random)
+        self.world_controller = World(self.world)
         self.terminal = views.Terminal(self.world)
+
+        self.world.generate(random)
 
     def random_hash(self):
         return md5.new(str(random.random())).hexdigest()
@@ -78,7 +80,8 @@ class Game(object):
                 player = creature.player
 
                 # Gather available info for that creature
-                info = self.world.gather_creature_info(creatures[id])
+                # info = self.world.gather_creature_info(creatures[id])
+                info = self.world_controller.get_creature_info(creature)
                 # Send that info to the AI, get the response
                 response = self.exchange_message(player, info)
                 # World handles the player's AI commands
@@ -99,6 +102,34 @@ class Game(object):
                 raw_input('Press any key to continue...')
 
         return MatchResult(None)
+
+
+class World(object):
+    def __init__(self, world):
+        self.world = world
+
+    def get_creature_info(self, c):
+        """
+        c -- creature
+        """
+        info = dict(creatures={}, fortresses={}, resources={}, memory={})
+
+        x0 = max(c.position.x - c.view_range, 0)
+        xf = min(c.position.x + c.view_range, models.World.MAP_SIZE - 1)
+        y0 = max(c.position.y - c.view_range, 0)
+        yf = min(c.position.y + c.view_range, models.World.MAP_SIZE - 1)
+
+        for x in range(x0, xf + 1):
+            for y in range(y0, yf + 1):
+                if self.world.tilemap.in_bounds(x, y) and not self.world.tilemap.is_tile_empty(x, y):
+                    entity = self.world.tilemap.get_tile_at(x, y)
+                    if entity.id != c.id:
+                        entity_info = entity.to_info()
+                        info[entity_info['type']][entity.id] = entity_info # REFACTOR: confusing?
+                    else:
+                        info['myself'] = entity.to_info()
+
+        return info
 
 
 class MatchResult(object):

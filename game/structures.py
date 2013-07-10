@@ -36,11 +36,21 @@ class EntityDict(object):
 class TileMap(object):
     EMPTY_TILE = ' '
 
-    def __init__(self, size):
+    def __init__(self, size, empty=' '):
         self.size = size
-        self.tiles = []
-        for i in range(size*size):
-            self.tiles.append(self.EMPTY_TILE)
+        self.tiles = [empty for i in range(size*size)]
+
+    def __getitem__(self, p):
+        if isinstance(p, slice):
+            region = []
+            for x in range(p.start[0], p.stop[0]): # Improve? O(n^2)
+                for y in range(p.start[1], p.stop[1]):
+                    region.append(self.tiles[x + self.size*y])
+        else:
+            return self.get_tile_at(p[0], p[1])
+
+    def __setitem__(self, p, tile):
+        self.set_tile_at(p[0], p[1], tile)
 
     def in_bounds(self, x, y):
         return (0 <= x < self.size) and (0 <= y < self.size)
@@ -65,3 +75,9 @@ class TileMap(object):
     def is_tile_empty(self, x, y):
         return self.get_tile_at(x, y) == self.EMPTY_TILE
 
+    def get_region(self, lower, upper):
+        """
+        Returns a square region delimited by the points (tuples) lower_left and
+        upper_right.
+        """
+        return self.tiles[lower:upper]

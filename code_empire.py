@@ -6,8 +6,6 @@ import time
 import game.controllers as controllers
 
 
-lg = logging.getLogger('code_empire')
-
 def timestamp():
     return time.strftime("%d-%m-%Y-%H%M%S", time.gmtime())
 
@@ -17,9 +15,13 @@ def setup_logging():
     lg.setLevel(logging.DEBUG)
  
 def new_game(players, inter):
+    lg = logging.getLogger('code_empire')
+    setup_logging()
     lg.info('starting new game (interactive: {}), players: {}'.format(inter, players))
+
     game = controllers.Game(players[0], players[1])
     result = game.play(interactive=inter)
+
     lg.info('game over, winner: {}'.format(result.winner))   
     print result
 

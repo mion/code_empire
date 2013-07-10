@@ -18,7 +18,9 @@ from structures import TileMap
 
 class Entity(object):
     """Entity"""
-    ID_COUNTER = random.randrange(0, 1000) # Add random initial ID to avoid cheating (finding the other player's creatures).
+    ID_COUNTER = random.randrange(0, 1000) # Add random initial ID to avoid 
+                                           # cheating (finding the other 
+                                           # player's creatures).
 
     def __init__(self, position):
         self.id = str(Entity.ID_COUNTER)
@@ -58,7 +60,10 @@ class Creature(Entity):
         return 'c'
 
     def __repr__(self):
-        return "{} {}, life: {} [ID: {}]\n".format(self.position, self.name, self.life, self.id)
+        return "{} {}, life: {} [ID: {}]\n".format(self.position, 
+                                                   self.name, 
+                                                   self.life, 
+                                                   self.id)
 
     def to_info(self):
         return {
@@ -139,8 +144,8 @@ class Creature(Entity):
 
 class GatherResult(object):
     """Possible return values for the 'gather' method."""
-    SUCCESS         = 'Success' # Successfully gathered resource, STILL has space left.
-    CAPPED          = 'Capped' # Succesfully gathered resource, NO more space (ie, is now full).
+    SUCCESS         = 'Success' # Gathered resource and still has space left.
+    CAPPED          = 'Capped' # Gathered resource but there's NO more space.
     DEPLETED        = 'Depleted' # There's no more resource left.
     FULL            = 'Full' # Can't hold any more gold.
 
@@ -184,7 +189,8 @@ class Resource(Entity):
         """
         :param: name The resource's name (eg: Tree, Gold Mine, etc)
         :param: gold_amount The amount of gold stored in this resource.
-        :param: gold_flux The amount of gold that can be retrieved per turn by any creature.
+        :param: gold_flux The amount of gold that can be retrieved per turn by 
+                any creature.
         """
         super(Resource, self).__init__(position=position)
 
@@ -196,7 +202,10 @@ class Resource(Entity):
         return '$'
 
     def __repr__(self):
-        return '{} {}, gold: {} [+{}]\n'.format(self.position, self.name, self.gold_amount, self.gold_flux)
+        return '{} {}, gold: {} [+{}]\n'.format(self.position, 
+                                                self.name, 
+                                                self.gold_amount, 
+                                                self.gold_flux)
 
     def to_info(self):
         return {
@@ -331,7 +340,6 @@ class World(object):
             self.tilemap.set_tile_at(to_x, to_y, c)
             c.position.x = to_x
             c.position.y = to_y
-
             return True
         else:
             return False
@@ -348,28 +356,29 @@ class World(object):
         else:
             return None
 
-    def gather_creature_info(self, c): # TODO: change method name... possible confusion with 'gather' from resource?
-        """
-        Information available to that creature.
-        """
-        info = {'creatures': {}, 'fortresses': {}, 'resources': {}, 'memory': c.memory}
+    # def gather_creature_info(self, c): # TODO: change method name... 
+    #     """
+    #     Gather information available to that creature (ie, what it sees) and 
+    #     create a dict that will later be dumped to a JSON and passed to the AI.
+    #     """
+    #     info = {'creatures': {}, 'fortresses': {}, 'resources': {}, 'memory': c.memory}
 
-        x0 = max(c.position.x - c.view_range, 0)
-        xf = min(c.position.x + c.view_range, World.MAP_SIZE - 1)
-        y0 = max(c.position.y - c.view_range, 0)
-        yf = min(c.position.y + c.view_range, World.MAP_SIZE - 1)
+    #     x0 = max(c.position.x - c.view_range, 0)
+    #     xf = min(c.position.x + c.view_range, World.MAP_SIZE - 1)
+    #     y0 = max(c.position.y - c.view_range, 0)
+    #     yf = min(c.position.y + c.view_range, World.MAP_SIZE - 1)
 
-        for x in range(x0, xf + 1):
-            for y in range(y0, yf + 1):
-                if self.tilemap.in_bounds(x, y) and not self.tilemap.is_tile_empty(x, y):
-                    entity = self.tilemap.get_tile_at(x, y)
-                    if entity.id != c.id:
-                        entity_info = entity.to_info()
-                        info[entity_info['type']][entity.id] = entity_info # REFACTOR: confusing?
-                    else:
-                        info['myself'] = entity.to_info()
+    #     for x in range(x0, xf + 1):
+    #         for y in range(y0, yf + 1):
+    #             if self.tilemap.in_bounds(x, y) and not self.tilemap.is_tile_empty(x, y):
+    #                 entity = self.tilemap.get_tile_at(x, y)
+    #                 if entity.id != c.id:
+    #                     entity_info = entity.to_info()
+    #                     info[entity_info['type']][entity.id] = entity_info # REFACTOR: confusing?
+    #                 else:
+    #                     info['myself'] = entity.to_info()
 
-        return info
+    #     return info
 
     def gather_fortress_info(self, c):
         return
