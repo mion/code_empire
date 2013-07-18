@@ -356,30 +356,6 @@ class World(object):
         else:
             return None
 
-    # def gather_creature_info(self, c): # TODO: change method name... 
-    #     """
-    #     Gather information available to that creature (ie, what it sees) and 
-    #     create a dict that will later be dumped to a JSON and passed to the AI.
-    #     """
-    #     info = {'creatures': {}, 'fortresses': {}, 'resources': {}, 'memory': c.memory}
-
-    #     x0 = max(c.position.x - c.view_range, 0)
-    #     xf = min(c.position.x + c.view_range, World.MAP_SIZE - 1)
-    #     y0 = max(c.position.y - c.view_range, 0)
-    #     yf = min(c.position.y + c.view_range, World.MAP_SIZE - 1)
-
-    #     for x in range(x0, xf + 1):
-    #         for y in range(y0, yf + 1):
-    #             if self.tilemap.in_bounds(x, y) and not self.tilemap.is_tile_empty(x, y):
-    #                 entity = self.tilemap.get_tile_at(x, y)
-    #                 if entity.id != c.id:
-    #                     entity_info = entity.to_info()
-    #                     info[entity_info['type']][entity.id] = entity_info # REFACTOR: confusing?
-    #                 else:
-    #                     info['myself'] = entity.to_info()
-
-    #     return info
-
     def gather_fortress_info(self, c):
         return
 
